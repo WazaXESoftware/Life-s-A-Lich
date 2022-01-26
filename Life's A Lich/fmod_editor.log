@@ -1,18 +1,13 @@
 [LOG] System::create                           : Header version = 2.01.09. Current version = 2.01.09.
-[LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
+[LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0x0.
 [LOG] SystemI::init                            : Initialize version=20109 (115889), maxchannels=256, flags=0x00020000
-[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD Core Audio Output'
+[LOG] OutputCoreAudio::init                    : Output running 2 channels at 44100Hz sample rate.
+[LOG] OutputCoreAudio::init                    : Maximum hardware read size: 1024 samples, Software buffer size: 512 samples, Number of software buffers: 4.
+[LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
-<<<<<<< HEAD
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x7f9c7dde5408 isAsync 0 updatePeriod 0.02
-=======
-[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000286733AEA08 isAsync 0 updatePeriod 0.02
->>>>>>> 807f983172f389d023534b05189cd0d994d966d1
+[LOG] AsyncManager::init                       : manager 0x7fa774679208 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -21,37 +16,1461 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-<<<<<<< HEAD
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SoundI::release                          :  (0x7f9cbef2e6c8)
-[LOG] SoundI::release                          :     Lich-flute drill 2nd part (0x7f9cbef2e838)
-[LOG] SoundI::release                          :  (0x7f9cbef2f628)
-[LOG] SoundI::release                          :     Lich-Latin kit bongo 2nd part (0x7f9cbef2f798)
-[LOG] SoundI::release                          :  (0x7f9cbef2c2d8)
-[LOG] SoundI::release                          :     Lich-violin stacc 2nd part (0x7f9cbef2c448)
-[LOG] SoundI::release                          :  (0x7f9cbef2d0f8)
-[LOG] SoundI::release                          :     Lich-cello stacc 2nd part 2 (0x7f9cbef2d268)
-[LOG] SoundI::release                          :  (0x7f9d1d49ae58)
-[LOG] SoundI::release                          :     Harp (0x7f9cbef2ac78)
-[LOG] SoundI::release                          :  (0x7f9cbef2e058)
-[LOG] SoundI::release                          :     Lifes a lich 2- effect (0x7f9cbef2e1c8)
-[LOG] SoundI::release                          :  (0x7f9cbef2d8a8)
-[LOG] SoundI::release                          :     Lich-basson 2nd part (0x7f9cbef2da18)
-[LOG] SoundI::release                          : Lich-perc long (0x7f9cbef2a718)
-[LOG] SoundI::release                          :     Lich-perc long (0x7f9cc8ea3428)
-[LOG] SoundI::release                          :     Lich-perc long (0x7f9cc8e0a898)
-[LOG] SoundI::release                          : Lich-basson intro (0x7f9cbeb3eef8)
-[LOG] SoundI::release                          :     Lich-basson intro (0x7f9cc8e3bec8)
-[LOG] SoundI::release                          :     Lich-basson intro (0x7f9cc8e0fdc8)
-[LOG] SoundI::release                          :  (0x7f9cbef2ca88)
-[LOG] SoundI::release                          :     Lich-harp pre chorus (0x7f9cbef2cbf8)
-[LOG] SoundI::release                          :  (0x7f9cbef2b378)
-[LOG] SoundI::release                          :     Lifes a lich 2- orc kit lite intro (0x7f9cbef2b4e8)
-[LOG] SoundI::release                          :  (0x7f9cbef2ee78)
-[LOG] SoundI::release                          :     Lich-flute drill to ending (0x7f9cbef2efe8)
-[LOG] SoundI::release                          :  (0x7f9cbef2bb28)
-[LOG] SoundI::release                          :     Lich-cello stacc 2nd part 1 (0x7f9cbef2bc98)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa772dbcad8 : node = 0x7fa8100d19d0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa8100433c8 : node = 0x7fa772de7b40
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa772dbcad8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa8100d1ae0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2-latin top long', format=5, channels=2, frequency=48000, lengthbytes=223488, lengthpcm=837817, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.315821.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa772dbcad8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa8100433c8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa772de7c50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2-latin bass long', format=5, channels=2, frequency=48000, lengthbytes=220064, lengthpcm=837817, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552854.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa8100433c8
+[LOG] SoundI::release                          : Lich-basson intro (0x7fa772b13b48)
+[LOG] SoundI::release                          :     Lich-basson intro (0x7fa772b18a88)
+[LOG] SoundI::release                          :     Lich-basson intro (0x7fa772b18ce8)
+[LOG] SoundI::release                          : Lich-perc long (0x7fa7739fb638)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa772b19788)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa772b19a38)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa7d6511498 : node = 0x7fa7d6529fa0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa7d6511498
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7d652a0b0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 21818
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa7d652b638 : node = 0x7fa7d653e7c0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-perc long', format=5, channels=2, frequency=48000, lengthbytes=275840, lengthpcm=1466182, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.572941.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa7d6511498
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa7d652b638
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7d653e8d0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 8727
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit bongo chorus', format=5, channels=2, frequency=48000, lengthbytes=159552, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa7d652b638
+[LOG] SoundI::release                          : Lifes a lich 2-latin bass long (0x7fa8100433c8)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin bass long (0x7fa77073d0e8)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin bass long (0x7fa77073d278)
+[LOG] SoundI::release                          : Lifes a lich 2-latin top long (0x7fa772dbcad8)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin top long (0x7fa8064e82e8)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin top long (0x7fa8064e7c58)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa773bb6438 : node = 0x7fa773b963c0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa773bb6778 : node = 0x7fa773bb5b00
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773bb6438
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773b964d0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2- strings trem 2nd', format=5, channels=2, frequency=48000, lengthbytes=122752, lengthpcm=497454, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.072138.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773bb6438
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773bb6778
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773bb5c10
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit 2nd part', format=5, channels=2, frequency=48000, lengthbytes=219328, lengthpcm=837817, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.315800.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773bb6778
+[LOG] SoundI::release                          : Lich-Latin kit bongo chorus (0x7fa7d652b638)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa770741b28)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa770741cb8)
+[LOG] SoundI::release                          : Lich-perc long (0x7fa7d6511498)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa770741238)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa7707413c8)
+[LOG] SoundI::release                          : Lifes a lich 2- strings trem 2nd (0x7fa773bb6438)
+[LOG] SoundI::release                          :     Lifes a lich 2- strings trem 2nd (0x7fa770b7feb8)
+[LOG] SoundI::release                          :     Lifes a lich 2- strings trem 2nd (0x7fa770b74608)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa80669c5b8 : node = 0x7fa773e08b10
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa80669c5b8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773e08c20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-ending turnaround', format=5, channels=2, frequency=48000, lengthbytes=187104, lengthpcm=654545, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.345375.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa80669c5b8
+[LOG] SoundI::release                          : Lich-Latin kit 2nd part (0x7fa773bb6778)
+[LOG] SoundI::release                          :     Lich-Latin kit 2nd part (0x7fa770b74fe8)
+[LOG] SoundI::release                          :     Lich-Latin kit 2nd part (0x7fa770b7c198)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa8067ade98 : node = 0x7fa770b31910
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa8067ade98
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa770b31a20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa770b746e8 : node = 0x7fa770b81140
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa8067af018 : node = 0x7fa770b77b20
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 1
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa8067d3758 : node = 0x7fa770b781b0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 2
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2.multi longer', format=5, channels=2, frequency=48000, lengthbytes=266240, lengthpcm=1047271, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.774988.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa8067ade98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa770b746e8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa770b81250
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2-latin top long', format=5, channels=2, frequency=48000, lengthbytes=223488, lengthpcm=837817, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.315821.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa770b746e8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa8067af018
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa770b77c30
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2.multi longer', format=5, channels=2, frequency=48000, lengthbytes=266240, lengthpcm=1047271, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.774988.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa8067af018
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa8067d3758
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa770b782c0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 13090
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-basson intro', format=5, channels=2, frequency=48000, lengthbytes=158080, lengthpcm=628363, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.311078.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa8067d3758
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa7739df738
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa7739df738
+[LOG] SoundI::release                          : Lich-basson intro (0x7fa8067d3758)
+[LOG] SoundI::release                          :     Lich-basson intro (0x7fa7739d87e8)
+[LOG] SoundI::release                          :     Lich-basson intro (0x7fa7739df738)
+[LOG] SoundI::release                          : Lich-ending turnaround (0x7fa80669c5b8)
+[LOG] SoundI::release                          :     Lich-ending turnaround (0x7fa773c4c338)
+[LOG] SoundI::release                          :     Lich-ending turnaround (0x7fa773c07638)
+[LOG] SoundI::release                          : Lifes a lich 2.multi longer (0x7fa8067ade98)
+[LOG] SoundI::release                          :     Lifes a lich 2.multi longer (0x7fa80654cc38)
+[LOG] SoundI::release                          :     Lifes a lich 2.multi longer (0x7fa80654ce78)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa774ccee08 : node = 0x7fa7d6443ef0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa774ccee08
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7d6444000
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 21818
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa80654ce78 : node = 0x7fa806505490
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-perc long', format=5, channels=2, frequency=48000, lengthbytes=275840, lengthpcm=1466182, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.572941.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa774ccee08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa80654ce78
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa8065055a0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 8727
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit bongo chorus', format=5, channels=2, frequency=48000, lengthbytes=159552, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa80654ce78
+[LOG] SoundI::release                          : Lifes a lich 2-latin top long (0x7fa770b746e8)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin top long (0x7fa7706e5bc8)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin top long (0x7fa770d4c208)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa8100433c8 : node = 0x7fa8100d19d0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa8100433c8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa8100d1ae0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa81003c128 : node = 0x7fa810034ef0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2- strings trem 2nd', format=5, channels=2, frequency=48000, lengthbytes=122752, lengthpcm=497454, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.072138.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa8100433c8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa81003c128
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa810035000
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit 2nd part', format=5, channels=2, frequency=48000, lengthbytes=219328, lengthpcm=837817, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.315800.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa81003c128
+[LOG] SoundI::release                          : Lich-Latin kit bongo chorus (0x7fa80654ce78)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa770741028)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa7707411b8)
+[LOG] SoundI::release                          : Lifes a lich 2.multi longer (0x7fa8067af018)
+[LOG] SoundI::release                          :     Lifes a lich 2.multi longer (0x7fa7739c9408)
+[LOG] SoundI::release                          :     Lifes a lich 2.multi longer (0x7fa7739af048)
+[LOG] SoundI::release                          : Lich-perc long (0x7fa774ccee08)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa8064ac428)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa77073d228)
+[LOG] SoundI::release                          : Lifes a lich 2- strings trem 2nd (0x7fa8100433c8)
+[LOG] SoundI::release                          :     Lifes a lich 2- strings trem 2nd (0x7fa77073bcc8)
+[LOG] SoundI::release                          :     Lifes a lich 2- strings trem 2nd (0x7fa77073cd28)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa770b7feb8 : node = 0x7fa770b76e70
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa770b7feb8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa770b76f80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-ending turnaround', format=5, channels=2, frequency=48000, lengthbytes=187104, lengthpcm=654545, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.345375.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa770b7feb8
+[LOG] SoundI::release                          : Lich-Latin kit 2nd part (0x7fa81003c128)
+[LOG] SoundI::release                          :     Lich-Latin kit 2nd part (0x7fa770741998)
+[LOG] SoundI::release                          :     Lich-Latin kit 2nd part (0x7fa770741b28)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa770b78898 : node = 0x7fa770b82490
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa770b78898
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa770b825a0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa770b312b8 : node = 0x7fa770b6ce60
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa7d6505538 : node = 0x7fa7d6517890
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2.multi longer', format=5, channels=2, frequency=48000, lengthbytes=266240, lengthpcm=1047271, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.774988.
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa7d6516be8 : node = 0x7fa7d654c590
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 2
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa7d6533d98 : node = 0x7fa7d654c6d0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 3
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa770b78898
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa770b312b8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa770b6cf70
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2-latin top long', format=5, channels=2, frequency=48000, lengthbytes=223488, lengthpcm=837817, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.315821.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa770b312b8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa7d6505538
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7d65179a0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2-latin bass long', format=5, channels=2, frequency=48000, lengthbytes=220064, lengthpcm=837817, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552854.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa7d6505538
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa7d6516be8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7d654c6a0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2-bass longer', format=5, channels=2, frequency=48000, lengthbytes=222560, lengthpcm=1047271, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.364866.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa7d6516be8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa7d6533d98
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7d654c7e0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 13090
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-basson intro', format=5, channels=2, frequency=48000, lengthbytes=158080, lengthpcm=628363, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.311078.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa7d6533d98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa774cb55d8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa774cb55d8
+[LOG] SoundI::release                          : Lich-basson intro (0x7fa7d6533d98)
+[LOG] SoundI::release                          :     Lich-basson intro (0x7fa774cb5448)
+[LOG] SoundI::release                          :     Lich-basson intro (0x7fa774cb55d8)
+[LOG] SoundI::release                          : Lich-ending turnaround (0x7fa770b7feb8)
+[LOG] SoundI::release                          :     Lich-ending turnaround (0x7fa80649fc18)
+[LOG] SoundI::release                          :     Lich-ending turnaround (0x7fa770eb10a8)
+[LOG] SoundI::release                          : Lifes a lich 2.multi longer (0x7fa770b78898)
+[LOG] SoundI::release                          :     Lifes a lich 2.multi longer (0x7fa774cd40c8)
+[LOG] SoundI::release                          :     Lifes a lich 2.multi longer (0x7fa774cc0f28)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa774cc9ad8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa774cc9ad8
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa770b6efb8 : node = 0x7fa8067d38e0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa770b6efb8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa8067d39f0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 21818
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa80669c5b8 : node = 0x7fa774e1f260
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa773e74518 : node = 0x7fa773e7cc90
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-perc long', format=5, channels=2, frequency=48000, lengthbytes=275840, lengthpcm=1466182, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.572941.
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 1
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa774e1fce8 : node = 0x7fa773ed6910
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 2
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa773e55038 : node = 0x7fa773e08cc0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 3
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa770b6efb8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa80669c5b8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa774e1f370
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 8727
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit bongo chorus', format=5, channels=2, frequency=48000, lengthbytes=159552, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa80669c5b8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773e74518
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773e7cda0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit bongo chorus', format=5, channels=2, frequency=48000, lengthbytes=159552, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773e74518
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa774e1fce8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773ed6a20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit chorus', format=5, channels=2, frequency=48000, lengthbytes=149536, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.315800.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa774e1fce8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773e55038
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773e08dd0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-bass intro', format=5, channels=2, frequency=48000, lengthbytes=130688, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.359763.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773e55038
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa7739df738
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa7739df738
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa7739b6318
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa7739b6318
+[LOG] SoundI::release                          : Lifes a lich 2-latin bass long (0x7fa7d6505538)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin bass long (0x7fa774cc8f18)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin bass long (0x7fa774cc90a8)
+[LOG] SoundI::release                          : Lifes a lich 2-latin top long (0x7fa770b312b8)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin top long (0x7fa774cc1908)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin top long (0x7fa774cc1a98)
+[LOG] SoundI::release                          : Lifes a lich 2-bass longer (0x7fa7d6516be8)
+[LOG] SoundI::release                          :     Lifes a lich 2-bass longer (0x7fa774cc9948)
+[LOG] SoundI::release                          :     Lifes a lich 2-bass longer (0x7fa774cc9ad8)
+[LOG] SoundI::release                          : Lich-perc long (0x7fa770b6efb8)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa80654cc38)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa806511c08)
+[LOG] SoundI::release                          : Lich-Latin kit bongo chorus (0x7fa80669c5b8)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa7706e5bc8)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa80654ce78)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa773b95c88 : node = 0x7fa773bbdc10
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773b95c88
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773bbdd20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 21818
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-perc long', format=5, channels=2, frequency=48000, lengthbytes=275840, lengthpcm=1466182, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.572941.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773b95c88
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa773bbaff8 : node = 0x7fa773bb2540
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa773b95588 : node = 0x7fa773bb7930
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773bbaff8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773bb2650
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa773b6ba78 : node = 0x7fa773b95740
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2-latin top long', format=5, channels=2, frequency=48000, lengthbytes=223488, lengthpcm=837817, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.315821.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773bbaff8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773b95588
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773bb7a40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2-bass longer', format=5, channels=2, frequency=48000, lengthbytes=222560, lengthpcm=1047271, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.364866.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773b95588
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773b6ba78
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773b95850
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 13090
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-basson intro', format=5, channels=2, frequency=48000, lengthbytes=158080, lengthpcm=628363, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.311078.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773b6ba78
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa806695f28
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa806695f28
+[LOG] SoundI::release                          : Lich-basson intro (0x7fa773b6ba78)
+[LOG] SoundI::release                          :     Lich-basson intro (0x7fa774e15728)
+[LOG] SoundI::release                          :     Lich-basson intro (0x7fa806695f28)
+[LOG] SoundI::release                          : Lich-Latin kit chorus (0x7fa774e1fce8)
+[LOG] SoundI::release                          :     Lich-Latin kit chorus (0x7fa7739d87e8)
+[LOG] SoundI::release                          :     Lich-Latin kit chorus (0x7fa7739b6318)
+[LOG] SoundI::release                          : Lich-Latin kit bongo chorus (0x7fa773e74518)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa7739de6e8)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa7739df738)
+[LOG] SoundI::release                          : Lich-bass intro (0x7fa773e55038)
+[LOG] SoundI::release                          :     Lich-bass intro (0x7fa7739c9408)
+[LOG] SoundI::release                          :     Lich-bass intro (0x7fa7739b49b8)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa774879e08 : node = 0x7fa772de7b40
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa774879e08
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa772de7c50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1090
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit bongo chorus', format=5, channels=2, frequency=48000, lengthbytes=159552, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa774879e08
+[LOG] SoundI::release                          : Lich-Latin kit bongo chorus (0x7fa774879e08)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa773c4c288)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa770b77648)
+[LOG] SoundI::release                          : Lich-perc long (0x7fa773b95c88)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa770e9ebb8)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa8064e7c58)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa773bc14c8 : node = 0x7fa773bb2680
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773bc14c8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773bb2790
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 21818
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa7d6517818 : node = 0x7fa7d65104a0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-perc long', format=5, channels=2, frequency=48000, lengthbytes=275840, lengthpcm=1466182, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.572941.
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa7d6518278 : node = 0x7fa7d651f4b0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 1
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa7d6516be8 : node = 0x7fa7d6516da0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 2
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa7d6533d98 : node = 0x7fa7d651f7c0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 3
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773bc14c8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa7d6517818
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7d65105b0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 8727
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit bongo chorus', format=5, channels=2, frequency=48000, lengthbytes=159552, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa7d6517818
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa7d6518278
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7d651f5c0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2-latin top long', format=5, channels=2, frequency=48000, lengthbytes=223488, lengthpcm=837817, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.315821.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa7d6518278
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa7d6516be8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7d6516eb0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2.multi longer', format=5, channels=2, frequency=48000, lengthbytes=266240, lengthpcm=1047271, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.774988.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa7d6516be8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa7d6533d98
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7d651f8d0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 13090
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-basson intro', format=5, channels=2, frequency=48000, lengthbytes=158080, lengthpcm=628363, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.311078.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa7d6533d98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa774cc3f28
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa774cc3f28
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa774cab4d8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa774cab4d8
+[LOG] SoundI::release                          : Lich-basson intro (0x7fa7d6533d98)
+[LOG] SoundI::release                          :     Lich-basson intro (0x7fa774cc3d98)
+[LOG] SoundI::release                          :     Lich-basson intro (0x7fa774cc3f28)
+[LOG] SoundI::release                          : Lifes a lich 2-latin top long (0x7fa773bbaff8)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin top long (0x7fa80667bc38)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin top long (0x7fa80669c5b8)
+[LOG] SoundI::release                          : Lifes a lich 2-bass longer (0x7fa773b95588)
+[LOG] SoundI::release                          :     Lifes a lich 2-bass longer (0x7fa772b9bce8)
+[LOG] SoundI::release                          :     Lifes a lich 2-bass longer (0x7fa772bb2918)
+[LOG] SoundI::release                          : Lich-perc long (0x7fa773bc14c8)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa770b79e28)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa770b7d0d8)
+[LOG] SoundI::release                          : Lich-Latin kit bongo chorus (0x7fa7d6517818)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa774cd0fc8)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa774cb87f8)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa80669c5b8 : node = 0x7fa773e06010
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa80669c5b8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773e06120
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 21818
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa774cd24f8 : node = 0x7fa7d64469a0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-perc long', format=5, channels=2, frequency=48000, lengthbytes=275840, lengthpcm=1466182, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.572941.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa80669c5b8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa774cd24f8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7d6446ab0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 8727
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit bongo chorus', format=5, channels=2, frequency=48000, lengthbytes=159552, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa774cd24f8
+[LOG] SoundI::release                          : Lifes a lich 2-latin top long (0x7fa7d6518278)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin top long (0x7fa774cab348)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin top long (0x7fa774cab4d8)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa770b85348 : node = 0x7fa770b84d80
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa770b85348
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa773c08cb8 : node = 0x7fa770b84b90
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa770b84e90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2- strings trem 2nd', format=5, channels=2, frequency=48000, lengthbytes=122752, lengthpcm=497454, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.072138.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa770b85348
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773c08cb8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa770b84ca0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit 2nd part', format=5, channels=2, frequency=48000, lengthbytes=219328, lengthpcm=837817, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.315800.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773c08cb8
+[LOG] SoundI::release                          : Lich-Latin kit bongo chorus (0x7fa774cd24f8)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa7739d87e8)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa7739bc488)
+[LOG] SoundI::release                          : Lifes a lich 2.multi longer (0x7fa7d6516be8)
+[LOG] SoundI::release                          :     Lifes a lich 2.multi longer (0x7fa774cc94d8)
+[LOG] SoundI::release                          :     Lifes a lich 2.multi longer (0x7fa774cc9668)
+[LOG] SoundI::release                          : Lich-perc long (0x7fa80669c5b8)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa7706e5bc8)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa770d4c208)
+[LOG] SoundI::release                          : Lifes a lich 2- strings trem 2nd (0x7fa770b85348)
+[LOG] SoundI::release                          :     Lifes a lich 2- strings trem 2nd (0x7fa80667bc38)
+[LOG] SoundI::release                          :     Lifes a lich 2- strings trem 2nd (0x7fa773e74518)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa770eb1548 : node = 0x7fa8064a8b10
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa770eb1548
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa8064a8c20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-ending turnaround', format=5, channels=2, frequency=48000, lengthbytes=187104, lengthpcm=654545, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.345375.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa770eb1548
+[LOG] SoundI::release                          : Lich-Latin kit 2nd part (0x7fa773c08cb8)
+[LOG] SoundI::release                          :     Lich-Latin kit 2nd part (0x7fa774e1ee48)
+[LOG] SoundI::release                          :     Lich-Latin kit 2nd part (0x7fa774e1fce8)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa770d4c208 : node = 0x7fa806505ab0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa770d4c208
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa7739df738 : node = 0x7fa806523b70
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa806505bc0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa7739c49f8 : node = 0x7fa806505490
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 1
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa7739b7c88 : node = 0x7fa7739d8300
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 2
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2.multi longer', format=5, channels=2, frequency=48000, lengthbytes=266240, lengthpcm=1047271, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.774988.
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa80649fc18 : node = 0x7fa8064a7c30
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 3
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa770d4c208
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa7739df738
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa806523c80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2-latin top long', format=5, channels=2, frequency=48000, lengthbytes=223488, lengthpcm=837817, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.315821.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa7739df738
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa7739c49f8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa8065055a0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2.multi longer', format=5, channels=2, frequency=48000, lengthbytes=266240, lengthpcm=1047271, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.774988.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa7739c49f8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa7739b7c88
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7739d8410
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2-latin bass long', format=5, channels=2, frequency=48000, lengthbytes=220064, lengthpcm=837817, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552854.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa7739b7c88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa80649fc18
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa8064a7d40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 13090
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-basson intro', format=5, channels=2, frequency=48000, lengthbytes=158080, lengthpcm=628363, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.311078.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa80649fc18
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773e55038
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773e55038
+[LOG] SoundI::release                          : Lich-basson intro (0x7fa80649fc18)
+[LOG] SoundI::release                          :     Lich-basson intro (0x7fa773e47218)
+[LOG] SoundI::release                          :     Lich-basson intro (0x7fa773e55038)
+[LOG] SoundI::release                          : Lich-ending turnaround (0x7fa770eb1548)
+[LOG] SoundI::release                          :     Lich-ending turnaround (0x7fa80667bc38)
+[LOG] SoundI::release                          :     Lich-ending turnaround (0x7fa8066967e8)
+[LOG] SoundI::release                          : Lifes a lich 2.multi longer (0x7fa770d4c208)
+[LOG] SoundI::release                          :     Lifes a lich 2.multi longer (0x7fa772b9bce8)
+[LOG] SoundI::release                          :     Lifes a lich 2.multi longer (0x7fa80669c5b8)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa80669c5b8 : node = 0x7fa772b13c90
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa80669c5b8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa772b13da0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 21818
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa8064c8028 : node = 0x7fa8064a8b10
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-perc long', format=5, channels=2, frequency=48000, lengthbytes=275840, lengthpcm=1466182, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.572941.
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa773b9b438 : node = 0x7fa773b9b9e0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 1
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa774cdce88 : node = 0x7fa774cd6950
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 2
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa774cdd1c8 : node = 0x7fa7d64442f0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 3
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa80669c5b8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa8064c8028
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa8064a8c20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 8727
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit bongo chorus', format=5, channels=2, frequency=48000, lengthbytes=159552, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa8064c8028
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773b9b438
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773b9baf0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit bongo chorus', format=5, channels=2, frequency=48000, lengthbytes=159552, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773b9b438
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa774cdce88
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa774cd6a60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit chorus', format=5, channels=2, frequency=48000, lengthbytes=149536, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.315800.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa774cdce88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa774cdd1c8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7d6444400
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-bass intro', format=5, channels=2, frequency=48000, lengthbytes=130688, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.359763.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa774cdd1c8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa772dcc9e8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa772dcc9e8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa772d9b038
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa772d9b038
+[LOG] SoundI::release                          : Lifes a lich 2-latin bass long (0x7fa7739b7c88)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin bass long (0x7fa774e15728)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin bass long (0x7fa772bb1628)
+[LOG] SoundI::release                          : Lifes a lich 2-latin top long (0x7fa7739df738)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin top long (0x7fa774e1ee48)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin top long (0x7fa773e74518)
+[LOG] SoundI::release                          : Lifes a lich 2.multi longer (0x7fa7739c49f8)
+[LOG] SoundI::release                          :     Lifes a lich 2.multi longer (0x7fa774e15958)
+[LOG] SoundI::release                          :     Lifes a lich 2.multi longer (0x7fa774e17cf8)
+[LOG] SoundI::release                          : Lich-perc long (0x7fa80669c5b8)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa77487ae48)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa772dbcad8)
+[LOG] SoundI::release                          : Lich-Latin kit bongo chorus (0x7fa8064c8028)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa77487f138)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa77487ebf8)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa8067d5c28 : node = 0x7fa8067d4740
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa8067d5c28
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa8067d4850
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 21818
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-perc long', format=5, channels=2, frequency=48000, lengthbytes=275840, lengthpcm=1466182, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.572941.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa8067d5c28
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa80669c5b8 : node = 0x7fa774e17b60
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa80669c5b8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa774e17c70
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa774e0e0a8 : node = 0x7fa773e44be0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa773e511e8 : node = 0x7fa773e8f5e0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 1
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa806699258 : node = 0x7fa773e7cc90
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 2
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2-latin top long', format=5, channels=2, frequency=48000, lengthbytes=223488, lengthpcm=837817, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.315821.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa80669c5b8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa774e0e0a8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773e44cf0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2-latin bass long', format=5, channels=2, frequency=48000, lengthbytes=220064, lengthpcm=837817, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552854.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa774e0e0a8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773e511e8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773e8f6f0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2-bass longer', format=5, channels=2, frequency=48000, lengthbytes=222560, lengthpcm=1047271, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.364866.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773e511e8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa806699258
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773e7cda0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 13090
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-basson intro', format=5, channels=2, frequency=48000, lengthbytes=158080, lengthpcm=628363, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.311078.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa806699258
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773b921f8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773b921f8
+[LOG] SoundI::release                          : Lich-basson intro (0x7fa806699258)
+[LOG] SoundI::release                          :     Lich-basson intro (0x7fa773b92068)
+[LOG] SoundI::release                          :     Lich-basson intro (0x7fa773b921f8)
+[LOG] SoundI::release                          : Lich-Latin kit chorus (0x7fa774cdce88)
+[LOG] SoundI::release                          :     Lich-Latin kit chorus (0x7fa772d9aea8)
+[LOG] SoundI::release                          :     Lich-Latin kit chorus (0x7fa772d9b038)
+[LOG] SoundI::release                          : Lich-Latin kit bongo chorus (0x7fa773b9b438)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa8100d4a98)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa772dcc9e8)
+[LOG] SoundI::release                          : Lich-bass intro (0x7fa774cdd1c8)
+[LOG] SoundI::release                          :     Lich-bass intro (0x7fa772db0d98)
+[LOG] SoundI::release                          :     Lich-bass intro (0x7fa772db0f28)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa7d6518278 : node = 0x7fa7d651f7c0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa7d6518278
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7d651f8d0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1090
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit bongo chorus', format=5, channels=2, frequency=48000, lengthbytes=159552, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa7d6518278
+[LOG] SoundI::release                          : Lich-Latin kit bongo chorus (0x7fa7d6518278)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa773b9b438)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa773b9fcb8)
+[LOG] SoundI::release                          : Lich-perc long (0x7fa8067d5c28)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa773bbdbf8)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa773bb2848)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa770b7d878 : node = 0x7fa770b85360
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa770b7d878
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa770b85470
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 21818
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa770b7e718 : node = 0x7fa773c45a40
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa770b313d8 : node = 0x7fa770b78b40
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-perc long', format=5, channels=2, frequency=48000, lengthbytes=275840, lengthpcm=1466182, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.572941.
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa773c45c68 : node = 0x7fa773c463f0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 2
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa770b30f08 : node = 0x7fa770b76690
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 3
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa770b7d878
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa770b7e718
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773c45b50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 8727
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit bongo chorus', format=5, channels=2, frequency=48000, lengthbytes=159552, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa770b7e718
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa770b313d8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa770b78c50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit bongo chorus', format=5, channels=2, frequency=48000, lengthbytes=159552, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa770b313d8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773c45c68
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773c46500
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit chorus', format=5, channels=2, frequency=48000, lengthbytes=149536, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.315800.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773c45c68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa770b30f08
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa770b767a0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-bass intro', format=5, channels=2, frequency=48000, lengthbytes=130688, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.359763.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa770b30f08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773b9add8
+[LOG] SoundI::release                          :     Lifes a lich 2-latin bass long (0x7fa774e0e0a8)
+[LOG] SoundI::release                          :         Lifes a lich 2-latin bass long (0x7fa773bb8cc8)
+[LOG] SoundI::release                          :         Lifes a lich 2-latin bass long (0x7fa773b90d98)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin top long (0x7fa80669c5b8)
+[LOG] SoundI::release                          :         Lifes a lich 2-latin top long (0x7fa773bb83d8)
+[LOG] SoundI::release                          :         Lifes a lich 2-latin top long (0x7fa773bb8568)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773b9add8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773b943b8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773b943b8
+[LOG] SoundI::release                          : Lifes a lich 2-bass longer (0x7fa773e511e8)
+[LOG] SoundI::release                          :     Lifes a lich 2-bass longer (0x7fa773b914f8)
+[LOG] SoundI::release                          :     Lifes a lich 2-bass longer (0x7fa773b91688)
+[LOG] SoundI::release                          : Lich-perc long (0x7fa770b7d878)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa773b694b8)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa773bc2788)
+[LOG] SoundI::release                          : Lich-Latin kit bongo chorus (0x7fa770b7e718)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa773b989a8)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa773bc1ba8)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa7d6518278 : node = 0x7fa7d651f7c0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa7d6518278
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7d651f8d0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 21818
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-perc long', format=5, channels=2, frequency=48000, lengthbytes=275840, lengthpcm=1466182, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.572941.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa7d6518278
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa773ba0db8 : node = 0x7fa773bb2540
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa773b683a8 : node = 0x7fa773bc1dc0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773ba0db8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773bb2650
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa774cbf498 : node = 0x7fa773835fd0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 1
+[LOG] SystemI::createSound                     :     filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa774cb6e48 : node = 0x7fa773835240
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 2
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2-latin top long', format=5, channels=2, frequency=48000, lengthbytes=223488, lengthpcm=837817, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.315821.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773ba0db8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773b683a8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773bc1ed0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2.multi longer', format=5, channels=2, frequency=48000, lengthbytes=266240, lengthpcm=1047271, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.774988.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773b683a8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa774cbf498
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7738360e0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2-bass longer', format=5, channels=2, frequency=48000, lengthbytes=222560, lengthpcm=1047271, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.364866.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa774cbf498
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa774cb6e48
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773835350
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 13090
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-basson intro', format=5, channels=2, frequency=48000, lengthbytes=158080, lengthpcm=628363, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.311078.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa774cb6e48
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa772da7178
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa772da7178
+[LOG] SoundI::release                          : Lich-basson intro (0x7fa774cb6e48)
+[LOG] SoundI::release                          :     Lich-basson intro (0x7fa772da6fe8)
+[LOG] SoundI::release                          :     Lich-basson intro (0x7fa772da7178)
+[LOG] SoundI::release                          : Lich-bass intro (0x7fa770b30f08)
+[LOG] SoundI::release                          :     Lich-bass intro (0x7fa773b973f8)
+[LOG] SoundI::release                          :     Lich-bass intro (0x7fa773b97588)
+[LOG] SoundI::release                          : Lich-Latin kit chorus (0x7fa773c45c68)
+[LOG] SoundI::release                          :     Lich-Latin kit chorus (0x7fa773b94158)
+[LOG] SoundI::release                          :     Lich-Latin kit chorus (0x7fa773b943b8)
+[LOG] SoundI::release                          : Lich-Latin kit bongo chorus (0x7fa770b313d8)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa773bc2588)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa773b9add8)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa770b71318 : node = 0x7fa770b777e0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa770b71318
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa770b778f0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1090
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit bongo chorus', format=5, channels=2, frequency=48000, lengthbytes=159552, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa770b71318
+[LOG] SoundI::release                          : Lich-Latin kit bongo chorus (0x7fa770b71318)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa80667bc38)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa80669c5b8)
+[LOG] SoundI::release                          : Lich-perc long (0x7fa7d6518278)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa8064e82e8)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa770741eb8)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa774cc7538 : node = 0x7fa7d64442f0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa774cc7538
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa774cc7878 : node = 0x7fa7d6443ba0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7d6444400
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 21818
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-perc long', format=5, channels=2, frequency=48000, lengthbytes=275840, lengthpcm=1466182, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.572941.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa774cc7538
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa774cc7878
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa7d6443cb0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 8727
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit bongo chorus', format=5, channels=2, frequency=48000, lengthbytes=159552, lengthpcm=628364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.552853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa774cc7878
+[LOG] SoundI::release                          : Lifes a lich 2-latin top long (0x7fa773ba0db8)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin top long (0x7fa772dbcad8)
+[LOG] SoundI::release                          :     Lifes a lich 2-latin top long (0x7fa810035f88)
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa774e0e0a8 : node = 0x7fa772b18220
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSound                     : filename = ../Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa774e0e0a8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa772b18330
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa773e46fc8 : node = 0x7fa773e08b10
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa772b18498.  list count = 0
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lifes a lich 2- strings trem 2nd', format=5, channels=2, frequency=48000, lengthbytes=122752, lengthpcm=497454, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.072138.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa774e0e0a8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa773e46fc8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3226976
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29888
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa773e08c20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lich-Latin kit 2nd part', format=5, channels=2, frequency=48000, lengthbytes=219328, lengthpcm=837817, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.315800.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa773e46fc8
+[LOG] SoundI::release                          : Lich-Latin kit bongo chorus (0x7fa774cc7878)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa8067d3758)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo chorus (0x7fa770b77648)
+[LOG] SoundI::release                          : Lifes a lich 2-bass longer (0x7fa774cbf498)
+[LOG] SoundI::release                          :     Lifes a lich 2-bass longer (0x7fa772da2ef8)
+[LOG] SoundI::release                          :     Lifes a lich 2-bass longer (0x7fa772da6888)
+[LOG] SoundI::release                          : Lifes a lich 2.multi longer (0x7fa773b683a8)
+[LOG] SoundI::release                          :     Lifes a lich 2.multi longer (0x7fa8100d4a98)
+[LOG] SoundI::release                          :     Lifes a lich 2.multi longer (0x7fa772dcc9e8)
+[LOG] SoundI::release                          : Lich-perc long (0x7fa774cc7538)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa80676d768)
+[LOG] SoundI::release                          :     Lich-perc long (0x7fa8067af018)
+[LOG] SoundI::release                          : Lifes a lich 2- strings trem 2nd (0x7fa774e0e0a8)
+[LOG] SoundI::release                          :     Lifes a lich 2- strings trem 2nd (0x7fa773c0b0c8)
+[LOG] SoundI::release                          :     Lifes a lich 2- strings trem 2nd (0x7fa773c0b258)
+[LOG] SoundI::release                          :  (0x7fa772b16ca8)
+[LOG] SoundI::release                          :     Lich-flute drill 2nd part (0x7fa772b16e18)
+[LOG] SoundI::release                          :  (0x7fa772b17c08)
+[LOG] SoundI::release                          :     Lich-Latin kit bongo 2nd part (0x7fa772b17d78)
+[LOG] SoundI::release                          :  (0x7fa772b15888)
+[LOG] SoundI::release                          :     Lich-violin stacc 2nd part (0x7fa772b159f8)
+[LOG] SoundI::release                          :  (0x7fa8067c8448)
+[LOG] SoundI::release                          :     Lich-cello stacc 2nd part 2 (0x7fa80676ea48)
+[LOG] SoundI::release                          :  (0x7fa772b14248)
+[LOG] SoundI::release                          :     Harp (0x7fa772b143b8)
+[LOG] SoundI::release                          :  (0x7fa772b16638)
+[LOG] SoundI::release                          :     Lifes a lich 2- effect (0x7fa772b167a8)
+[LOG] SoundI::release                          :  (0x7fa772b15e88)
+[LOG] SoundI::release                          :     Lich-basson 2nd part (0x7fa772b15ff8)
+[LOG] SoundI::release                          : Lich-Latin kit 2nd part (0x7fa773e46fc8)
+[LOG] SoundI::release                          :     Lich-Latin kit 2nd part (0x7fa773c465e8)
+[LOG] SoundI::release                          :     Lich-Latin kit 2nd part (0x7fa773c46778)
+[LOG] SoundI::release                          :  (0x7fa8067a5b58)
+[LOG] SoundI::release                          :     Lich-harp pre chorus (0x7fa8067cbdd8)
+[LOG] SoundI::release                          :  (0x7fa772b14688)
+[LOG] SoundI::release                          :     Lifes a lich 2- orc kit lite intro (0x7fa772b14a98)
+[LOG] SoundI::release                          :  (0x7fa772b17458)
+[LOG] SoundI::release                          :     Lich-flute drill to ending (0x7fa772b175c8)
+[LOG] SoundI::release                          :  (0x7fa772b150d8)
+[LOG] SoundI::release                          :     Lich-cello stacc 2nd part 1 (0x7fa772b15248)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -62,5 +1481,7 @@
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
-=======
->>>>>>> 807f983172f389d023534b05189cd0d994d966d1
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
