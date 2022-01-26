@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{9fb7496e-7506-4b97-826c-02942912dcf6}">
+		<property name="assetPath">
+			<value>Lich-2nd part strings trem.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>17.454535147392289</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dcedfcf1-f017-4985-9a16-22df8f3f2c52}</destination>
+		</relationship>
+	</object>
+</objects>

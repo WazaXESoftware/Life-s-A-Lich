@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{0e1e5ede-eb01-4e07-854c-0aabe0e4232f}">
+		<property name="assetPath">
+			<value>Lifes a lich 2- strings trem 2nd.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>10.363628117913832</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dcedfcf1-f017-4985-9a16-22df8f3f2c52}</destination>
+		</relationship>
+	</object>
+</objects>
