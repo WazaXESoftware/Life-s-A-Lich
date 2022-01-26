@@ -408,7 +408,7 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 0
   HasPlatforms: 0
-  sourceProjectPath: Assets/Fmod projekt/lol.fspro
+  sourceProjectPath: ../../../../Desktop/lol/lol.fspro
   sourceBankPath: ../Desktop
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
