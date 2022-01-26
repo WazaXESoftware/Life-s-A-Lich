@@ -58,17 +58,82 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 5610959490854673142}
-  - {fileID: 8897054680639513271}
+  - {fileID: 5579196250284848161}
+  - {fileID: 4591698973132944639}
   EditorEvents:
-  - {fileID: -1571513758474369433}
+  - {fileID: 2944163350971263697}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 8897054680639513271}
+  - {fileID: 4591698973132944639}
   StringsBanks:
-  - {fileID: 5610959490854673142}
-  stringsBankWriteTime: 637788040610000000
+  - {fileID: 5579196250284848161}
+  stringsBankWriteTime: 637788069332050252
   cacheVersion: 6
+--- !u!114 &2944163350971263697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prototyplevel
+  m_EditorClassIdentifier: 
+  Path: event:/Prototyplevel
+  guid: b5f3ec062c564243bb328ded2872c446
+  Banks:
+  - {fileID: 4591698973132944639}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 113454
+--- !u!114 &4591698973132944639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637788069331980544
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 3169472
+  Exists: 1
+--- !u!114 &5579196250284848161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637788069332050252
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 750
+  Exists: 1
 --- !u!114 &5610959490854673142
 MonoBehaviour:
   m_ObjectHideFlags: 0
