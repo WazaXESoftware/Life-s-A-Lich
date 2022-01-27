@@ -128,6 +128,6 @@ MonoBehaviour:
   body: {fileID: 5460673309210722865}
   moveSpeed: 2
   possessRange: 2
-  wisp: {fileID: 2938427950852181462, guid: f3065e08014c47f4fad46d433600dd78, type: 3}
+  wisp: {fileID: 5386594062432439039, guid: 29c3a43edab704d4a8e83a0f96815689, type: 3}
   spawnOffset: {x: 0, y: 1, z: 0}
   player: 0
