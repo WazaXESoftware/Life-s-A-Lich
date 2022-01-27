@@ -3736,3 +3736,17 @@
 [LOG] Manager::finishLoadBank                  : Bank with guid {b6da8784-72c7-492e-babe-5bf0425e3046} has already been loaded
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::finishLoadBank                  : Bank with guid {b6da8784-72c7-492e-babe-5bf0425e3046} has already been loaded
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[ERR] assert                                   : assertion: '!mManager->masterBus()' failed
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::finishLoadBank                  : Bank with guid {b6da8784-72c7-492e-babe-5bf0425e3046} has already been loaded
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::finishLoadBank                  : Bank with guid {b6da8784-72c7-492e-babe-5bf0425e3046} has already been loaded

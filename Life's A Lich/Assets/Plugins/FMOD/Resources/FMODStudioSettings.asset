@@ -689,6 +689,7 @@ MonoBehaviour:
   MasterBanks:
   - Master
   - Desktop/Ljud
+  - Desktop/Bank A
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
