@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7379261012797073834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637788796187572551
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 3497632
+  Exists: 1
+--- !u!114 &-7203705356416356619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB_Dungeon
+  m_EditorClassIdentifier: 
+  Path: event:/AMB_Dungeon
+  guid: 116e4b28022d2d45baa0e60a8cf1015d
+  Banks:
+  - {fileID: 5028621874063270178}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 58357
+--- !u!114 &-5991176905750332232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Ljud.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../Desktop/Desktop/Ljud.strings.bank
+  Name: Desktop/Ljud.strings
+  StudioPath: bank:/Ljud.strings
+  lastModified: 637788810534837524
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 746
+  Exists: 1
+--- !u!114 &-223118279248044147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prototyplevel
+  m_EditorClassIdentifier: 
+  Path: event:/Prototyplevel
+  guid: b5f3ec062c564243bb328ded2872c446
+  Banks:
+  - {fileID: -7379261012797073834}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 113454
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -5991176905750332232}
+  - {fileID: 8403521441598047608}
+  - {fileID: -7379261012797073834}
+  - {fileID: 5028621874063270178}
+  EditorEvents:
+  - {fileID: -223118279248044147}
+  - {fileID: -7203705356416356619}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -7379261012797073834}
+  - {fileID: 5028621874063270178}
+  StringsBanks:
+  - {fileID: -5991176905750332232}
+  - {fileID: 8403521441598047608}
+  stringsBankWriteTime: 637788810534837524
+  cacheVersion: 6
+--- !u!114 &5028621874063270178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Ljud.bank
+  m_EditorClassIdentifier: 
+  Path: ../Desktop/Desktop/Ljud.bank
+  Name: Desktop/Ljud
+  StudioPath: bank:/Ljud
+  lastModified: 637788810534817500
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1176128
+  Exists: 1
+--- !u!114 &8403521441598047608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637788076998142181
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 750
+  Exists: 1
