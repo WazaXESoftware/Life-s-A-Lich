@@ -1,5 +1,28 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8583756211392205819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMBIENCE/AMB_Dungeon
+  m_EditorClassIdentifier: 
+  Path: event:/AMBIENCE/AMB_Dungeon
+  guid: 116e4b28022d2d45baa0e60a8cf1015d
+  Banks:
+  - {fileID: 5824011677916230243}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 58357
 --- !u!114 &-6355769819410081174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,7 +38,7 @@ MonoBehaviour:
   Path: event:/Prototyplevel
   guid: b5f3ec062c564243bb328ded2872c446
   Banks:
-  - {fileID: -5991292016092648275}
+  - {fileID: -2756134202777354735}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -38,7 +61,26 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637788976190000000
+  lastModified: 637788987204394670
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-2756134202777354735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Musik.bank
+  m_EditorClassIdentifier: 
+  Path: LjudMusik/Desktop/Desktop/Musik.bank
+  Name: Musik
+  StudioPath: bank:/Musik
+  lastModified: 637788986095995504
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -57,11 +99,11 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637788976190000000
+  lastModified: 637788987204404680
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 750
+    Value: 852
   Exists: 1
 --- !u!114 &-380859798332162443
 MonoBehaviour:
@@ -101,14 +143,17 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: -429852346170238565}
   - {fileID: -5991292016092648275}
+  - {fileID: -2756134202777354735}
+  - {fileID: 5824011677916230243}
   EditorEvents:
   - {fileID: -6355769819410081174}
+  - {fileID: -8583756211392205819}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5991292016092648275}
   StringsBanks:
   - {fileID: -429852346170238565}
-  stringsBankWriteTime: 637788976190000000
+  stringsBankWriteTime: 637788987204404680
   cacheVersion: 6
 --- !u!114 &1084036791960579679
 MonoBehaviour:
@@ -147,6 +192,25 @@ MonoBehaviour:
   Name: Master
   StudioPath: bank:/Master
   lastModified: 637788973940000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &5824011677916230243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ljud.bank
+  m_EditorClassIdentifier: 
+  Path: LjudMusik/Desktop/Desktop/Ljud.bank
+  Name: Ljud
+  StudioPath: bank:/Ljud
+  lastModified: 637788987204374658
   LoadResult: 0
   FileSizes: []
   Exists: 1
