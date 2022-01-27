@@ -39,9 +39,7 @@ public class Entity : MonoBehaviour
 
             float horizontal = Input.GetAxisRaw("Horizontal");
             float vertical = Input.GetAxisRaw("Vertical");
-            Vector3 dir = (forward * vertical + right * horizontal).normalized;
-            transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
-            body.velocity = dir * moveSpeed + new Vector3(0, body.velocity.y, 0);
+            body.velocity = (forward * vertical + right * horizontal).normalized * moveSpeed + new Vector3(0, body.velocity.y, 0);
 
             if (Input.GetButtonDown("Fire1"))
             {
