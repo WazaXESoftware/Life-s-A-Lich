@@ -58,3 +58,7 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Life's A Lich/fmod_editor.log
+*.log
+Life's A Lich/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
+Life's A Lich/fmod_editor.log
