@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: ../Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637788169346036106
+  lastModified: 637788069332050252
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -94,7 +94,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 9073226388307413662}
   - {fileID: -3291686160942089844}
-  stringsBankWriteTime: 637788850531651111
+  stringsBankWriteTime: 637788827062475662
   cacheVersion: 6
 --- !u!114 &936519344254184125
 MonoBehaviour:
@@ -111,7 +111,7 @@ MonoBehaviour:
   Path: ../Desktop/Desktop/Ljud.bank
   Name: Desktop/Ljud
   StudioPath: bank:/Ljud
-  lastModified: 637788850531641191
+  lastModified: 637788827062156449
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -132,7 +132,7 @@ MonoBehaviour:
   Path: ../Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637788850531928881
+  lastModified: 637788243497579314
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -153,7 +153,7 @@ MonoBehaviour:
   Path: ../Desktop/Desktop/Ljud.strings.bank
   Name: Desktop/Ljud.strings
   StudioPath: bank:/Ljud.strings
-  lastModified: 637788850531651111
+  lastModified: 637788827062475662
   LoadResult: 0
   FileSizes:
   - Name: 
