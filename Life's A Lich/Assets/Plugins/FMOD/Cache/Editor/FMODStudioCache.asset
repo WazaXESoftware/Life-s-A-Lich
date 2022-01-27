@@ -1,6 +1,34 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!114 &-8161984525917793990
+=======
+--- !u!114 &-6355769819410081174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prototyplevel
+  m_EditorClassIdentifier: 
+  Path: event:/Prototyplevel
+  guid: b5f3ec062c564243bb328ded2872c446
+  Banks:
+  - {fileID: -5991292016092648275}
+  - {fileID: -589644304230899534}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 113454
+--- !u!114 &-5991292016092648275
+>>>>>>> parent of 2b91c24 (Merge branch 'main' of https://github.com/WazaXESoftware/Life-s-A-Lich)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,6 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Path: ../../../../Desktop/lol/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
@@ -22,6 +51,16 @@ MonoBehaviour:
     Value: 3169472
   Exists: 0
 --- !u!114 &-2547584387818433740
+=======
+  Path: LjudMusik/Desktop/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637788994024252122
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-5234713431638071125
+>>>>>>> parent of 2b91c24 (Merge branch 'main' of https://github.com/WazaXESoftware/Life-s-A-Lich)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30,6 +69,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/New Event
   m_EditorClassIdentifier: 
@@ -44,6 +84,19 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 113454
 --- !u!114 &-2138252925457838386
+=======
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ljud.bank
+  m_EditorClassIdentifier: 
+  Path: LjudMusik/Desktop/Desktop/Ljud.bank
+  Name: Ljud
+  StudioPath: bank:/Ljud
+  lastModified: 637788994024232104
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-3826318513830800667
+>>>>>>> parent of 2b91c24 (Merge branch 'main' of https://github.com/WazaXESoftware/Life-s-A-Lich)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -53,6 +106,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+<<<<<<< HEAD
   m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
   Path: Assets/Fmod projekt/Build/Desktop/Master.bank
@@ -63,6 +117,18 @@ MonoBehaviour:
   FileSizes: []
   Exists: 1
 --- !u!114 &-1571513758474369433
+=======
+  m_Name: bank:/Musik.bank
+  m_EditorClassIdentifier: 
+  Path: LjudMusik/Desktop/Desktop/Musik.bank
+  Name: Musik
+  StudioPath: bank:/New Folder/Musik
+  lastModified: 637788993730417097
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-589644304230899534
+>>>>>>> parent of 2b91c24 (Merge branch 'main' of https://github.com/WazaXESoftware/Life-s-A-Lich)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -71,6 +137,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/Prototyplevel
   m_EditorClassIdentifier: 
@@ -86,6 +153,40 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 113454
 --- !u!114 &-1079519735076966468
+=======
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Musik.bank
+  m_EditorClassIdentifier: 
+  Path: LjudMusik/Desktop/Desktop/Musik.bank
+  Name: Musik
+  StudioPath: bank:/Musik
+  lastModified: 637788984800000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-429852346170238565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: LjudMusik/Desktop/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637788994024262142
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 804
+  Exists: 1
+--- !u!114 &-380859798332162443
+>>>>>>> parent of 2b91c24 (Merge branch 'main' of https://github.com/WazaXESoftware/Life-s-A-Lich)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,7 +201,11 @@ MonoBehaviour:
   Path: event:/Prototyplevel
   guid: b5f3ec062c564243bb328ded2872c446
   Banks:
+<<<<<<< HEAD
   - {fileID: 2506663560294563743}
+=======
+  - {fileID: 3770955562296161073}
+>>>>>>> parent of 2b91c24 (Merge branch 'main' of https://github.com/WazaXESoftware/Life-s-A-Lich)
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -108,7 +213,11 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 113454
+<<<<<<< HEAD
 --- !u!114 &-691566497485046582
+=======
+--- !u!114 &-65355791471536867
+>>>>>>> parent of 2b91c24 (Merge branch 'main' of https://github.com/WazaXESoftware/Life-s-A-Lich)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,6 +226,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
@@ -129,6 +239,21 @@ MonoBehaviour:
   - Name: 
     Value: 750
   Exists: 1
+=======
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMBIENCE/AMB_Dungeon
+  m_EditorClassIdentifier: 
+  Path: event:/AMBIENCE/AMB_Dungeon
+  guid: 116e4b28022d2d45baa0e60a8cf1015d
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 58357
+>>>>>>> parent of 2b91c24 (Merge branch 'main' of https://github.com/WazaXESoftware/Life-s-A-Lich)
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +267,7 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
+<<<<<<< HEAD
   - {fileID: -691566497485046582}
   - {fileID: 2506663560294563743}
   EditorEvents:
@@ -154,6 +280,23 @@ MonoBehaviour:
   stringsBankWriteTime: 637788173405954575
   cacheVersion: 6
 --- !u!114 &752813778903317167
+=======
+  - {fileID: -429852346170238565}
+  - {fileID: -5991292016092648275}
+  - {fileID: -3826318513830800667}
+  - {fileID: -5234713431638071125}
+  EditorEvents:
+  - {fileID: 794467597988646387}
+  - {fileID: 2168568999533396339}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -5991292016092648275}
+  StringsBanks:
+  - {fileID: -429852346170238565}
+  stringsBankWriteTime: 637788994024262142
+  cacheVersion: 6
+--- !u!114 &794467597988646387
+>>>>>>> parent of 2b91c24 (Merge branch 'main' of https://github.com/WazaXESoftware/Life-s-A-Lich)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,6 +305,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
@@ -194,6 +338,23 @@ MonoBehaviour:
     Value: 3169472
   Exists: 1
 --- !u!114 &1465046565472022035
+=======
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prototyplevel
+  m_EditorClassIdentifier: 
+  Path: event:/Prototyplevel
+  guid: b5f3ec062c564243bb328ded2872c446
+  Banks:
+  - {fileID: -3826318513830800667}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 113454
+--- !u!114 &1084036791960579679
+>>>>>>> parent of 2b91c24 (Merge branch 'main' of https://github.com/WazaXESoftware/Life-s-A-Lich)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -205,6 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Path: ../../../../Desktop/lol/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
@@ -278,6 +440,18 @@ MonoBehaviour:
     Value: 750
   Exists: 0
 --- !u!114 &5337023933534482196
+=======
+  Path: Ljud:Musik/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637788973940000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 750
+  Exists: 1
+--- !u!114 &2168568999533396339
+>>>>>>> parent of 2b91c24 (Merge branch 'main' of https://github.com/WazaXESoftware/Life-s-A-Lich)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,6 +461,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
   m_Name: event:/Prototyplevel
   m_EditorClassIdentifier: 
   Path: event:/Prototyplevel
@@ -301,6 +476,22 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 113454
 --- !u!114 &5610959490854673142
+=======
+  m_Name: event:/AMBIENCE/AMB_Dungeon
+  m_EditorClassIdentifier: 
+  Path: event:/AMBIENCE/AMB_Dungeon
+  guid: 116e4b28022d2d45baa0e60a8cf1015d
+  Banks:
+  - {fileID: -5234713431638071125}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 58357
+--- !u!114 &3634200074536052052
+>>>>>>> parent of 2b91c24 (Merge branch 'main' of https://github.com/WazaXESoftware/Life-s-A-Lich)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -310,6 +501,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+<<<<<<< HEAD
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
   Path: ../../../../Desktop/Jobb:skola/life is a lich/Build/Desktop/Master.strings.bank
@@ -343,6 +535,18 @@ MonoBehaviour:
     Value: 750
   Exists: 1
 --- !u!114 &8897054680639513271
+=======
+  m_Name: bank:/Ljud.bank
+  m_EditorClassIdentifier: 
+  Path: LjudMusik/Desktop/Desktop/Ljud.bank
+  Name: Ljud
+  StudioPath: bank:/Ljud
+  lastModified: 637788991836819995
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &3770955562296161073
+>>>>>>> parent of 2b91c24 (Merge branch 'main' of https://github.com/WazaXESoftware/Life-s-A-Lich)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -354,10 +558,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Path: ../../../../Desktop/Jobb:skola/life is a lich/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
   lastModified: 637788040610000000
+=======
+  Path: Ljud:Musik/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637788973940000000
+>>>>>>> parent of 2b91c24 (Merge branch 'main' of https://github.com/WazaXESoftware/Life-s-A-Lich)
   LoadResult: 0
   FileSizes: []
   Exists: 1

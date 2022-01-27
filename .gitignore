@@ -58,8 +58,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-<<<<<<< HEAD
-=======
 Life's A Lich/fmod_editor.log
 *.log
 
@@ -69,4 +67,3 @@ Life's A Lich/fmod_editor.log
 *.log
 
 Life's A Lich/fmod_editor.log
->>>>>>> bbf38af1571ff87bbba046197badc4e6f3a05716
