@@ -35,8 +35,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/AMB_Dungeon
   guid: 116e4b28022d2d45baa0e60a8cf1015d
-  Banks:
-  - {fileID: 5028621874063270178}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -59,7 +58,7 @@ MonoBehaviour:
   Path: ../Desktop/Desktop/Ljud.strings.bank
   Name: Desktop/Ljud.strings
   StudioPath: bank:/Ljud.strings
-  lastModified: 637788810534837524
+  lastModified: 637788819094521463
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -107,7 +106,6 @@ MonoBehaviour:
   - {fileID: 5028621874063270178}
   EditorEvents:
   - {fileID: -223118279248044147}
-  - {fileID: -7203705356416356619}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7379261012797073834}
@@ -115,7 +113,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -5991176905750332232}
   - {fileID: 8403521441598047608}
-  stringsBankWriteTime: 637788810534837524
+  stringsBankWriteTime: 637788819094521463
   cacheVersion: 6
 --- !u!114 &5028621874063270178
 MonoBehaviour:
@@ -132,8 +130,8 @@ MonoBehaviour:
   Path: ../Desktop/Desktop/Ljud.bank
   Name: Desktop/Ljud
   StudioPath: bank:/Ljud
-  lastModified: 637788810534817500
-  LoadResult: 0
+  lastModified: 637788819094511463
+  LoadResult: 28
   FileSizes:
   - Name: 
     Value: 1176128
