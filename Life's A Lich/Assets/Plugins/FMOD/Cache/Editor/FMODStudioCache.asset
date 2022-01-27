@@ -16,6 +16,7 @@ MonoBehaviour:
   guid: b5f3ec062c564243bb328ded2872c446
   Banks:
   - {fileID: -5991292016092648275}
+  - {fileID: -589644304230899534}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -38,7 +39,26 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637788976190000000
+  lastModified: 637788984800000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-589644304230899534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Musik.bank
+  m_EditorClassIdentifier: 
+  Path: LjudMusik/Desktop/Desktop/Musik.bank
+  Name: Musik
+  StudioPath: bank:/Musik
+  lastModified: 637788984800000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -57,11 +77,11 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637788976190000000
+  lastModified: 637788984800000000
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 750
+    Value: 798
   Exists: 1
 --- !u!114 &-380859798332162443
 MonoBehaviour:
@@ -101,6 +121,7 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: -429852346170238565}
   - {fileID: -5991292016092648275}
+  - {fileID: -589644304230899534}
   EditorEvents:
   - {fileID: -6355769819410081174}
   EditorParameters: []
@@ -108,7 +129,7 @@ MonoBehaviour:
   - {fileID: -5991292016092648275}
   StringsBanks:
   - {fileID: -429852346170238565}
-  stringsBankWriteTime: 637788976190000000
+  stringsBankWriteTime: 637788984800000000
   cacheVersion: 6
 --- !u!114 &1084036791960579679
 MonoBehaviour:
