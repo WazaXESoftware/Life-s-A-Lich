@@ -272,7 +272,7 @@ MonoBehaviour:
   HasSourceProject: 0
   HasPlatforms: 0
   sourceProjectPath: 
-  sourceBankPath: Ljud:Musik/Desktop
+  sourceBankPath: LjudMusik/Desktop/Desktop
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -293,7 +293,8 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks: []
+  MasterBanks:
+  - Master
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
@@ -305,19 +306,19 @@ MonoBehaviour:
   EnableErrorCallback: 0
   SharedLibraryUpdateStage: 0
   SharedLibraryTimeSinceStart: 0
-  HideSetupWizard: 0
+  HideSetupWizard: 1
   Platforms:
-  - {fileID: 3008650979155213293}
-  - {fileID: 2653571798996080279}
+  - {fileID: -5200496864366378222}
   - {fileID: -4731527601681071554}
-  - {fileID: -1256016426038246396}
-  - {fileID: 2959135004338968126}
   - {fileID: -3602103274091834031}
-  - {fileID: 8406947118935075869}
+  - {fileID: -1256016426038246396}
   - {fileID: 675355798774704765}
   - {fileID: 1932422789727007578}
-  - {fileID: -5200496864366378222}
+  - {fileID: 2653571798996080279}
+  - {fileID: 2959135004338968126}
+  - {fileID: 3008650979155213293}
   - {fileID: 4022484551274937146}
+  - {fileID: 8406947118935075869}
   MigratedPlatforms: 0c000000150000000b0000000a00000009000000120000000800000005000000060000000200000001000000
 --- !u!114 &675355798774704765
 MonoBehaviour:
@@ -507,15 +508,15 @@ MonoBehaviour:
       Value: {fileID: 0}
       HasValue: 0
   childIdentifiers:
+  - 46fbfdf3fc43db0458918377fd40293e
   - c88d16e5272a4e241b0ef0ac2e53b73d
-  - fd7c55dab0fce234b8c25f6ffca523c1
-  - 2c5177b11d81d824dbb064f9ac8527da
   - e7a046c753c3c3d4aacc91f6597f310d
-  - 52eb9df5db46521439908db3a29a1bbb
+  - fd7c55dab0fce234b8c25f6ffca523c1
   - b7716510a1f36934c87976f3a81dbf3d
   - 0f8eb3f400726694eb47beb1a9f94ce8
-  - 46fbfdf3fc43db0458918377fd40293e
+  - 2c5177b11d81d824dbb064f9ac8527da
   - 2fea114e74ecf3c4f920e1d5cc1c4c40
+  - 52eb9df5db46521439908db3a29a1bbb
   outputType: 
   threadAffinities:
     Value: []
