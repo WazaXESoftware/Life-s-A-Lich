@@ -13,7 +13,9 @@ public class Wisp : Entity
 
             float horizontal = Input.GetAxisRaw("Horizontal");
             float vertical = Input.GetAxisRaw("Vertical");
-            body.velocity = (forward * vertical + right * horizontal).normalized * moveSpeed;
+            Vector3 dir = (forward * vertical + right * horizontal).normalized;
+            if (dir.magnitude > 0) transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
+            body.velocity = dir * moveSpeed;
 
             if (Input.GetButtonDown("Fire1"))
             {

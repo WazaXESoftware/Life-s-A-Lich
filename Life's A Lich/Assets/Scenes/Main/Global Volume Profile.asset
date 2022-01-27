@@ -28,7 +28,11 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
+<<<<<<< HEAD
     m_Value: 0.294
+=======
+    m_Value: 0.322
+>>>>>>> parent of ef78dc9 (fattar inte)
     min: 0
     max: 1
   smoothness:
@@ -52,6 +56,7 @@ MonoBehaviour:
     m_Value: 1
     min: 0
     max: 1
+<<<<<<< HEAD
 --- !u!114 &-6449166492046196927
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -75,6 +80,8 @@ MonoBehaviour:
   fogType:
     m_OverrideState: 0
     m_Value: 0
+=======
+>>>>>>> parent of ef78dc9 (fattar inte)
 --- !u!114 &-487291024969799076
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -213,9 +220,12 @@ MonoBehaviour:
   - {fileID: 1944010078159442959}
   - {fileID: -487291024969799076}
   - {fileID: -6573962936490251317}
+<<<<<<< HEAD
   - {fileID: 5767909412139151838}
   - {fileID: 3324235931705980476}
   - {fileID: -6449166492046196927}
+=======
+>>>>>>> parent of ef78dc9 (fattar inte)
 --- !u!114 &1944010078159442959
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -239,12 +249,21 @@ MonoBehaviour:
     min: 0
   intensity:
     m_OverrideState: 1
+<<<<<<< HEAD
     m_Value: 0.348
     min: 0
     max: 1
   scatter:
     m_OverrideState: 1
     m_Value: 0.963
+=======
+    m_Value: 0.402
+    min: 0
+    max: 1
+  scatter:
+    m_OverrideState: 0
+    m_Value: 0.7
+>>>>>>> parent of ef78dc9 (fattar inte)
     min: 0
     max: 1
   tint:
@@ -272,6 +291,7 @@ MonoBehaviour:
   m_HighQualityFiltering:
     m_OverrideState: 1
     m_Value: 1
+<<<<<<< HEAD
 --- !u!114 &3324235931705980476
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -339,3 +359,5 @@ MonoBehaviour:
     m_Value: 1
     min: 0.01
     max: 5
+=======
+>>>>>>> parent of ef78dc9 (fattar inte)
