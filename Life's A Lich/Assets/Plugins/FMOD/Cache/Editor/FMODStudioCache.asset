@@ -45,7 +45,7 @@ MonoBehaviour:
   - {fileID: 3770955562296161073}
   StringsBanks:
   - {fileID: 1084036791960579679}
-  stringsBankWriteTime: 637788969700000000
+  stringsBankWriteTime: 637788973940000000
   cacheVersion: 6
 --- !u!114 &1084036791960579679
 MonoBehaviour:
@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: Ljud:Musik/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637788969700000000
+  lastModified: 637788973940000000
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -83,7 +83,7 @@ MonoBehaviour:
   Path: Ljud:Musik/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637788969700000000
+  lastModified: 637788973940000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
