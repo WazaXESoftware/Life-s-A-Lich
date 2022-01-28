@@ -2,12 +2,13 @@
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=20109 (115889), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=44100, nAvgBytesPerSec=352800, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
 [LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] OutputWASAPI::init                       : Output buffer size: 3760 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000027016C2E9A8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000024F93157298 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -16,6 +17,81 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = LjudMusik/Desktop/Desktop/Ljud.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000250602F2808 : node = 0000024F8F70BA90
+[LOG] SystemI::createSound                     : add node to async list : head = 0000024FB75A5DF8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000250602F2808
+[LOG] SystemI::createSoundInternal             :     Create name='LjudMusik/Desktop/Desktop/Ljud.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1237536
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 19968
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000024F8F70BBA0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 4000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='BOAC_FX_08_Wind_120BPM', format=5, channels=2, frequency=48000, lengthbytes=292032, lengthpcm=1152000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.102691.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000250602F2808
+[LOG] SoundI::release                          : BOAC_FX_08_Wind_120BPM (0000025038CF7618)
+[LOG] SoundI::release                          :     BOAC_FX_08_Wind_120BPM (0000024FB655E0E8)
+[LOG] SoundI::release                          :     BOAC_FX_08_Wind_120BPM (0000024FB7001238)
+[LOG] SystemI::createSound                     : filename = LjudMusik/Desktop/Desktop/Ljud.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000025060983C68 : node = 0000024F8F70B6D0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000024FB75A5DF8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000025060983C68
+[LOG] SystemI::createSoundInternal             :     Create name='LjudMusik/Desktop/Desktop/Ljud.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1237536
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 19968
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000024F8F70B7E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='BOAC_FX_08_Wind_120BPM', format=5, channels=2, frequency=48000, lengthbytes=292032, lengthpcm=1152000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.102691.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000025060983C68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000250C31C5718
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000250C31C5718
+[LOG] SoundI::release                          : BOAC_FX_08_Wind_120BPM (00000250602F2808)
+[LOG] SoundI::release                          :     BOAC_FX_08_Wind_120BPM (0000024F92F8F438)
+[LOG] SoundI::release                          :     BOAC_FX_08_Wind_120BPM (00000250C31C5568)
+[LOG] SoundI::release                          :  (0000024F8F34FA48)
+[LOG] SoundI::release                          :     ESM_Stone_Rock_Impact_10_Impact_Scrape_Screech_Cement_Ceramic_Rubble (0000024FB655BEC8)
+[LOG] SoundI::release                          :  (0000024F8F34E908)
+[LOG] SoundI::release                          :     ESM_Stone_Rock_Impact_2_Impact_Scrape_Screech_Cement_Ceramic_Rubble (0000024FB655E428)
+[LOG] SoundI::release                          :  (0000024F8F3526D8)
+[LOG] SoundI::release                          :     ESM_Stone_Rock_Impact_6_Impact_Scrape_Screech_Cement_Ceramic_Rubble (0000024FB655DDA8)
+[LOG] SoundI::release                          :  (0000024F8F34D208)
+[LOG] SoundI::release                          :     ESM_Stone_Rock_Impact_3_Impact_Scrape_Screech_Cement_Ceramic_Rubble (0000024FB6561828)
+[LOG] SoundI::release                          :  (0000024F8F34CDB8)
+[LOG] SoundI::release                          :     ESM_Muffled_Stone_Pour_Impact_Scrape_Screech_Cement_Ceramic_Rubble (0000024FB655EDE8)
+[LOG] SoundI::release                          :  (0000024F8F34CF28)
+[LOG] SoundI::release                          :     ESM_Empire_Game_Collect_Magic_Coin_Twinkle_1 (0000024FB655D3E8)
+[LOG] SoundI::release                          :  (0000024F8F3523F8)
+[LOG] SoundI::release                          :     ESM_Ancient_Game_Magic_Sparkle_Glitter_Drop1_Fantasy_Tonal_Accent_Hit_Stab (0000024FB655C888)
+[LOG] SoundI::release                          :  (0000024F8F352568)
+[LOG] SoundI::release                          :     FF_AS_mouse_squeak_patient (0000024FB655E908)
+[LOG] SoundI::release                          : BOAC_FX_08_Wind_120BPM (0000025060983C68)
+[LOG] SoundI::release                          :     BOAC_FX_08_Wind_120BPM (0000024F92F92838)
+[LOG] SoundI::release                          :     BOAC_FX_08_Wind_120BPM (00000250C31C5718)
+[LOG] SoundI::release                          : CaveWaterDrips_SFXB.24 (0000025038BCB588)
+[LOG] SoundI::release                          :     CaveWaterDrips_SFXB.24 (0000024FB655CA28)
+[LOG] SoundI::release                          :     CaveWaterDrips_SFXB.24 (00000250C31C5208)
+[LOG] SoundI::release                          :  (0000024F8F34DC18)
+[LOG] SoundI::release                          :     FF_AS_mouse_squeak_nails (0000024FB6561688)
+[LOG] SoundI::release                          :  (0000024F8F350CF8)
+[LOG] SoundI::release                          :     FF_AS_mouse_squeak_lower (0000024FB655DF48)
+[LOG] SoundI::release                          :  (0000024F8F350B88)
+[LOG] SoundI::release                          :     FF_AS_mouse_squeak_authoritative (0000024FB655DC08)
+[LOG] SoundI::release                          :  (0000024F8F34D4E8)
+[LOG] SoundI::release                          :     ESM_Magic_Wand_Sparkle_Fantasy_Cast_Craft_Mobile_App_Special_Touch_Pickup (0000024FB655C068)
+[LOG] SoundI::release                          :  (0000024F8F351148)
+[LOG] SoundI::release                          :     ESM_Christmas_Magic_Ice_Conjure_Freeze_Snow_Glitter_Wind_Chime_Ascending_Hybrid_1_Game (0000024FB655B508)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -26,5 +102,3 @@
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
