@@ -767,6 +767,14 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 112
       objectReference: {fileID: 0}
+    - target: {fileID: 5460673309210722866, guid: 383221b853a9e7547971925adea37895, type: 3}
+      propertyPath: skip
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5460673309210722866, guid: 383221b853a9e7547971925adea37895, type: 3}
+      propertyPath: skipForce
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5460673309210722867, guid: 383221b853a9e7547971925adea37895, type: 3}
       propertyPath: m_Name
       value: Slime
