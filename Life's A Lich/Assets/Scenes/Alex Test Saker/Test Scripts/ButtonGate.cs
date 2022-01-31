@@ -7,13 +7,15 @@ public class ButtonGate : MonoBehaviour
     public GameObject gate;
     public float speed = 3f;
     public bool buttonPushed;
+    public float minHieght;
+    public float maxHieght;
     void Update()
     {
-        if (buttonPushed)
+        if (buttonPushed && gate.transform.position.y < maxHieght )
         {
             moveUp();
         }
-        else
+        else if(buttonPushed == false && gate.transform.position.y > minHieght)
         {
             moveDown();
         }

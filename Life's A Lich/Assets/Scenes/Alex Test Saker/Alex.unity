@@ -318,6 +318,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gate: {fileID: 652070197}
+  speed: 3
+  buttonPushed: 0
+  minHieght: 5
+  maxHieght: 10
 --- !u!65 &331044762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -544,7 +548,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652070197}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1, y: 4.26, z: 11.637524}
+  m_LocalPosition: {x: 1.1, y: 5.1, z: 11.637524}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 824106031}
