@@ -7,15 +7,15 @@ public class ButtonGate : MonoBehaviour
     public GameObject gate;
     public float speed = 3f;
     public bool buttonPushed;
-    public float minHieght;
-    public float maxHieght;
+    public float minHeight;
+    public float maxHeight;
     void Update()
     {
-        if (buttonPushed && gate.transform.position.y < maxHieght )
+        if (buttonPushed && gate.transform.position.y < maxHeight )
         {
             moveUp();
         }
-        else if(buttonPushed == false && gate.transform.position.y > minHieght)
+        else if(buttonPushed == false && gate.transform.position.y > minHeight)
         {
             moveDown();
         }
@@ -31,17 +31,33 @@ public class ButtonGate : MonoBehaviour
         gate.transform.Translate(Vector3.down * speed * Time.deltaTime);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.tag == "Monster")
+    //    {
+    //        buttonPushed = true;
+    //    }
+    //}
+
+    //private void OnCollisionExit(Collision collision)
+    //{
+    //    if (collision.gameObject.tag == "Monster")
+    //    {
+    //        buttonPushed = false;
+    //    }
+    //}
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Monster")
+        if (other.gameObject.tag == "Monster")
         {
             buttonPushed = true;
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider other)
     {
-        if(collision.gameObject.tag == "Monster")
+        if (other.gameObject.tag == "Monster")
         {
             buttonPushed = false;
         }
