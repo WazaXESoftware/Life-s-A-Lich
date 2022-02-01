@@ -61,4 +61,9 @@ public class Slime : Entity
 
         playerLastFrame = player;
     }
+
+    protected override void EntityUpdate()
+    {
+
+    }
 }
