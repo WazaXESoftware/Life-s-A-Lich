@@ -75,14 +75,18 @@ public class Entity : MonoBehaviour
         Entity target = FindClosestEntity();
         if (target != null)
         {
-            bool swap = player;
-            player = target.player;
-            target.player = swap;
+            target.TakeOver();
+            player = false;
         }
         else
         {
             Exit();
         }
+    }
+
+    public virtual void TakeOver()
+    {
+        player = true;
     }
 
     protected virtual void Exit()
