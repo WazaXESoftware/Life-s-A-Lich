@@ -1,14 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ButtonGate : MonoBehaviour
 {
+    public GameObject[] characters;
     public GameObject gate;
     public float speed = 3f;
     public bool buttonPushed;
     public float minHeight;
     public float maxHeight;
+
+    private void Start()
+    {
+        
+    }
     void Update()
     {
         if (buttonPushed && gate.transform.position.y < maxHeight )
@@ -31,25 +38,9 @@ public class ButtonGate : MonoBehaviour
         gate.transform.Translate(Vector3.down * speed * Time.deltaTime);
     }
 
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.gameObject.tag == "Monster")
-    //    {
-    //        buttonPushed = true;
-    //    }
-    //}
-
-    //private void OnCollisionExit(Collision collision)
-    //{
-    //    if (collision.gameObject.tag == "Monster")
-    //    {
-    //        buttonPushed = false;
-    //    }
-    //}
-
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Monster")
+        if (characters.Contains(other.gameObject))
         {
             buttonPushed = true;
         }
@@ -57,10 +48,9 @@ public class ButtonGate : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Monster")
+        if (characters.Contains(other.gameObject))
         {
             buttonPushed = false;
         }
     }
-
 }
