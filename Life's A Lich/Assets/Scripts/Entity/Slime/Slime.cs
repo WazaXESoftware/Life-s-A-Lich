@@ -20,8 +20,6 @@ public class Slime : Entity
 
             else
             {
-                
-
                 if ((Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0) || Mathf.Abs(body.velocity.y) > 0.01f)
                 {
                     chargeTimer = 0f;

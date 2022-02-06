@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class EntityActionState : EntityState
 {
+
     [Range(0.1f, 5f)] public float actionTime = 1f;
     private float actionTimer = 0;
 

@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Entity2 : MonoBehaviour
+public class Entity3 : MonoBehaviour
 {
-
     public Rigidbody body;
 
-    [HideInInspector]public Camera cameraMain;
+    [HideInInspector] public Camera cameraMain;
     protected Vector3 forward;
     protected Vector3 right;
 
@@ -18,36 +17,9 @@ public class Entity2 : MonoBehaviour
     public bool player = false;
     protected bool playerLastFrame = false;
 
-    [HideInInspector]public EntityState state;
-
-    public EntityIdleState idleState = new EntityIdleState();
-    public EntityWalkState walkState = new EntityWalkState();
-    public EntityActionState actionState = new EntityActionState();
-    public EntityConfusedState confusedState = new EntityConfusedState();
-
-    public virtual void OnValidate()
-    {
-        idleState.OnValidate(this);
-        walkState.OnValidate(this);
-        actionState.OnValidate(this);
-        confusedState.OnValidate(this);
-    }
-
     protected virtual void Start()
     {
         cameraMain = Camera.main;
-        EnterState(idleState);
-    }
-
-    protected virtual void Update()
-    {
-        if (player) state.PlayerUpdate();
-        else state.EntityUpdate();
-        if (state == idleState) Debug.Log("IdleState");
-        if (state == walkState) Debug.Log("WalkState");
-        if (state == actionState) Debug.Log("ActionState");
-        if (state == confusedState) Debug.Log("ConfusedState");
-        //animator.SetFloat("Speed") = body.velocity.magnitude;
     }
 
     protected virtual void OnDrawGizmosSelected()
@@ -55,17 +27,11 @@ public class Entity2 : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, possessRange);
     }
 
-    public void EnterState(EntityState newState)
+    public Entity3 FindClosestEntity()
     {
-        state = newState;
-        state.EnterState();
-    }
-
-    protected Entity FindClosestEntity()
-    {
-        Entity[] entities = FindObjectsOfType<Entity>();
-        Entity closestEntity = null;
-        foreach (Entity entity in entities)
+        Entity3[] entities = FindObjectsOfType<Entity3>();
+        Entity3 closestEntity = null;
+        foreach (Entity3 entity in entities)
         {
             float distanceToEntity = (entity.transform.position - transform.position).magnitude;
             float distanceToClosestEntity = 0f;
@@ -78,5 +44,16 @@ public class Entity2 : MonoBehaviour
             }
         }
         return closestEntity;
+    }
+
+    public virtual void TakeOver()
+    {
+        player = true;
+    }
+
+    public virtual void Exit()
+    {
+        Instantiate(wisp, transform.position + spawnOffset, Quaternion.identity);
+        player = false;
     }
 }

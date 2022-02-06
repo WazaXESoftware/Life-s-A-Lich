@@ -3,23 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class EntityState
+public class SlimeState2
 {
-    public Entity2 entity;
+    [HideInInspector]public Slime3 entity;
 
-    public virtual void OnValidate(Entity2 entity)
+    public virtual void OnValidate(Slime3 entity)
     {
         this.entity = entity;
     }
-    /**
-    public virtual void Start(Entity2 entity) 
-    {
-        this.entity = entity;
-    }
-    **/
+
     public virtual void EnterState() { }
 
-    public virtual void ExitState(EntityState newState) 
+    public virtual void ExitState(SlimeState2 newState)
     {
         entity.EnterState(newState);
     }
@@ -33,5 +28,4 @@ public class EntityState
     public virtual void Action() { }
 
     public virtual void Possess() { }
-
 }
