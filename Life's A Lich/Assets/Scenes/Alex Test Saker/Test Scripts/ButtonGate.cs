@@ -5,16 +5,22 @@ using UnityEngine;
 
 public class ButtonGate : MonoBehaviour
 {
-    public GameObject[] characters;
+    public List<GameObject> characters;
     public GameObject gate;
-    public float speed = 3f;
+    public float speedUp = 3f;
+    public float speedDown = 4f;
     public bool buttonPushed;
     public float minHeight;
     public float maxHeight;
 
     private void Start()
     {
-        
+        List<Entity> entities = new List<Entity>(FindObjectsOfType<Entity>());
+        foreach (Entity entity in entities)
+        {
+            characters.Add(entity.gameObject);
+        }
+
     }
     void Update()
     {
@@ -30,12 +36,12 @@ public class ButtonGate : MonoBehaviour
 
     private void moveUp()
     {
-        gate.transform.Translate(Vector3.up * speed * Time.deltaTime);
+        gate.transform.Translate(Vector3.up * speedUp * Time.deltaTime);
     }
 
     private void moveDown()
     {
-        gate.transform.Translate(Vector3.down * speed * Time.deltaTime);
+        gate.transform.Translate(Vector3.down * speedDown * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other)
