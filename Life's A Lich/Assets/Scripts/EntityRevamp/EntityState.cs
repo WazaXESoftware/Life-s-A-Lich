@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class EntityState
 {
-    [HideInInspector] public Entity2 entity;
+    public Entity2 entity;
 
     public virtual void OnValidate(Entity2 entity)
     {
@@ -33,4 +33,5 @@ public class EntityState
     public virtual void Action() { }
 
     public virtual void Possess() { }
+
 }

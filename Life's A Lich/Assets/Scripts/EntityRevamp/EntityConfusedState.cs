@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class EntityConfusedState : EntityState
 {
+
     [Range (0.1f, 5f)]public float confusedTime = 1f;
     private float confusedTimer = 0;
 

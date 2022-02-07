@@ -57,8 +57,8 @@ public class Entity2 : MonoBehaviour
 
     public void EnterState(EntityState newState)
     {
-            state = newState;
-            state.EnterState();
+        state = newState;
+        state.EnterState();
     }
 
     protected Entity FindClosestEntity()

@@ -5,6 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public class EntityWalkState : EntityState
 {
+    private Entity2 entity;
+
     public override void EnterState() 
     {
 
