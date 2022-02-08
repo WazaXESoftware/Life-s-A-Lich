@@ -1328,7 +1328,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 948874945997201174, guid: 94abaf8c52e66be4c86aaaa1374cc97b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 94abaf8c52e66be4c86aaaa1374cc97b, type: 3}
 --- !u!1 &1620713466
 GameObject:
@@ -1734,3 +1735,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 948874945997201175, guid: 94abaf8c52e66be4c86aaaa1374cc97b, type: 3}
   m_PrefabInstance: {fileID: 1446510002}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2072735084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072735083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e912f62cb237c4b8a8307d6cf72b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 0}
+  cameraMain: {fileID: 0}
+  moveSpeed: 5
+  possessRange: 2
+  wisp: {fileID: 0}
+  spawnOffset: {x: 0, y: 1, z: 0}
+  player: 0
+  skipMaxChargeTime: 2
+  leastChargeForSkip: 0.1
+  skipForce: 6
+  chargeTimer: 0
+  idleState:
+    entity: {fileID: 2072735084}
+  jumpState:
+    entity: {fileID: 2072735084}
+  actionState:
+    entity: {fileID: 2072735084}
+    actionTime: 1
+  confusedState:
+    entity: {fileID: 2072735084}
+    confusedTime: 1
