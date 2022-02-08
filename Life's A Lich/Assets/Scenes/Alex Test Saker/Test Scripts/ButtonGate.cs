@@ -15,8 +15,8 @@ public class ButtonGate : MonoBehaviour
 
     private void Start()
     {
-        List<Entity3> entities = new List<Entity3>(FindObjectsOfType<Entity3>());
-        foreach (Entity3 entity in entities)
+        List<Entity> entities = new List<Entity>(FindObjectsOfType<Entity>());
+        foreach (Entity entity in entities)
         {
             characters.Add(entity.gameObject);
         }
