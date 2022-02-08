@@ -530,7 +530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characters:
-  - {fileID: 2072735083}
+  - {fileID: 0}
   gate: {fileID: 652070197}
   speedUp: 3
   speedDown: 4
@@ -1394,7 +1394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 948874945997201169, guid: 94abaf8c52e66be4c86aaaa1374cc97b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4
+      value: -2.02
       objectReference: {fileID: 0}
     - target: {fileID: 948874945997201169, guid: 94abaf8c52e66be4c86aaaa1374cc97b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1432,16 +1432,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 948874945997201174, guid: 94abaf8c52e66be4c86aaaa1374cc97b, type: 3}
-      propertyPath: player
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 948874945997201175, guid: 94abaf8c52e66be4c86aaaa1374cc97b, type: 3}
       propertyPath: m_Name
       value: Slime 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 948874945997201174, guid: 94abaf8c52e66be4c86aaaa1374cc97b, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94abaf8c52e66be4c86aaaa1374cc97b, type: 3}
 --- !u!1 &1620713466
 GameObject:
@@ -1842,6 +1837,111 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1961341396 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5696853417066807715, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+  m_PrefabInstance: {fileID: 2038293205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1961341397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961341396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e912f62cb237c4b8a8307d6cf72b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 1961341398}
+  cameraMain: {fileID: 0}
+  moveSpeed: 5
+  possessRange: 2
+  wisp: {fileID: 0}
+  spawnOffset: {x: 0, y: 1, z: 0}
+  player: 1
+  skipMaxChargeTime: 1.8
+  leastChargeForSkip: 0.05
+  skipForce: 5
+  chargeTimer: 0
+  idleState:
+    entity: {fileID: 1961341397}
+  jumpState:
+    entity: {fileID: 1961341397}
+  actionState:
+    entity: {fileID: 1961341397}
+    actionTime: 1
+  confusedState:
+    entity: {fileID: 1961341397}
+    confusedTime: 1
+--- !u!54 &1961341398 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 5696853417066807713, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+  m_PrefabInstance: {fileID: 2038293205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2038293205
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5696853417066807715, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+      propertyPath: m_Name
+      value: Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696853417066807715, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5696853417066807714, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
 --- !u!1 &2072735083 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 948874945997201175, guid: 94abaf8c52e66be4c86aaaa1374cc97b, type: 3}
@@ -1859,7 +1959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29e912f62cb237c4b8a8307d6cf72b1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  body: {fileID: 0}
+  body: {fileID: 2072735085}
   cameraMain: {fileID: 0}
   moveSpeed: 5
   possessRange: 2
@@ -1880,3 +1980,8 @@ MonoBehaviour:
   confusedState:
     entity: {fileID: 2072735084}
     confusedTime: 1
+--- !u!54 &2072735085 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 948874945997201173, guid: 94abaf8c52e66be4c86aaaa1374cc97b, type: 3}
+  m_PrefabInstance: {fileID: 1446510002}
+  m_PrefabAsset: {fileID: 0}

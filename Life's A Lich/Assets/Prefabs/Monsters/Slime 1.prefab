@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 948874945997201171}
   - component: {fileID: 948874945997201172}
   - component: {fileID: 948874945997201173}
-  - component: {fileID: 948874945997201174}
   m_Layer: 10
   m_Name: Slime 1
   m_TagString: Player
@@ -114,28 +113,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &948874945997201174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 948874945997201175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40538b83597d425418508109f422b0aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  body: {fileID: 948874945997201173}
-  moveSpeed: 4
-  possessRange: 2
-  wisp: {fileID: 5386594062432439039, guid: 29c3a43edab704d4a8e83a0f96815689, type: 3}
-  spawnOffset: {x: 0, y: 1, z: 0}
-  player: 0
-  skip: 1
-  skipChargeTime: 1
-  skipForce: 5
-  chargeTimer: 0
 --- !u!95 &5107963566953123569
 Animator:
   serializedVersion: 3
