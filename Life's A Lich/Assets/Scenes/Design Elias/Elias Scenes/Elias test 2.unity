@@ -1255,7 +1255,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119879105}
   m_LocalRotation: {x: 0.0018924882, y: 0.9098811, z: -0.41483524, w: 0.0049638813}
-  m_LocalPosition: {x: -72, y: 8, z: 9}
+  m_LocalPosition: {x: 7, y: 6, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1559425208}
@@ -3073,14 +3073,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 350609078}
   cameraMain: {fileID: 0}
-  moveSpeed: 5
+  moveSpeed: 3
   possessRange: 2
-  wisp: {fileID: 0}
+  host: {fileID: 0}
   spawnOffset: {x: 0, y: 1, z: 0}
   player: 1
+  inPossessable: 0
   skipMaxChargeTime: 1.8
-  leastChargeForSkip: 0.05
-  skipForce: 5
+  leastChargeForSkip: 0.2
+  skipForceY: 4
+  skipForceX: 7
   chargeTimer: 0
   idleState:
     entity: {fileID: 350609077}
@@ -3213,7 +3215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -61.75
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3221,7 +3223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
       propertyPath: m_LocalRotation.w
