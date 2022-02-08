@@ -12,11 +12,13 @@ public class SlimeConfusedState2 : SlimeState2
     {
         //entity.animator.SetTrigger("Confused");
         confusedTimer = 0;
+        entity.inPossessable = true;
     }
 
     public override void ExitState(SlimeState2 newState)
     {
-        entity.EnterState(entity.idleState);
+        entity.EnterState(newState);
+        entity.inPossessable = false;
     }
 
     public override void PlayerUpdate()
