@@ -97,6 +97,6 @@ public class SlimeIdleState2 : SlimeState2
 
     private bool IsGrounded()
     {
-        return Physics.CheckCapsule(entityCollider.bounds.center, new Vector3(entityCollider.bounds.center.x, entityCollider.bounds.center.y + entityCollider.radius + 0.01f, entityCollider.bounds.center.z), entityCollider.radius);
+        return Physics.Raycast(entityCollider.bounds.center, Vector3.down, (entity.transform.localScale.y + entityCollider.radius) + 0.01f);
     }
 }

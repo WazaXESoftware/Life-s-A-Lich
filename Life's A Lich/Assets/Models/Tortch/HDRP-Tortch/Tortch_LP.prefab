@@ -1563,7 +1563,7 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 21300000, guid: 88f90d2cb01915445ad5fad96ee53f50, type: 3}
+    - sprite: {fileID: 21300000, guid: 733fcea42d8615640ab84588c69b3ac1, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -4930,7 +4930,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.31908473, b: 0.15686274, a: 1}
+  m_Color: {r: 0.15686274, g: 0.9999996, b: 1, a: 1}
   m_Intensity: 1566.4253
   m_Range: 10
   m_SpotAngle: 30
