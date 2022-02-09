@@ -6,7 +6,7 @@ using UnityEngine;
 public class SlimeJumpState2 : SlimeState2
 {
     SphereCollider entityCollider;
-    private float leastTimeSpent = 0.05f;
+    private float leastTimeSpent = 0.25f;
     private float timer = 0f;
     public override void EnterState()
     {
@@ -25,6 +25,7 @@ public class SlimeJumpState2 : SlimeState2
 
     private bool IsGrounded()
     {
-        return Physics.Raycast(entityCollider.bounds.center, Vector3.down, (entity.transform.localScale.y * entityCollider.radius) + 0.01f);
+        RaycastHit hit;
+        return Physics.CheckSphere(entityCollider.bounds.center - new Vector3(0, Physics.defaultContactOffset, 0), entityCollider.radius, entity.layerMask, QueryTriggerInteraction.UseGlobal);
     }
 }

@@ -42,8 +42,16 @@ public class Slime3 : Entity3
 
     protected void Update()
     {
-        if (player) state.PlayerUpdate();
-        else state.EntityUpdate();
+        if (player)
+        {
+            gameObject.layer = 12;
+            state.PlayerUpdate();
+        }
+        else
+        {
+            gameObject.layer = 10;
+            state.EntityUpdate();
+        }
         state.Update();
 
         if (state == idleState) Debug.Log("IdleState");
@@ -51,5 +59,29 @@ public class Slime3 : Entity3
         if (state == actionState) Debug.Log("ActionState");
         if (state == confusedState) Debug.Log("ConfusedState");
         animator.SetFloat("Speed", new Vector3(body.velocity.x, 0, body.velocity.z).magnitude);
+    }
+
+    public override void TakeOver(GameObject host)
+    {
+        if (!inPossessable)
+        {
+            player = true;
+            gameObject.layer = 12;
+            this.host = host;
+            host.SetActive(false);
+            host.transform.position = transform.position;
+            host.transform.parent = transform;
+        }
+    }
+
+    public override void Exit()
+    {
+        host.transform.parent = null;
+        host.transform.position = transform.position + spawnOffset;
+        host.SetActive(true);
+        host.GetComponent<Entity3>().player = true;
+        host = null;
+        player = false;
+        gameObject.layer = 10;
     }
 }
