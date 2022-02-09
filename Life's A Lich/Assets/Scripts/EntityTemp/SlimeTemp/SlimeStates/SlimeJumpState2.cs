@@ -25,6 +25,6 @@ public class SlimeJumpState2 : SlimeState2
 
     private bool IsGrounded()
     {
-        return Physics.Raycast(entityCollider.bounds.center, Vector3.down, entityCollider.radius + 0.01f);
+        return Physics.Raycast(entityCollider.bounds.center, Vector3.down, (entity.transform.localScale.y * entityCollider.radius) + 0.01f);
     }
 }
