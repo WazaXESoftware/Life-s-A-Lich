@@ -436,7 +436,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &159126935
 RectTransform:
   m_ObjectHideFlags: 0
@@ -450,6 +450,7 @@ RectTransform:
   m_Children:
   - {fileID: 1499651049}
   - {fileID: 9529901}
+  - {fileID: 656152873}
   m_Father: {fileID: 941345529}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -731,17 +732,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656152872}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6266605, y: 0.90220314, z: 0.90220314}
   m_Children:
   - {fileID: 1733367938}
-  m_Father: {fileID: 941345529}
-  m_RootOrder: 1
+  m_Father: {fileID: 159126935}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 175, y: -230}
+  m_AnchoredPosition: {x: 109.66559, y: -27.06607}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656152874
@@ -1034,6 +1035,7 @@ MonoBehaviour:
     sentences:
     - "hej detta \xE4r f\xF6rsta rummet"
     - "klickat p\xE5 continue i f\xF6rsta rum\n"
+  dialogueOver: 0
 --- !u!65 &846941989
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1139,7 +1141,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 159126935}
-  - {fileID: 656152873}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1587,8 +1588,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620713466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.31361085, y: -1.41, z: 7.31}
-  m_LocalScale: {x: 10, y: 1, z: 10}
+  m_LocalPosition: {x: -2.61, y: -1.41, z: 7.31}
+  m_LocalScale: {x: 15, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1642,6 +1643,7 @@ MonoBehaviour:
     sentences:
     - rum 2
     - "klickat p\xE5 continue rum 2"
+  dialogueOver: 0
 --- !u!65 &1652107074
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1904,6 +1906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 1499651050}
   dialogueText: {fileID: 9529902}
+  dialogueBox: {fileID: 159126934}
 --- !u!222 &1851683648
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1979,15 +1982,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 1961341398}
+  animator: {fileID: 0}
   cameraMain: {fileID: 0}
   moveSpeed: 5
   possessRange: 2
-  wisp: {fileID: 0}
+  host: {fileID: 0}
   spawnOffset: {x: 0, y: 1, z: 0}
   player: 1
+  inPossessable: 0
   skipMaxChargeTime: 1.8
   leastChargeForSkip: 0.05
-  skipForce: 5
+  skipForceY: 6
+  skipForceX: 10
   chargeTimer: 0
   idleState:
     entity: {fileID: 1961341397}
@@ -2025,15 +2031,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.28
+      value: -8.46
       objectReference: {fileID: 0}
     - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.07
+      value: 1.61
       objectReference: {fileID: 0}
     - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4
+      value: 5.71
       objectReference: {fileID: 0}
     - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
       propertyPath: m_LocalRotation.w

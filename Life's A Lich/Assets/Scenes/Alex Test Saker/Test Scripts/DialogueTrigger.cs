@@ -6,6 +6,8 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
 
+    public bool dialogueOver;
+
     public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
@@ -13,9 +15,10 @@ public class DialogueTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && dialogueOver == false)
         {
             TriggerDialogue();
+            dialogueOver = true;
         }
     }
 }

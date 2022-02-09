@@ -9,6 +9,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
 
+    public GameObject dialogueBox;
+
     public Queue<string> sentences;
     void Start()
     {
@@ -17,16 +19,18 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        nameText.text = dialogue.name;
+            dialogueBox.SetActive(true);
 
-        sentences.Clear();
+            nameText.text = dialogue.name;
 
-        foreach(string sentence in dialogue.sentences)
-        {
-            sentences.Enqueue(sentence);
-        }
+            sentences.Clear();
 
-        DisplayNextSentence();
+            foreach (string sentence in dialogue.sentences)
+            {
+                sentences.Enqueue(sentence);
+            }
+
+            DisplayNextSentence();
     }
 
     public void DisplayNextSentence()
@@ -43,6 +47,6 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        ;
+        dialogueBox.SetActive(false);
     }
 }
