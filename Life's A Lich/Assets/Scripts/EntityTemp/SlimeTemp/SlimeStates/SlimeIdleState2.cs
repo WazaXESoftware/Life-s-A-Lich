@@ -13,6 +13,13 @@ public class SlimeIdleState2 : SlimeState2
         entity.chargeTimer = 0f;
         entityCollider = entity.GetComponent<SphereCollider>();
         oneFrame = false;
+        entity.animator.SetBool("IsIdle", true);
+    }
+
+    public override void ExitState(SlimeState2 newState)
+    {
+        base.ExitState(newState);
+        entity.animator.SetBool("IsIdle", false);
     }
 
     public override void PlayerUpdate()
@@ -22,20 +29,23 @@ public class SlimeIdleState2 : SlimeState2
 
         if (!Input.GetKey(KeyCode.Space))
         {
-
-            if (entity.chargeTimer > entity.leastChargeForSkip)
+            if (entity.chargeTimer > 0)
             {
-                float trueTime = Mathf.Clamp(entity.chargeTimer, 0f, entity.skipMaxChargeTime);
-                Vector3 forward = new Vector3(entity.cameraMain.transform.forward.x, 0, entity.cameraMain.transform.forward.z).normalized;
-                Vector3 right = Vector3.Cross(Vector3.up, forward).normalized;
+                entity.animator.SetTrigger("OnRelease");
+                if (entity.chargeTimer > entity.leastChargeForSkip)
+                {
+                    float trueTime = Mathf.Clamp(entity.chargeTimer, 0f, entity.skipMaxChargeTime);
+                    Vector3 forward = new Vector3(entity.cameraMain.transform.forward.x, 0, entity.cameraMain.transform.forward.z).normalized;
+                    Vector3 right = Vector3.Cross(Vector3.up, forward).normalized;
 
-                float horizontal = Input.GetAxisRaw("Horizontal");
-                float vertical = Input.GetAxisRaw("Vertical");
-                Vector3 dir = (forward * vertical + right * horizontal).normalized;
-                if (dir.magnitude != 0) entity.transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
+                    float horizontal = Input.GetAxisRaw("Horizontal");
+                    float vertical = Input.GetAxisRaw("Vertical");
+                    Vector3 dir = (forward * vertical + right * horizontal).normalized;
+                    if (dir.magnitude != 0) entity.transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
 
-                entity.body.velocity = (trueTime / entity.skipMaxChargeTime) * dir * entity.skipForceX + new Vector3(0, (trueTime/entity.skipMaxChargeTime)*entity.skipForceY, 0);
-                ExitState(entity.jumpState);
+                    entity.body.velocity = (trueTime / entity.skipMaxChargeTime) * dir * entity.skipForceX + new Vector3(0, (trueTime / entity.skipMaxChargeTime) * entity.skipForceY, 0);
+                    ExitState(entity.jumpState);
+                }
             }
             else
             {
@@ -52,6 +62,7 @@ public class SlimeIdleState2 : SlimeState2
         }
         else
         {
+            if (entity.chargeTimer == 0) entity.animator.SetTrigger("OnChargeUp");
             entity.chargeTimer += Time.deltaTime;
         }
 

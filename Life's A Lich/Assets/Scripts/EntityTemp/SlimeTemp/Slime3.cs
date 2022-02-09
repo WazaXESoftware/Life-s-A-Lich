@@ -50,6 +50,6 @@ public class Slime3 : Entity3
         if (state == jumpState) Debug.Log("JumpState");
         if (state == actionState) Debug.Log("ActionState");
         if (state == confusedState) Debug.Log("ConfusedState");
-        //animator.SetFloat("Speed") = body.velocity.magnitude;
+        animator.SetFloat("Speed", new Vector3(body.velocity.x, 0, body.velocity.z).magnitude);
     }
 }
