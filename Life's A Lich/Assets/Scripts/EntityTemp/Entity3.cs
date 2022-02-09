@@ -6,6 +6,7 @@ public class Entity3 : MonoBehaviour
 {
     public Rigidbody body;
     public Animator animator;
+    public LayerMask layerMask;
 
     [HideInInspector] public Camera cameraMain;
     protected Vector3 forward;
@@ -25,7 +26,10 @@ public class Entity3 : MonoBehaviour
 
     private void Update()
     {
-        if (player == true && host == null) Debug.LogError("Entity: Error, player is true while the entity is missing a host.");
+        if (player) gameObject.layer = 13;
+        else gameObject.layer = 0;
+        if (player && host == null) Debug.LogError("Entity: Error, player is true while the entity is missing a host.");
+
     }
 
     protected virtual void OnDrawGizmosSelected()
@@ -57,6 +61,7 @@ public class Entity3 : MonoBehaviour
         if (!inPossessable)
         {
             player = true;
+            gameObject.layer = 13;
             this.host = host;
             host.SetActive(false);
             host.transform.position = transform.position;
@@ -72,5 +77,6 @@ public class Entity3 : MonoBehaviour
         host.GetComponent<Entity3>().player = true;
         host = null;
         player = false;
+        gameObject.layer = 0;
     }
 }

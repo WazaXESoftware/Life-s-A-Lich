@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 7.5835724, g: 7.154114, b: 4.7776947, a: 1}
+  m_IndirectSpecularColor: {r: 7.5716324, g: 7.147682, b: 4.773506, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -625,7 +625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 56634983}
   - component: {fileID: 56634984}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CM vcam2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1717,7 +1717,7 @@ GameObject:
   m_Component:
   - component: {fileID: 158891980}
   - component: {fileID: 158891981}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CM vcam2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3412,7 +3412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 304481070}
   - component: {fileID: 304481071}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CM vcam1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6181,7 +6181,7 @@ GameObject:
   - component: {fileID: 637283059}
   - component: {fileID: 637283061}
   - component: {fileID: 637283060}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Room7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6394,7 +6394,7 @@ GameObject:
   - component: {fileID: 680522367}
   - component: {fileID: 680522366}
   - component: {fileID: 680522365}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6779,7 +6779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 702376555}
   - component: {fileID: 702376556}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CM vcam1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7187,7 +7187,7 @@ GameObject:
   - component: {fileID: 762729133}
   - component: {fileID: 762729132}
   - component: {fileID: 762729131}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8083,7 +8083,7 @@ GameObject:
   - component: {fileID: 902296322}
   - component: {fileID: 902296321}
   - component: {fileID: 902296323}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Room1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8676,7 +8676,7 @@ GameObject:
   m_Component:
   - component: {fileID: 956965379}
   - component: {fileID: 956965380}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CM vcam2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9408,7 +9408,7 @@ GameObject:
   - component: {fileID: 1058265925}
   - component: {fileID: 1058265927}
   - component: {fileID: 1058265926}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Room2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9895,7 +9895,7 @@ GameObject:
   - component: {fileID: 1109014957}
   - component: {fileID: 1109014959}
   - component: {fileID: 1109014958}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Room5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10357,7 +10357,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1150522404}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: //Rooms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10491,7 +10491,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1176857328}
   - component: {fileID: 1176857329}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CM vcam2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10653,7 +10653,7 @@ GameObject:
   - component: {fileID: 1190454372}
   - component: {fileID: 1190454371}
   - component: {fileID: 1190454370}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10848,7 +10848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1211019022}
   - component: {fileID: 1211019023}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CM vcam2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11018,7 +11018,7 @@ GameObject:
   - component: {fileID: 1224158659}
   - component: {fileID: 1224158658}
   - component: {fileID: 1224158657}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12584,6 +12584,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 1441378429}
   animator: {fileID: 2047312674}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
   cameraMain: {fileID: 0}
   moveSpeed: 2
   possessRange: 2
@@ -13072,7 +13075,7 @@ GameObject:
   - component: {fileID: 1503773178}
   - component: {fileID: 1503773177}
   - component: {fileID: 1503773176}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13603,7 +13606,7 @@ GameObject:
   - component: {fileID: 1588537873}
   - component: {fileID: 1588537875}
   - component: {fileID: 1588537874}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Room4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13872,7 +13875,7 @@ GameObject:
   - component: {fileID: 1602639567}
   - component: {fileID: 1602639566}
   - component: {fileID: 1602639565}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14679,7 +14682,7 @@ GameObject:
   - component: {fileID: 1701413994}
   - component: {fileID: 1701413993}
   - component: {fileID: 1701413992}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15425,7 +15428,7 @@ GameObject:
   - component: {fileID: 1746435535}
   - component: {fileID: 1746435537}
   - component: {fileID: 1746435536}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Room4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15767,7 +15770,7 @@ GameObject:
   - component: {fileID: 1767685990}
   - component: {fileID: 1767685992}
   - component: {fileID: 1767685991}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Room3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16125,7 +16128,7 @@ GameObject:
   - component: {fileID: 1791988930}
   - component: {fileID: 1791988929}
   - component: {fileID: 1791988928}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16364,7 +16367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1807810524}
   - component: {fileID: 1807810525}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CM vcam2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16848,6 +16851,10 @@ PrefabInstance:
     - target: {fileID: 6958060371131369328, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
       propertyPath: skipForceY
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6958060371131369328, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
+      propertyPath: layerMask.m_Bits
+      value: 1841
       objectReference: {fileID: 0}
     - target: {fileID: 6958060371131369330, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
       propertyPath: m_Material
@@ -19174,7 +19181,7 @@ GameObject:
   - component: {fileID: 2053804122}
   - component: {fileID: 2053804124}
   - component: {fileID: 2053804123}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Room6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
