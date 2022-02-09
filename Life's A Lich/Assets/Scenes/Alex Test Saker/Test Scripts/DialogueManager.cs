@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -11,14 +12,21 @@ public class DialogueManager : MonoBehaviour
 
     public GameObject dialogueBox;
 
+    public static bool GameIsPaused = false;
+
     public Queue<string> sentences;
     void Start()
     {
         sentences = new Queue<string>();
     }
 
+
+
+
     public void StartDialogue(Dialogue dialogue)
     {
+        
+
             dialogueBox.SetActive(true);
 
             nameText.text = dialogue.name;
@@ -31,6 +39,8 @@ public class DialogueManager : MonoBehaviour
             }
 
             DisplayNextSentence();
+
+        
     }
 
     public void DisplayNextSentence()
@@ -48,5 +58,6 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         dialogueBox.SetActive(false);
+        
     }
 }
