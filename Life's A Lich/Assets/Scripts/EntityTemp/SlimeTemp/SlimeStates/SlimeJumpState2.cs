@@ -25,7 +25,6 @@ public class SlimeJumpState2 : SlimeState2
 
     private bool IsGrounded()
     {
-        RaycastHit hit;
         return Physics.CheckSphere(entityCollider.bounds.center - new Vector3(0, Physics.defaultContactOffset, 0), entityCollider.radius, entity.layerMask, QueryTriggerInteraction.UseGlobal);
     }
 }
