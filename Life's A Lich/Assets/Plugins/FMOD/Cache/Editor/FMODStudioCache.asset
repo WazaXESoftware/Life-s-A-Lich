@@ -85,7 +85,7 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637800013980000000
+  lastModified: 637800014691924857
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -104,7 +104,7 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637800013980000000
+  lastModified: 637800014691934860
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -199,7 +199,7 @@ MonoBehaviour:
   - {fileID: -4128682858105212913}
   StringsBanks:
   - {fileID: -1842584387437825345}
-  stringsBankWriteTime: 637800013980000000
+  stringsBankWriteTime: 637800014691934860
   cacheVersion: 6
 --- !u!114 &3122194134790220205
 MonoBehaviour:
@@ -235,7 +235,7 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Desktop/Musik.bank
   Name: Musik
   StudioPath: bank:/New Folder/Musik
-  lastModified: 637800013980000000
+  lastModified: 637800014692174874
   LoadResult: 0
   FileSizes: []
   Exists: 1

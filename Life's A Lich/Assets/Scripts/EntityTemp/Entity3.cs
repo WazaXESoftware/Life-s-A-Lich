@@ -5,6 +5,7 @@ using UnityEngine;
 public class Entity3 : MonoBehaviour
 {
     public Rigidbody body;
+    public Animator animator;
 
     [HideInInspector] public Camera cameraMain;
     protected Vector3 forward;
