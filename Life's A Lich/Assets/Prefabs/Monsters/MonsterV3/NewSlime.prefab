@@ -1,24 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!95 &6958060370869033956
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7804341073698412480}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4b02e4087d68e06458c68eb930138580, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6958060371131369332
 GameObject:
   m_ObjectHideFlags: 0
@@ -72,7 +53,7 @@ MonoBehaviour:
   possessRange: 2
   host: {fileID: 0}
   spawnOffset: {x: 0, y: 1, z: 0}
-  player: 1
+  player: 0
   inPossessable: 0
   skipMaxChargeTime: 2
   leastChargeForSkip: 0.1
@@ -118,6 +99,25 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.9493546
   m_Center: {x: -0.0347929, y: -0.5821272, z: 4.417824e-11}
+--- !u!95 &6958060370869033956
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7804341073698412480}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4b02e4087d68e06458c68eb930138580, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &6958060370406009489
 PrefabInstance:
   m_ObjectHideFlags: 0

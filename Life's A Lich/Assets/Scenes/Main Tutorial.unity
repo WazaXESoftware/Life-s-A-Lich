@@ -7335,6 +7335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 1298500858}
+  animator: {fileID: 0}
   cameraMain: {fileID: 0}
   moveSpeed: 5
   possessRange: 2
@@ -7970,6 +7971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 1441378429}
+  animator: {fileID: 2047312674}
   cameraMain: {fileID: 0}
   moveSpeed: 2
   possessRange: 2
@@ -12013,6 +12015,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 5696853417066807714, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+--- !u!95 &2047312674 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 344380848062222405, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+  m_PrefabInstance: {fileID: 2047312673}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2053804121
 GameObject:
   m_ObjectHideFlags: 0
