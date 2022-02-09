@@ -1548,7 +1548,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277357341}
   m_LocalRotation: {x: 0.0018924882, y: 0.9098811, z: -0.41483524, w: 0.0049638813}
-  m_LocalPosition: {x: 0.25, y: 5, z: 5.25}
+  m_LocalPosition: {x: 2.75, y: 4.82, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6566,14 +6566,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176857327}
-  m_LocalRotation: {x: -0.000080195605, y: 0.8945852, z: -0.44688284, w: 0.0036276558}
-  m_LocalPosition: {x: 9.78, y: 6.18, z: 5.94}
+  m_LocalRotation: {x: 0.00019920908, y: 0.92632234, z: -0.37671462, w: 0.0036230697}
+  m_LocalPosition: {x: 9.78, y: 6.1799994, z: 3.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1602639564}
   m_Father: {fileID: 1767685990}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 53.087, y: -180.626, z: -0.323}
+  m_LocalEulerAnglesHint: {x: 44.26, y: -180.525, z: -0.189}
 --- !u!114 &1176857329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7659,6 +7659,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1212089245}
     m_Modifications:
+    - target: {fileID: 463486729, guid: 29c3a43edab704d4a8e83a0f96815689, type: 3}
+      propertyPath: m_Radius
+      value: 0.3884182
+      objectReference: {fileID: 0}
+    - target: {fileID: 463486729, guid: 29c3a43edab704d4a8e83a0f96815689, type: 3}
+      propertyPath: m_Center.x
+      value: -3.5527137e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 463486729, guid: 29c3a43edab704d4a8e83a0f96815689, type: 3}
+      propertyPath: m_Center.y
+      value: -0.14110708
+      objectReference: {fileID: 0}
+    - target: {fileID: 463486729, guid: 29c3a43edab704d4a8e83a0f96815689, type: 3}
+      propertyPath: m_Center.z
+      value: -0.030317247
+      objectReference: {fileID: 0}
     - target: {fileID: 463486730, guid: 29c3a43edab704d4a8e83a0f96815689, type: 3}
       propertyPath: m_UseGravity
       value: 1
