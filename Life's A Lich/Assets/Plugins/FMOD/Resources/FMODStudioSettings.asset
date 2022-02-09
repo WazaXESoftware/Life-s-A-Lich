@@ -497,7 +497,6 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
-  - Ljud
   - Musik
   BanksToLoad: []
   LiveUpdatePort: 9264

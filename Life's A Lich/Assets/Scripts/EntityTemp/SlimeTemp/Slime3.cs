@@ -8,7 +8,8 @@ public class Slime3 : Entity3
     //public bool skip = true;
     [Range(0.3f, 3f)] public float skipMaxChargeTime = 2f;
     [Range(0f, 3f)] public float leastChargeForSkip = 0.1f;
-    [Range(1f, 20f)] public float skipForce = 6f;
+    [Range(1f, 20f)] public float skipForceY = 6f;
+    [Range(0.1f, 20f)] public float skipForceX = 10f;
     public float chargeTimer = 0f;
 
     private SlimeState2 state;
@@ -30,7 +31,7 @@ public class Slime3 : Entity3
     protected override void Start()
     {
         base.Start();
-        state = idleState;
+        EnterState(idleState);
     }
 
     public void EnterState(SlimeState2 newState)
@@ -49,6 +50,6 @@ public class Slime3 : Entity3
         if (state == jumpState) Debug.Log("JumpState");
         if (state == actionState) Debug.Log("ActionState");
         if (state == confusedState) Debug.Log("ConfusedState");
-        //animator.SetFloat("Speed") = body.velocity.magnitude;
+        animator.SetFloat("Speed", new Vector3(body.velocity.x, 0, body.velocity.z).magnitude);
     }
 }

@@ -1255,7 +1255,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119879105}
   m_LocalRotation: {x: 0.0018924882, y: 0.9098811, z: -0.41483524, w: 0.0049638813}
-  m_LocalPosition: {x: -72, y: 8, z: 9}
+  m_LocalPosition: {x: 7, y: 6, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1559425208}
@@ -2196,6 +2196,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251492315}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &256593140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5386594062432439039, guid: 29c3a43edab704d4a8e83a0f96815689, type: 3}
+  m_PrefabInstance: {fileID: 1163997214}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &256593141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256593140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afd22fa6db4354447ab3ca72e4fa4633, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 256593143}
+  cameraMain: {fileID: 0}
+  moveSpeed: 5
+  possessRange: 2
+  host: {fileID: 256593140}
+  spawnOffset: {x: 0, y: 1, z: 0}
+  player: 1
+  inPossessable: 0
+  maximumFloatForce: 10
+  desiredHeight: 3
+  idleState:
+    entity: {fileID: 256593141}
+--- !u!54 &256593143 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 463486730, guid: 29c3a43edab704d4a8e83a0f96815689, type: 3}
+  m_PrefabInstance: {fileID: 1163997214}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &261426894
 GameObject:
   m_ObjectHideFlags: 0
@@ -3073,14 +3107,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 350609078}
   cameraMain: {fileID: 0}
-  moveSpeed: 5
+  moveSpeed: 3
   possessRange: 2
-  wisp: {fileID: 0}
+  host: {fileID: 256593140}
   spawnOffset: {x: 0, y: 1, z: 0}
-  player: 1
+  player: 0
+  inPossessable: 0
   skipMaxChargeTime: 1.8
-  leastChargeForSkip: 0.05
-  skipForce: 5
+  leastChargeForSkip: 0.2
+  skipForceY: 4
+  skipForceX: 7
   chargeTimer: 0
   idleState:
     entity: {fileID: 350609077}
@@ -3199,6 +3235,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5696853417066807712, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: fafd1ac559782cd4c88972d1bb01cf37, type: 2}
     - target: {fileID: 5696853417066807715, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
       propertyPath: m_Name
       value: Slime
@@ -3213,15 +3253,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -61.75
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5696853417066807717, guid: 593710f163741ab4493e7246a6ac9141, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8452,7 +8492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 463486731, guid: 29c3a43edab704d4a8e83a0f96815689, type: 3}
       propertyPath: player
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5386594062432439024, guid: 29c3a43edab704d4a8e83a0f96815689, type: 3}
       propertyPath: m_RootOrder
@@ -8506,7 +8546,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 463486731, guid: 29c3a43edab704d4a8e83a0f96815689, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 29c3a43edab704d4a8e83a0f96815689, type: 3}
 --- !u!4 &1163997215 stripped
 Transform:

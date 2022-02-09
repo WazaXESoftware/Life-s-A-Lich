@@ -49,4 +49,6 @@ public class EntityIdleState : EntityState
     }
 
     public override void Possess() { }
+
+
 }
