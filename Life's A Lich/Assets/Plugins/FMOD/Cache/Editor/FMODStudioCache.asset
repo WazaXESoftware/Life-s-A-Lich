@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Characters/Slime/Slime_fotsteg
   guid: cd9f4d339489784fbaf327ac1ea81965
-  Banks:
-  - {fileID: 3122194134790220205}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -23,6 +22,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 550
+--- !u!114 &-6088263602119815314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prototyplevel
+  m_EditorClassIdentifier: 
+  Path: event:/Prototyplevel
+  guid: b5f3ec062c564243bb328ded2872c446
+  Banks:
+  - {fileID: -4128682858105212913}
+  - {fileID: 3327424500811645579}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 113454
 --- !u!114 &-4149672334610061712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,7 +85,7 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637789731720000000
+  lastModified: 637800013980000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -81,11 +104,11 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637798487520000000
+  lastModified: 637800013980000000
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1260
+    Value: 810
   Exists: 1
 --- !u!114 &-1200663525705882677
 MonoBehaviour:
@@ -101,8 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Characters/Wisp/Wisp_Transfers/Transfer_Slime
   guid: c4461a9c537d654c998c4ac6927ebdc5
-  Banks:
-  - {fileID: 3122194134790220205}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -124,15 +146,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Interactables/Int_MovPlatform_in
   guid: e373423e4de4b2419055fb685c7d3895
-  Banks:
-  - {fileID: 3122194134790220205}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2647
+  Length: 3647
 --- !u!114 &-178063488419617980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,8 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/AMBIENCE/AMB_Dungeon
   guid: 116e4b28022d2d45baa0e60a8cf1015d
-  Banks:
-  - {fileID: 3122194134790220205}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -172,23 +192,14 @@ MonoBehaviour:
   - {fileID: -1842584387437825345}
   - {fileID: -4128682858105212913}
   - {fileID: 3327424500811645579}
-  - {fileID: 3122194134790220205}
   EditorEvents:
-  - {fileID: -178063488419617980}
-  - {fileID: -8471266829189117612}
-  - {fileID: 8564667119311211096}
-  - {fileID: 3857679000623004783}
-  - {fileID: 3965059131631760598}
-  - {fileID: 8849538977495577570}
-  - {fileID: -1200663525705882677}
-  - {fileID: 3449571999618079556}
-  - {fileID: -275308735157318669}
+  - {fileID: -6088263602119815314}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4128682858105212913}
   StringsBanks:
   - {fileID: -1842584387437825345}
-  stringsBankWriteTime: 637798487520000000
+  stringsBankWriteTime: 637800013980000000
   cacheVersion: 6
 --- !u!114 &3122194134790220205
 MonoBehaviour:
@@ -224,7 +235,7 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Desktop/Musik.bank
   Name: Musik
   StudioPath: bank:/New Folder/Musik
-  lastModified: 637789731720000000
+  lastModified: 637800013980000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -242,8 +253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Characters/Wisp/Wisp_Hoover
   guid: c51d8b91fe84b647ab40de1241082835
-  Banks:
-  - {fileID: 3122194134790220205}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -265,15 +275,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Interactables/Int_MovPlatform_out
   guid: 662041c28676c445b1fb00c73c28616d
-  Banks:
-  - {fileID: 3122194134790220205}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2000
+  Length: 3000
 --- !u!114 &3965059131631760598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,8 +297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Characters/Skeleton/Skel_Fotsteg
   guid: a6353de0f1ba1a4a911b70db63102837
-  Banks:
-  - {fileID: 3122194134790220205}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -311,8 +319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Interactables/Int_Door
   guid: 2cd1c8de2d4f044b87b9ac9b6c7dabde
-  Banks:
-  - {fileID: 3122194134790220205}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -334,8 +341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Interactables/Int_Button
   guid: bb40104031437a4f86741d883c77c425
-  Banks:
-  - {fileID: 3122194134790220205}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
