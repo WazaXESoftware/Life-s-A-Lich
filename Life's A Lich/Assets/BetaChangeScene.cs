@@ -14,7 +14,7 @@ public class BetaChangeScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("joystick button 0"))
+        if (Input.GetButtonDown("Submit"))
         {
             SceneManager.LoadScene("MainTutorial");
         }

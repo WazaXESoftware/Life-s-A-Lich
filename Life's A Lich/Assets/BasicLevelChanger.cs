@@ -11,7 +11,7 @@ public class BasicLevelChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("joystick button 0"))
+        if (Input.GetButtonDown("Submit"))
         {
             FadeToLevel(+1);
         }
