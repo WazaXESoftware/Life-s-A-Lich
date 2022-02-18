@@ -51,7 +51,7 @@ MonoBehaviour:
   animator: {fileID: 6958060370869033956}
   layerMask:
     serializedVersion: 2
-    m_Bits: 3889
+    m_Bits: 1841
   cameraMain: {fileID: 0}
   moveSpeed: 13
   velocityCap: 3
@@ -90,7 +90,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!135 &6958060371131369330
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -114,10 +114,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
-  m_Height: 1.6
+  m_Radius: 0.8493546
+  m_Height: 0
   m_Direction: 1
-  m_Center: {x: -0.03479289, y: -0.7799999, z: 0}
+  m_Center: {x: -0.0347929, y: -0.9, z: 4.417824e-11}
 --- !u!95 &6958060370869033956
 Animator:
   serializedVersion: 3
