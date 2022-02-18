@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 6958060371131369328}
   - component: {fileID: 6958060371131369331}
   - component: {fileID: 6958060371131369330}
-  m_Layer: 0
+  - component: {fileID: 1521534187}
+  m_Layer: 10
   m_Name: NewSlime
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6958060371131369332}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0.02, y: 1.85, z: -4.84}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.61172, y: 0.61172, z: 0.61172}
   m_Children:
   - {fileID: 7423417041487957370}
   m_Father: {fileID: 0}
@@ -48,8 +49,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 6958060371131369331}
   animator: {fileID: 6958060370869033956}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 3889
   cameraMain: {fileID: 0}
-  moveSpeed: 5
+  moveSpeed: 13
+  velocityCap: 3
   possessRange: 2
   host: {fileID: 0}
   spawnOffset: {x: 0, y: 1, z: 0}
@@ -58,7 +63,7 @@ MonoBehaviour:
   skipMaxChargeTime: 2
   leastChargeForSkip: 0.1
   skipForceY: 6
-  skipForceX: 10
+  skipForceX: 5.5
   chargeTimer: 0
   idleState:
     entity: {fileID: 6958060371131369328}
@@ -93,12 +98,26 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6958060371131369332}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fafd1ac559782cd4c88972d1bb01cf37, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.9493546
   m_Center: {x: -0.0347929, y: -0.5821272, z: 4.417824e-11}
+--- !u!136 &1521534187
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6958060371131369332}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.8
+  m_Height: 1.6
+  m_Direction: 1
+  m_Center: {x: -0.03479289, y: -0.7799999, z: 0}
 --- !u!95 &6958060370869033956
 Animator:
   serializedVersion: 3
@@ -169,9 +188,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3450601967515603077, guid: b6a115f031063c64fafd6f409e1fa799, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -2335317325139241942, guid: b6a115f031063c64fafd6f409e1fa799, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b6a115f031063c64fafd6f409e1fa799, type: 3}
       propertyPath: m_Name
       value: Slime_Model_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b6a115f031063c64fafd6f409e1fa799, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2383950292380023366, guid: b6a115f031063c64fafd6f409e1fa799, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5018134655774440187, guid: b6a115f031063c64fafd6f409e1fa799, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7917537304043538482, guid: b6a115f031063c64fafd6f409e1fa799, type: 3}
       propertyPath: m_Materials.Array.data[0]

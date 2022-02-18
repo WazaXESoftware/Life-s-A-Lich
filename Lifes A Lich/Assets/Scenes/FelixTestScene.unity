@@ -179,6 +179,7 @@ MonoBehaviour:
     m_Bits: 0
   cameraMain: {fileID: 0}
   moveSpeed: 5
+  velocityCap: 10
   possessRange: 2
   host: {fileID: 0}
   spawnOffset: {x: 0, y: 1, z: 0}
@@ -331,6 +332,7 @@ MonoBehaviour:
     m_Bits: 0
   cameraMain: {fileID: 0}
   moveSpeed: 5
+  velocityCap: 10
   possessRange: 2
   host: {fileID: 171719881}
   spawnOffset: {x: 0, y: 1, z: 0}
@@ -338,6 +340,8 @@ MonoBehaviour:
   inPossessable: 0
   maximumFloatForce: 12
   desiredHeight: 3
+  fakeFriction: 0
+  haltOnRelease: 0
   idleState:
     entity: {fileID: 171719883}
 --- !u!135 &171719884
@@ -467,6 +471,7 @@ MonoBehaviour:
     m_Bits: 0
   cameraMain: {fileID: 0}
   moveSpeed: 5
+  velocityCap: 10
   possessRange: 2
   host: {fileID: 0}
   spawnOffset: {x: 0, y: 1, z: 0}
@@ -567,25 +572,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24823abfd2e1b543aed3e27718d5e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  body: {fileID: 668795639}
-  cameraMain: {fileID: 0}
-  moveSpeed: 5
-  possessRange: 2
-  wisp: {fileID: 0}
-  spawnOffset: {x: 0, y: 1, z: 0}
-  player: 1
-  state:
-    entity: {fileID: 0}
-  idleState:
-    entity: {fileID: 668795640}
-  walkState:
-    entity: {fileID: 668795640}
-  actionState:
-    entity: {fileID: 668795640}
-    actionTime: 1
-  confusedState:
-    entity: {fileID: 668795640}
-    confusedTime: 1
 --- !u!135 &668795641
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1362,77 +1348,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2678517988403368042, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3500142162030495210, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4546584272412573371, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4727232748832035031, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958060371131369328, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
-      propertyPath: moveSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958060371131369328, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
-      propertyPath: skipForceX
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958060371131369328, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
-      propertyPath: skipForceY
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958060371131369328, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
-      propertyPath: layerMask.m_Bits
-      value: 3889
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958060371131369330, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: fafd1ac559782cd4c88972d1bb01cf37, type: 2}
-    - target: {fileID: 6958060371131369331, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958060371131369331, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6958060371131369332, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
       propertyPath: m_Name
       value: NewSlime (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 6958060371131369332, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958060371131369332, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 6958060371131369333, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
       propertyPath: m_RootOrder
       value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958060371131369333, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.61172
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958060371131369333, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.61172
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958060371131369333, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.61172
       objectReference: {fileID: 0}
     - target: {fileID: 6958060371131369333, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1473,10 +1395,6 @@ PrefabInstance:
     - target: {fileID: 6958060371131369333, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7804341073698412480, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
@@ -1582,6 +1500,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2916777719747580259, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
+      propertyPath: moveSpeed
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916777719747580259, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
+      propertyPath: velocityCap
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916777719747580259, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
+      propertyPath: fakeFriction
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7114419825918057366, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
       propertyPath: m_RootOrder
       value: 9

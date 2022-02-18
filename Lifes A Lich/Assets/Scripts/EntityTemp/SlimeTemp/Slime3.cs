@@ -84,4 +84,13 @@ public class Slime3 : Entity3
         player = false;
         gameObject.layer = 10;
     }
+
+    protected override void OnDrawGizmosSelected()
+    {
+        base.OnDrawGizmosSelected();
+        SphereCollider collider = GetComponent<SphereCollider>();
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(collider.bounds.center - new Vector3(0, 0.25f, 0), collider.radius * transform.localScale.y - 0.1f);
+        Gizmos.color = Color.white;
+    }
 }

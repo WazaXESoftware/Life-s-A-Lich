@@ -8,12 +8,18 @@ public class Respawn : MonoBehaviour
 
     private GameObject player;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collider)
     {
-        if(collision.gameObject.tag == "Player")
+        Entity3 collidingEntity;
+        if(collider.gameObject.TryGetComponent<Entity3>(out collidingEntity))
         {
+            collidingEntity.body.velocity = Vector3.zero;
+            collidingEntity.transform.position = respawnPoint.position;
+
+            /**
             player = collision.gameObject;
             player.transform.position = respawnPoint.position;
+            **/
         }
     }
 }
