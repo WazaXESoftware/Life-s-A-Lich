@@ -286,15 +286,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2916777719747580259, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
       propertyPath: moveSpeed
-      value: 4
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916777719747580259, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
+      propertyPath: fakeFriction
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 2916777719747580259, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
       propertyPath: desiredHeight
-      value: 2
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916777719747580259, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
+      propertyPath: haltOnRelease
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916777719747580259, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
+      propertyPath: layerMask.m_Bits
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2916777719747580259, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
       propertyPath: maximumFloatForce
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2916777720143949420, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
       propertyPath: m_Mass
@@ -314,7 +326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7114419825918057366, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.12
+      value: -1.8699999
       objectReference: {fileID: 0}
     - target: {fileID: 7114419825918057366, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1158,7 +1170,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986466687}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 7.035719, y: 1, z: 6.037406}
@@ -1556,7 +1568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6958060371131369328, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6958060371131369328, guid: 505f92387ee5b5a47afe8f38dfd5de2c, type: 3}
       propertyPath: skipForceX
