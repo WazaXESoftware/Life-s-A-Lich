@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/AMBIENCE/AMB_Dungeon
+  Event: event:/LJUD/AMBIENCE/AMB_Dungeon
   PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
