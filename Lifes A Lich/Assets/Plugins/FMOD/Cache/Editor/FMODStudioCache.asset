@@ -137,6 +137,52 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-7687301219169281255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/LJUD/AMBIENCE/Vatten
+  m_EditorClassIdentifier: 
+  Path: event:/LJUD/AMBIENCE/Vatten
+  guid: 6e90b44ef2a4494d98a7d25534a35396
+  Banks:
+  - {fileID: 7548288541334054461}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15014
+--- !u!114 &-6593708589837668388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/LJUD/AMBIENCE/Vattenfall
+  m_EditorClassIdentifier: 
+  Path: event:/LJUD/AMBIENCE/Vattenfall
+  guid: ff7226495a5d5447b63df6537b443c81
+  Banks:
+  - {fileID: 7548288541334054461}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9673
 --- !u!114 &-6088263602119815314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,10 +222,50 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637802716989390781
+  lastModified: 637811478300000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-4342379675237292113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menymusik/Start game
+  m_EditorClassIdentifier: 
+  Name: Start game
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-4328628645722522084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menymusik/Start game
+  m_EditorClassIdentifier: 
+  Name: Start game
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-4149672334610061712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,7 +370,7 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Musik.bank
   Name: Musik
   StudioPath: bank:/Musik
-  lastModified: 637802716989621010
+  lastModified: 637811478300000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -354,6 +440,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1375
+--- !u!114 &-972692533420637363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menymusik/Start game
+  m_EditorClassIdentifier: 
+  Name: Start game
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-275308735157318669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,12 +531,16 @@ MonoBehaviour:
   - {fileID: 3141860502944926496}
   - {fileID: -8148708429379108107}
   - {fileID: 9049269300146638509}
+  - {fileID: -7687301219169281255}
+  - {fileID: 4913478911796016413}
+  - {fileID: -6593708589837668388}
+  - {fileID: 7142032826524713501}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4364898984747503745}
   StringsBanks:
   - {fileID: 4317100354281364856}
-  stringsBankWriteTime: 637802716989390781
+  stringsBankWriteTime: 637811478300000000
   cacheVersion: 6
 --- !u!114 &2113050354915072818
 MonoBehaviour:
@@ -639,11 +749,11 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637802716989390781
+  lastModified: 637811478300000000
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1380
+    Value: 1628
   Exists: 1
 --- !u!114 &4401483830161843870
 MonoBehaviour:
@@ -691,6 +801,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3000
+--- !u!114 &4913478911796016413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/LJUD/Characters/Wisp/Wisp_Transfers/Transfer_Skeleton
+  m_EditorClassIdentifier: 
+  Path: event:/LJUD/Characters/Wisp/Wisp_Transfers/Transfer_Skeleton
+  guid: 997b07b51e113a41b33864bab5ac0270
+  Banks:
+  - {fileID: 7548288541334054461}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1269
 --- !u!114 &5744195045293616687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,6 +893,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1800
+--- !u!114 &7142032826524713501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Menymusik
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Menymusik
+  guid: b65272b4dda24d4a8d3a881baa0e30a8
+  Banks:
+  - {fileID: -2473004717973089230}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -4342379675237292113}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 93400
 --- !u!114 &7548288541334054461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -775,7 +932,7 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Ljud.bank
   Name: Ljud
   StudioPath: bank:/Ljud
-  lastModified: 637802716989381931
+  lastModified: 637811478300000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
