@@ -67,6 +67,7 @@ public class Slime3 : Entity3
         if (!inPossessable)
         {
             player = true;
+            gameObject.tag = "Player";
             gameObject.layer = 12;
             this.host = host;
             host.SetActive(false);
@@ -83,6 +84,7 @@ public class Slime3 : Entity3
         host.GetComponent<Entity3>().player = true;
         host = null;
         player = false;
+        gameObject.tag = "Untagged";
         gameObject.layer = 10;
     }
 
