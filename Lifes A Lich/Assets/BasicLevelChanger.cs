@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 public class BasicLevelChanger : MonoBehaviour
 {
     public Animator animator;
     private int levelToLoad;
-
+    public StudioEventEmitter emitter;
     // Update is called once per frame
     void Update()
     {
@@ -21,6 +22,7 @@ public class BasicLevelChanger : MonoBehaviour
     {
         levelToLoad = levelIndex;
         animator.SetTrigger("FadeOut");
+        emitter.SetParameter("Start game", 1);
 
     }
 
