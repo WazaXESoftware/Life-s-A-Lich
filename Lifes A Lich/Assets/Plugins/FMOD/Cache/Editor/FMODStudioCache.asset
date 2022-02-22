@@ -1,590 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8471266829189117612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Characters/Slime/Slime_fotsteg
-  m_EditorClassIdentifier: 
-  Path: event:/Characters/Slime/Slime_fotsteg
-  guid: cd9f4d339489784fbaf327ac1ea81965
-  Banks: []
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 550
---- !u!114 &-8343824788283579456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Interactables/Int_MovPlatform_in
-  m_EditorClassIdentifier: 
-  Path: event:/Interactables/Int_MovPlatform_in
-  guid: e373423e4de4b2419055fb685c7d3895
-  Banks:
-  - {fileID: 3788424014673100880}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3647
---- !u!114 &-8148708429379108107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/LJUD/Interactables/Int_Button
-  m_EditorClassIdentifier: 
-  Path: event:/LJUD/Interactables/Int_Button
-  guid: e54fd8792fd22644a2d6f6f2e79a4b57
-  Banks:
-  - {fileID: 7548288541334054461}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1500
---- !u!114 &-8141045678533125845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/LJUD/Interactables/Int_MovPlatform_in
-  m_EditorClassIdentifier: 
-  Path: event:/LJUD/Interactables/Int_MovPlatform_in
-  guid: baba95bfdc50744a8414cee3a76bce78
-  Banks:
-  - {fileID: 7548288541334054461}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3647
---- !u!114 &-8118315575746957515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Characters/Wisp/Wisp_Transfers/Transfer_Slime
-  m_EditorClassIdentifier: 
-  Path: event:/Characters/Wisp/Wisp_Transfers/Transfer_Slime
-  guid: c4461a9c537d654c998c4ac6927ebdc5
-  Banks:
-  - {fileID: 3788424014673100880}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1375
---- !u!114 &-7822555259927108877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/LJUD/Interactables/Int_Door
-  m_EditorClassIdentifier: 
-  Path: event:/LJUD/Interactables/Int_Door
-  guid: 9d0280b873b9e342b102c8e41b7ca93b
-  Banks:
-  - {fileID: 7548288541334054461}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-7687301219169281255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/LJUD/AMBIENCE/Vatten
-  m_EditorClassIdentifier: 
-  Path: event:/LJUD/AMBIENCE/Vatten
-  guid: 6e90b44ef2a4494d98a7d25534a35396
-  Banks:
-  - {fileID: 7548288541334054461}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 15014
---- !u!114 &-6593708589837668388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/LJUD/AMBIENCE/Vattenfall
-  m_EditorClassIdentifier: 
-  Path: event:/LJUD/AMBIENCE/Vattenfall
-  guid: ff7226495a5d5447b63df6537b443c81
-  Banks:
-  - {fileID: 7548288541334054461}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 9673
---- !u!114 &-6088263602119815314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Prototyplevel
-  m_EditorClassIdentifier: 
-  Path: event:/Prototyplevel
-  guid: b5f3ec062c564243bb328ded2872c446
-  Banks:
-  - {fileID: -4128682858105212913}
-  - {fileID: 3327424500811645579}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 113454
---- !u!114 &-4364898984747503745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: LjudMusik/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637811478300000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-4342379675237292113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Menymusik/Start game
-  m_EditorClassIdentifier: 
-  Name: Start game
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-4328628645722522084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Menymusik/Start game
-  m_EditorClassIdentifier: 
-  Name: Start game
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &-4149672334610061712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Prototyplevel
-  m_EditorClassIdentifier: 
-  Path: event:/Prototyplevel
-  guid: b5f3ec062c564243bb328ded2872c446
-  Banks:
-  - {fileID: -4128682858105212913}
-  - {fileID: 3327424500811645579}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 113454
---- !u!114 &-4128682858105212913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: LjudMusik/Desktop/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637800162830084145
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-3469257438163299568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Interactables/Int_MovPlatform_out
-  m_EditorClassIdentifier: 
-  Path: event:/Interactables/Int_MovPlatform_out
-  guid: 662041c28676c445b1fb00c73c28616d
-  Banks:
-  - {fileID: 3788424014673100880}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3000
---- !u!114 &-3217931298379863064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Characters/Wisp/Wisp_Hoover
-  m_EditorClassIdentifier: 
-  Path: event:/Characters/Wisp/Wisp_Hoover
-  guid: c51d8b91fe84b647ab40de1241082835
-  Banks:
-  - {fileID: 3788424014673100880}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1800
---- !u!114 &-2473004717973089230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Musik.bank
-  m_EditorClassIdentifier: 
-  Path: LjudMusik/Desktop/Musik.bank
-  Name: Musik
-  StudioPath: bank:/Musik
-  lastModified: 637811478300000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-2075613958736697332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/LJUD/Characters/Wisp/Wisp_Transfers/Transfer_Slime
-  m_EditorClassIdentifier: 
-  Path: event:/LJUD/Characters/Wisp/Wisp_Transfers/Transfer_Slime
-  guid: 365df1702623124192eb52f6c1dc75d3
-  Banks:
-  - {fileID: 7548288541334054461}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1375
---- !u!114 &-1842584387437825345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: LjudMusik/Desktop/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637800162830104153
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 1194
-  Exists: 1
---- !u!114 &-1200663525705882677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Characters/Wisp/Wisp_Transfers/Transfer_Slime
-  m_EditorClassIdentifier: 
-  Path: event:/Characters/Wisp/Wisp_Transfers/Transfer_Slime
-  guid: c4461a9c537d654c998c4ac6927ebdc5
-  Banks: []
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1375
---- !u!114 &-972692533420637363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Menymusik/Start game
-  m_EditorClassIdentifier: 
-  Name: Start game
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &-275308735157318669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Interactables/Int_MovPlatform_in
-  m_EditorClassIdentifier: 
-  Path: event:/Interactables/Int_MovPlatform_in
-  guid: e373423e4de4b2419055fb685c7d3895
-  Banks: []
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3647
---- !u!114 &-178063488419617980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/AMBIENCE/AMB_Dungeon
-  m_EditorClassIdentifier: 
-  Path: event:/AMBIENCE/AMB_Dungeon
-  guid: 116e4b28022d2d45baa0e60a8cf1015d
-  Banks: []
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 58357
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 4317100354281364856}
-  - {fileID: 7548288541334054461}
-  - {fileID: -4364898984747503745}
-  - {fileID: -2473004717973089230}
-  EditorEvents:
-  - {fileID: -2075613958736697332}
-  - {fileID: 6394591546920380107}
-  - {fileID: 5744195045293616687}
-  - {fileID: -7822555259927108877}
-  - {fileID: -8141045678533125845}
-  - {fileID: 4465095354536728071}
-  - {fileID: 3141860502944926496}
-  - {fileID: -8148708429379108107}
-  - {fileID: 9049269300146638509}
-  - {fileID: -7687301219169281255}
-  - {fileID: 4913478911796016413}
-  - {fileID: -6593708589837668388}
-  - {fileID: 7142032826524713501}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -4364898984747503745}
-  StringsBanks:
-  - {fileID: 4317100354281364856}
-  stringsBankWriteTime: 637811478300000000
-  cacheVersion: 6
---- !u!114 &2113050354915072818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Characters/Slime/Slime_Jump
-  m_EditorClassIdentifier: 
-  Path: event:/Characters/Slime/Slime_Jump
-  guid: cd9f4d339489784fbaf327ac1ea81965
-  Banks:
-  - {fileID: 3788424014673100880}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 550
---- !u!114 &3122194134790220205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ljud.bank
-  m_EditorClassIdentifier: 
-  Path: LjudMusik/Desktop/Desktop/Ljud.bank
-  Name: Ljud
-  StudioPath: bank:/Ljud
-  lastModified: 637798487520000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &3141860502944926496
+--- !u!114 &-8844368960558179067
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -599,7 +15,7 @@ MonoBehaviour:
   Path: event:/LJUD/AMBIENCE/AMB_Dungeon
   guid: deb2c676e29a2a40bc1b16927a7c05f9
   Banks:
-  - {fileID: 7548288541334054461}
+  - {fileID: -2689560234639305910}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -607,26 +23,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 58357
---- !u!114 &3327424500811645579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Musik.bank
-  m_EditorClassIdentifier: 
-  Path: LjudMusik/Desktop/Desktop/Musik.bank
-  Name: Musik
-  StudioPath: bank:/New Folder/Musik
-  lastModified: 637800161841647778
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &3449571999618079556
+--- !u!114 &-8726332222290455588
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -636,105 +33,86 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Characters/Wisp/Wisp_Hoover
+  m_Name: event:/LJUD/AMBIENCE/Vatten
   m_EditorClassIdentifier: 
-  Path: event:/Characters/Wisp/Wisp_Hoover
-  guid: c51d8b91fe84b647ab40de1241082835
-  Banks: []
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1800
---- !u!114 &3788424014673100880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ljud.bank
-  m_EditorClassIdentifier: 
-  Path: LjudMusik/Desktop/Desktop/Ljud.bank
-  Name: Ljud
-  StudioPath: bank:/Ljud
-  lastModified: 637800162830064121
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &3857679000623004783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Interactables/Int_MovPlatform_out
-  m_EditorClassIdentifier: 
-  Path: event:/Interactables/Int_MovPlatform_out
-  guid: 662041c28676c445b1fb00c73c28616d
-  Banks: []
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3000
---- !u!114 &3965059131631760598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Characters/Skeleton/Skel_Fotsteg
-  m_EditorClassIdentifier: 
-  Path: event:/Characters/Skeleton/Skel_Fotsteg
-  guid: a6353de0f1ba1a4a911b70db63102837
-  Banks: []
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &4055941702979242970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Interactables/Int_Button
-  m_EditorClassIdentifier: 
-  Path: event:/Interactables/Int_Button
-  guid: bb40104031437a4f86741d883c77c425
+  Path: event:/LJUD/AMBIENCE/Vatten
+  guid: 6e90b44ef2a4494d98a7d25534a35396
   Banks:
-  - {fileID: 3788424014673100880}
+  - {fileID: -2689560234639305910}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15014
+--- !u!114 &-7915653084049466142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menymusik/Start game
+  m_EditorClassIdentifier: 
+  Name: Start game
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-7738068907275818095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/LJUD/Characters/Wisp/Wisp_Transfers/Transfer_Skeleton
+  m_EditorClassIdentifier: 
+  Path: event:/LJUD/Characters/Wisp/Wisp_Transfers/Transfer_Skeleton
+  guid: 997b07b51e113a41b33864bab5ac0270
+  Banks:
+  - {fileID: -2689560234639305910}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1500
---- !u!114 &4317100354281364856
+  Length: 1269
+--- !u!114 &-7044303620563492539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/LJUD/Characters/Wisp/Wisp_Transfers/Transfer_Slime
+  m_EditorClassIdentifier: 
+  Path: event:/LJUD/Characters/Wisp/Wisp_Transfers/Transfer_Slime
+  guid: 365df1702623124192eb52f6c1dc75d3
+  Banks:
+  - {fileID: -2689560234639305910}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1375
+--- !u!114 &-5790721090821985280
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -755,7 +133,7 @@ MonoBehaviour:
   - Name: 
     Value: 1628
   Exists: 1
---- !u!114 &4401483830161843870
+--- !u!114 &-5224477749450554307
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -765,12 +143,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Interactables/Int_Door
+  m_Name: event:/LJUD/Interactables/Int_Door
   m_EditorClassIdentifier: 
-  Path: event:/Interactables/Int_Door
-  guid: 2cd1c8de2d4f044b87b9ac9b6c7dabde
+  Path: event:/LJUD/Interactables/Int_Door
+  guid: 9d0280b873b9e342b102c8e41b7ca93b
   Banks:
-  - {fileID: 3788424014673100880}
+  - {fileID: -2689560234639305910}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -778,53 +156,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &4465095354536728071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/LJUD/Interactables/Int_MovPlatform_out
-  m_EditorClassIdentifier: 
-  Path: event:/LJUD/Interactables/Int_MovPlatform_out
-  guid: be20ce78510a664999b6fcffb1740d1a
-  Banks:
-  - {fileID: 7548288541334054461}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3000
---- !u!114 &4913478911796016413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/LJUD/Characters/Wisp/Wisp_Transfers/Transfer_Skeleton
-  m_EditorClassIdentifier: 
-  Path: event:/LJUD/Characters/Wisp/Wisp_Transfers/Transfer_Skeleton
-  guid: 997b07b51e113a41b33864bab5ac0270
-  Banks:
-  - {fileID: 7548288541334054461}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1269
---- !u!114 &5744195045293616687
+--- !u!114 &-4502106713497134214
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -839,7 +171,7 @@ MonoBehaviour:
   Path: event:/LJUD/Characters/Slime/Slime_Jump
   guid: 9bce2e62a1feed44b6cd4ea91cc5fae5
   Banks:
-  - {fileID: 7548288541334054461}
+  - {fileID: -2689560234639305910}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -847,7 +179,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 550
---- !u!114 &5908305100177063863
+--- !u!114 &-3929691740199203216
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -857,43 +189,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/AMBIENCE/AMB_Dungeon
+  m_Name: event:/LJUD/Interactables/Int_MovPlatform_in
   m_EditorClassIdentifier: 
-  Path: event:/AMBIENCE/AMB_Dungeon
-  guid: 116e4b28022d2d45baa0e60a8cf1015d
+  Path: event:/LJUD/Interactables/Int_MovPlatform_in
+  guid: baba95bfdc50744a8414cee3a76bce78
   Banks:
-  - {fileID: 3788424014673100880}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 58357
---- !u!114 &6394591546920380107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/LJUD/Characters/Wisp/Wisp_Hoover
-  m_EditorClassIdentifier: 
-  Path: event:/LJUD/Characters/Wisp/Wisp_Hoover
-  guid: 4a5eccbeb8718742b1f3d4a9696df3d8
-  Banks:
-  - {fileID: 7548288541334054461}
+  - {fileID: -2689560234639305910}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1800
---- !u!114 &7142032826524713501
+  Length: 3647
+--- !u!114 &-2926150924836157301
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -903,21 +212,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Menymusik
+  m_Name: event:/LJUD/Interactables/Int_Button
   m_EditorClassIdentifier: 
-  Path: event:/Music/Menymusik
-  guid: b65272b4dda24d4a8d3a881baa0e30a8
+  Path: event:/LJUD/Interactables/Int_Button
+  guid: e54fd8792fd22644a2d6f6f2e79a4b57
   Banks:
-  - {fileID: -2473004717973089230}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -4342379675237292113}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 93400
---- !u!114 &7548288541334054461
+  - {fileID: -2689560234639305910}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
+--- !u!114 &-2724180223921598833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Musik.bank
+  m_EditorClassIdentifier: 
+  Path: LjudMusik/Desktop/Musik.bank
+  Name: Musik
+  StudioPath: bank:/Musik
+  lastModified: 637811480120000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-2689560234639305910
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -932,11 +259,114 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Ljud.bank
   Name: Ljud
   StudioPath: bank:/Ljud
+  lastModified: 637811480120000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-1750912216746251905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/LJUD/AMBIENCE/Vattenfall
+  m_EditorClassIdentifier: 
+  Path: event:/LJUD/AMBIENCE/Vattenfall
+  guid: ff7226495a5d5447b63df6537b443c81
+  Banks:
+  - {fileID: -2689560234639305910}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9673
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -5790721090821985280}
+  - {fileID: -2689560234639305910}
+  - {fileID: 3881105977425897345}
+  - {fileID: -2724180223921598833}
+  EditorEvents:
+  - {fileID: -7044303620563492539}
+  - {fileID: 976906929309516872}
+  - {fileID: -8726332222290455588}
+  - {fileID: -7738068907275818095}
+  - {fileID: -4502106713497134214}
+  - {fileID: -5224477749450554307}
+  - {fileID: -3929691740199203216}
+  - {fileID: 6816125478370499798}
+  - {fileID: -8844368960558179067}
+  - {fileID: -2926150924836157301}
+  - {fileID: -1750912216746251905}
+  - {fileID: 8526805502095579277}
+  - {fileID: 7648898649750487993}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 3881105977425897345}
+  StringsBanks:
+  - {fileID: -5790721090821985280}
+  stringsBankWriteTime: 637811478300000000
+  cacheVersion: 6
+--- !u!114 &976906929309516872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/LJUD/Characters/Wisp/Wisp_Hoover
+  m_EditorClassIdentifier: 
+  Path: event:/LJUD/Characters/Wisp/Wisp_Hoover
+  guid: 4a5eccbeb8718742b1f3d4a9696df3d8
+  Banks:
+  - {fileID: -2689560234639305910}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1800
+--- !u!114 &3881105977425897345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: LjudMusik/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
   lastModified: 637811478300000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
---- !u!114 &8564667119311211096
+--- !u!114 &6816125478370499798
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -946,19 +376,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Interactables/Int_Door
+  m_Name: event:/LJUD/Interactables/Int_MovPlatform_out
   m_EditorClassIdentifier: 
-  Path: event:/Interactables/Int_Door
-  guid: 2cd1c8de2d4f044b87b9ac9b6c7dabde
-  Banks: []
+  Path: event:/LJUD/Interactables/Int_MovPlatform_out
+  guid: be20ce78510a664999b6fcffb1740d1a
+  Banks:
+  - {fileID: -2689560234639305910}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
---- !u!114 &8849538977495577570
+  Length: 3000
+--- !u!114 &7648898649750487993
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -968,19 +399,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Interactables/Int_Button
+  m_Name: event:/Music/Menymusik
   m_EditorClassIdentifier: 
-  Path: event:/Interactables/Int_Button
-  guid: bb40104031437a4f86741d883c77c425
-  Banks: []
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1500
---- !u!114 &9049269300146638509
+  Path: event:/Music/Menymusik
+  guid: b65272b4dda24d4a8d3a881baa0e30a8
+  Banks:
+  - {fileID: -2724180223921598833}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7915653084049466142}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 93400
+--- !u!114 &8526805502095579277
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -995,7 +428,7 @@ MonoBehaviour:
   Path: event:/Music/Prototyplevel
   guid: 2bdda295ddcde440beb4425e4030e157
   Banks:
-  - {fileID: -2473004717973089230}
+  - {fileID: -2724180223921598833}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
