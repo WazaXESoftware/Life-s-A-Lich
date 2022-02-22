@@ -13,7 +13,7 @@ public class Entity3 : MonoBehaviour
     protected Vector3 right;
 
     //public bool isGrounded = false;
-    [Range(0f, 20f)] public float moveSpeed = 5f;
+    [Range(0f, 50f)] public float moveSpeed = 5f;
     [Range(0f, 20f)] public float velocityCap = 10f;
     [Range(0f, 10f)] public float possessRange = 2f;
     [Tooltip("The wisp that spawns when exiting a monster.")] public GameObject host = null;
@@ -65,6 +65,7 @@ public class Entity3 : MonoBehaviour
         {
             player = true;
             oneFrame = false;
+            gameObject.tag = "Player";
             gameObject.layer = 13;
             this.host = host;
             host.SetActive(false);
@@ -81,6 +82,7 @@ public class Entity3 : MonoBehaviour
         host.GetComponent<Entity3>().player = true;
         host = null;
         player = false;
+        gameObject.tag = "Untagged";
         gameObject.layer = 0;
     }
 
