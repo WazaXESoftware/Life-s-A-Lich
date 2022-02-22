@@ -94,8 +94,8 @@ public class SlimeIdleState2 : SlimeState2
     {
         if (oneFrame)
         {
+            ExitState(entity.confusedState);
             entity.Exit();
-            entity.EnterState(entity.confusedState);
         }
     }
 

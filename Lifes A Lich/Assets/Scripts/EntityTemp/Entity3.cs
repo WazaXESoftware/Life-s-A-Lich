@@ -19,6 +19,7 @@ public class Entity3 : MonoBehaviour
     [Tooltip("The wisp that spawns when exiting a monster.")] public GameObject host = null;
     [Tooltip("The offset of which the wisp is spawned when exiting a monster.")] public Vector3 spawnOffset = new Vector3(0, 1, 0);
     public bool player = false;
+    private bool oneFrame = false;
     [HideInInspector] public bool inPossessable = false;
 
     protected virtual void Start()
@@ -26,12 +27,12 @@ public class Entity3 : MonoBehaviour
         cameraMain = Camera.main;
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         if (player) gameObject.layer = 13;
         else gameObject.layer = 0;
         if (player && host == null) Debug.LogError("Entity: Error, player is true while the entity is missing a host.");
-
+        oneFrame = true;
     }
 
     protected virtual void OnDrawGizmosSelected()
@@ -63,6 +64,7 @@ public class Entity3 : MonoBehaviour
         if (!inPossessable)
         {
             player = true;
+            oneFrame = false;
             gameObject.layer = 13;
             this.host = host;
             host.SetActive(false);
@@ -89,13 +91,14 @@ public class Entity3 : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 dir = (forward * vertical + right * horizontal).normalized;
-        if (body.velocity.magnitude > 0.01f) transform.rotation = Quaternion.LookRotation(new Vector3(body.velocity.x, 0, body.velocity.z), Vector3.up);
+        if (new Vector3(body.velocity.x, 0, body.velocity.z).magnitude > 0.01f) transform.rotation = Quaternion.LookRotation(new Vector3(body.velocity.x, 0, body.velocity.z), Vector3.up);
         body.AddForce(dir * moveSpeed * Time.deltaTime, ForceMode.VelocityChange);
-        if (body.velocity.magnitude > velocityCap)
+        Vector3 xzVector = new Vector3(body.velocity.x, 0, body.velocity.z);
+        if (xzVector.magnitude > velocityCap)
         {
             Debug.Log("Braking...");
-            float brakeForce = body.velocity.magnitude - velocityCap;
-            Vector3 velocityDir = body.velocity.normalized;
+            float brakeForce = xzVector.magnitude - velocityCap;
+            Vector3 velocityDir = xzVector.normalized;
             body.AddForce(-velocityDir * brakeForce, ForceMode.VelocityChange);
         }
     }

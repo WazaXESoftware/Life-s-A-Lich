@@ -40,7 +40,7 @@ public class Slime3 : Entity3
         state.EnterState();
     }
 
-    protected void Update()
+    protected override void Update()
     {
         if (player)
         {
@@ -52,6 +52,7 @@ public class Slime3 : Entity3
             gameObject.layer = 10;
             state.EntityUpdate();
         }
+        if (player && host == null) Debug.LogError("Entity: Error, player is true while the entity is missing a host.");
         state.Update();
 
         if (state == idleState) Debug.Log("IdleState");
