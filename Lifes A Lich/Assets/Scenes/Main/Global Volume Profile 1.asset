@@ -42,7 +42,7 @@ MonoBehaviour:
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.49
+    m_Value: 0.349
     min: 0
     max: 1
   scatter:
@@ -317,8 +317,8 @@ MonoBehaviour:
     showAlpha: 0
     showEyeDropper: 1
   maxFogDistance:
-    m_OverrideState: 0
-    m_Value: 5000
+    m_OverrideState: 1
+    m_Value: 80
     min: 0
   mipFogMaxMip:
     m_OverrideState: 0
