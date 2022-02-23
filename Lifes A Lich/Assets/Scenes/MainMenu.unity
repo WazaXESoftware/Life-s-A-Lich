@@ -530,7 +530,7 @@ MonoBehaviour:
       enableBigTilePrepass: 0
       isFptlEnabled: 0
   clearColorMode: 1
-  backgroundColorHDR: {r: 0.0009803922, g: 0.0009803922, b: 0.0009803922, a: 0}
+  backgroundColorHDR: {r: 0.009433985, g: 0.006744421, b: 0.00636349, a: 0}
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2
