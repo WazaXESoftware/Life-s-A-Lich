@@ -10,7 +10,7 @@ public class ButtonGate : MonoBehaviour
     public float speedUp = 3f;
     public float speedDown = 4f;
     public bool buttonPushed;
-    public float minHeight;
+    private float minHeight;
     public float maxHeight;
 
     private void Start()
@@ -21,10 +21,11 @@ public class ButtonGate : MonoBehaviour
             characters.Add(entity.gameObject);
         }
 
+        minHeight = gate.transform.position.y;
     }
     void Update()
     {
-        if (buttonPushed && gate.transform.position.y < maxHeight )
+        if (buttonPushed && gate.transform.position.y < minHeight + maxHeight)
         {
             moveUp();
         }

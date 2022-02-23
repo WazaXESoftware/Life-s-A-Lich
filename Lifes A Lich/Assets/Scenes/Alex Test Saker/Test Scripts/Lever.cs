@@ -7,12 +7,12 @@ public class Lever : InteractableObject
     public GameObject door;
     public float speedUp = 3f;
     public float speedDown = 4f;
-    public float minHeight;
+    private float minHeight;
     public float maxHeight;
     public bool leverPulled;
     void Start()
     {
-        
+        minHeight = door.transform.position.y;
     }
 
     public override void Interact()
@@ -21,7 +21,7 @@ public class Lever : InteractableObject
     }
     void Update()
     {
-        if(leverPulled && door.transform.position.y < maxHeight)
+        if(leverPulled && door.transform.position.y < minHeight + maxHeight)
         {
             moveUp();
         }

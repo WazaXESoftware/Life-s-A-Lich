@@ -25,9 +25,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        
-
-            dialogueBox.SetActive(true);
+        dialogueBox.SetActive(true);
 
             nameText.text = dialogue.name;
 
@@ -39,8 +37,6 @@ public class DialogueManager : MonoBehaviour
             }
 
             DisplayNextSentence();
-
-        
     }
 
     public void DisplayNextSentence()
