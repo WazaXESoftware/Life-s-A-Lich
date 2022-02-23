@@ -6,27 +6,18 @@ using UnityEngine.SceneManagement;
 public class SceneTrigger : MonoBehaviour
 {
     public Animator animator;
-    private int levelToLoad;
+    private int levelToLoade;
+    public AudioSource signSound;
+    public AudioSource signOffSound;
+    private Animator anim;
 
-    void Update()
-    {
-        if (Input.GetButtonDown("Submit"))
-        {
-            FadeToLevel(+1);
-        }
-    }
+    // Start is called before the first frame update
+    
 
-    public void FadeToLevel(int levelIndex)
-    {
-        levelToLoad = levelIndex;
-        animator.SetTrigger("FadeOut");
-        OnFadeComplete();
-    }
-
-
-    public void OnFadeComplete()
+    private void OnTriggerEnter(Collider other)
     {
         SceneManager.LoadScene("MainTwo");
-
     }
+
+    
 }
