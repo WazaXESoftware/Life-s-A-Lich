@@ -7,7 +7,7 @@ public class GlobalControls : MonoBehaviour
 {
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Return))
+        if(Input.GetKeyDown(KeyCode.Insert))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
