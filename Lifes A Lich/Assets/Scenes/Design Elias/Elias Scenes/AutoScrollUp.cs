@@ -9,7 +9,7 @@ public class AutoScrollUp : MonoBehaviour
 
 void Update(){
   if(check == 1){
-    float step = 0.002f;
+    float step = 0.004f;
               var cameraPosition = virtualCamUp.transform.position;
               cameraPosition.y += step;
               virtualCamUp.transform.position = cameraPosition;

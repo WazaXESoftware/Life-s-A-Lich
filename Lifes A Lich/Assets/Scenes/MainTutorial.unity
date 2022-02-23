@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 10.873341, g: 8.409803, b: 5.7665305, a: 1}
+  m_IndirectSpecularColor: {r: 10.871365, g: 8.408228, b: 5.765063, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4198,13 +4198,14 @@ MonoBehaviour:
   spawnOffset: {x: 0, y: 1, z: 0}
   player: 0
   inPossessable: 0
-  skipMaxChargeTime: 1
-  leastChargeForSkip: 0.1
   skipForceY: 6
   skipForceX: 5.5
-  chargeTimer: 0
   idleState:
     entity: {fileID: 279186104}
+  chargeState:
+    entity: {fileID: 279186104}
+    skipMaxChargeTime: 1
+    leastChargeForSkip: 0.1
   jumpState:
     entity: {fileID: 279186104}
   actionState:
@@ -14779,13 +14780,14 @@ MonoBehaviour:
   spawnOffset: {x: 0, y: 1, z: 0}
   player: 0
   inPossessable: 0
-  skipMaxChargeTime: 1
-  leastChargeForSkip: 0.1
   skipForceY: 6
   skipForceX: 5.5
-  chargeTimer: 0
   idleState:
     entity: {fileID: 1119243368}
+  chargeState:
+    entity: {fileID: 1119243368}
+    skipMaxChargeTime: 1
+    leastChargeForSkip: 0.1
   jumpState:
     entity: {fileID: 1119243368}
   actionState:
@@ -18862,13 +18864,14 @@ MonoBehaviour:
   spawnOffset: {x: 0, y: 1, z: 0}
   player: 0
   inPossessable: 0
-  skipMaxChargeTime: 1.8
-  leastChargeForSkip: 0.05
   skipForceY: 4
   skipForceX: 7
-  chargeTimer: 0
   idleState:
     entity: {fileID: 1441378428}
+  chargeState:
+    entity: {fileID: 1441378428}
+    skipMaxChargeTime: 2
+    leastChargeForSkip: 0.1
   jumpState:
     entity: {fileID: 1441378428}
   actionState:
@@ -19639,7 +19642,7 @@ Animator:
   m_GameObject: {fileID: 1494610204}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1550f1489376f6a46a78e33f8646695c, type: 2}
+  m_Controller: {fileID: 9100000, guid: dce21373afb6fcb43bb5937f738e0de0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -29659,7 +29662,7 @@ Animator:
   m_GameObject: {fileID: 2097417515}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1550f1489376f6a46a78e33f8646695c, type: 2}
+  m_Controller: {fileID: 9100000, guid: dce21373afb6fcb43bb5937f738e0de0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

@@ -6290,13 +6290,14 @@ MonoBehaviour:
   spawnOffset: {x: 0, y: 1, z: 0}
   player: 0
   inPossessable: 0
-  skipMaxChargeTime: 2
-  leastChargeForSkip: 0.1
   skipForceY: 6
   skipForceX: 5.5
-  chargeTimer: 0
   idleState:
     entity: {fileID: 400877341}
+  chargeState:
+    entity: {fileID: 400877341}
+    skipMaxChargeTime: 2
+    leastChargeForSkip: 0.1
   jumpState:
     entity: {fileID: 400877341}
   actionState:
@@ -19948,7 +19949,6 @@ MonoBehaviour:
   speedUp: 3
   speedDown: 4
   buttonPushed: 0
-  minHeight: 4.75
   maxHeight: 7.75
 --- !u!65 &1018099429
 BoxCollider:
@@ -22570,11 +22570,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7114419825918057366, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -129.01
+      value: -188.76
       objectReference: {fileID: 0}
     - target: {fileID: 7114419825918057366, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -17.95
+      value: -11.34
       objectReference: {fileID: 0}
     - target: {fileID: 7114419825918057366, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -25279,11 +25279,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3838953694961227015, guid: 46f1a70d895661748aeefdd3609b88fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -127.13
+      value: -188.72998
       objectReference: {fileID: 0}
     - target: {fileID: 3838953694961227015, guid: 46f1a70d895661748aeefdd3609b88fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -19.17
+      value: -15.56
       objectReference: {fileID: 0}
     - target: {fileID: 3838953694961227015, guid: 46f1a70d895661748aeefdd3609b88fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26828,7 +26828,6 @@ MonoBehaviour:
   door: {fileID: 1401224560}
   speedUp: 3
   speedDown: 4
-  minHeight: -17.491
   maxHeight: -14
   leverPulled: 0
 --- !u!1 &1490075128
