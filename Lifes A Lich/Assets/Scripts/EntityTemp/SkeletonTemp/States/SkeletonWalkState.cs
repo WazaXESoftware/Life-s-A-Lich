@@ -27,9 +27,16 @@ public class SkeletonWalkState : SkeletonState
             return;
         }
 
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Action();
+            return;
+        }
+
         if (Input.GetButtonDown("Fire2"))
         {
             Possess();
+            return;
         }
 
         if (!entity.IsGrounded())
