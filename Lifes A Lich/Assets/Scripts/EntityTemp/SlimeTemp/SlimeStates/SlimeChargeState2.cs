@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class SlimeChargeState2 : SlimeState2
 {
     [Range(0.3f, 3f)] public float skipMaxChargeTime = 2f;
@@ -31,7 +32,7 @@ public class SlimeChargeState2 : SlimeState2
             }
             else
             {
-                float trueTime = Mathf.Clamp(skipMaxChargeTime, 0f, skipMaxChargeTime);
+                float trueTime = Mathf.Clamp(timer, 0f, skipMaxChargeTime);
                 Vector3 forward = new Vector3(entity.cameraMain.transform.forward.x, 0, entity.cameraMain.transform.forward.z).normalized;
                 Vector3 right = Vector3.Cross(Vector3.up, forward).normalized;
 
