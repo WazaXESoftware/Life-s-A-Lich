@@ -32,7 +32,7 @@ public class Skeleton : Entity3
     protected override void Start()
     {
         base.Start();
-        EnterState(idleState);
+        EnterState(collapsedState);
     }
 
     protected override void Update()
