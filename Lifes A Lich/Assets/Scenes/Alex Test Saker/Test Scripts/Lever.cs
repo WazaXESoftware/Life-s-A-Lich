@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Lever : InteractableObject
+public class Lever : InteractableObject
 {
     public GameObject door;
     public float speedUp = 3f;
     public float speedDown = 4f;
-    public bool buttonPushed;
     public float minHeight;
     public float maxHeight;
     public bool leverPulled;
