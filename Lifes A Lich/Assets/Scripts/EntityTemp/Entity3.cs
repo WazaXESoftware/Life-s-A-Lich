@@ -59,6 +59,24 @@ public class Entity3 : MonoBehaviour
         return closestEntity;
     }
 
+    public InteractableObject FindClosestInteractableObject()
+    {
+        InteractableObject[] objects = FindObjectsOfType<InteractableObject>();
+        InteractableObject closestObject = null;
+        foreach(InteractableObject object_ in objects)
+        {
+            float distanceToObject = (object_.transform.position - transform.position).magnitude;
+            float distanceToClosestObject = 0f;
+            if (closestObject != null) distanceToClosestObject = (closestObject.transform.position - transform.position).magnitude;
+            if (distanceToObject < possessRange && 
+               (closestObject == null || distanceToObject < distanceToClosestObject))
+            {
+                closestObject = object_;
+            }
+        }
+        return closestObject;
+    }
+
     public virtual void TakeOver(GameObject host)
     {
         if (!inPossessable)

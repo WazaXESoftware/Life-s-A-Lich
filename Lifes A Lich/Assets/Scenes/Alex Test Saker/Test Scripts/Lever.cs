@@ -18,7 +18,7 @@ public abstract class Lever : InteractableObject
 
     public override void Interact()
     {
-        
+        leverPulled = !leverPulled;
     }
     void Update()
     {

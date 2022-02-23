@@ -26,9 +26,16 @@ public class SkeletonIdleState : SkeletonState
             return;
         }
 
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Action();
+            return;
+        }
+
         if (Input.GetButtonDown("Fire2"))
         {
             Possess();
+            return;
         }
 
         if (!entity.IsGrounded())
@@ -61,6 +68,11 @@ public class SkeletonIdleState : SkeletonState
     {
         ExitState(entity.collapsedState);
         entity.Exit();
+    }
+
+    public override void Action()
+    {
+        ExitState(entity.actionState);
     }
 
 }
