@@ -137,11 +137,8 @@ MonoBehaviour:
   spawnOffset: {x: 0, y: 1, z: 0}
   player: 0
   inPossessable: 0
-  skipMaxChargeTime: 2
-  leastChargeForSkip: 0.1
   skipForceY: 6
   skipForceX: 5.5
-  chargeTimer: 0
   idleState:
     entity: {fileID: 8557836600710728374}
   jumpState:
@@ -219,7 +216,7 @@ Animator:
   m_GameObject: {fileID: 8791838864975001751}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1550f1489376f6a46a78e33f8646695c, type: 2}
+  m_Controller: {fileID: 9100000, guid: dce21373afb6fcb43bb5937f738e0de0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

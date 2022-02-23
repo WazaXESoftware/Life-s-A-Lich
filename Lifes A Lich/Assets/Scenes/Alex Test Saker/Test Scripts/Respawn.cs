@@ -13,13 +13,7 @@ public class Respawn : MonoBehaviour
         Entity3 collidingEntity;
         if(collider.gameObject.TryGetComponent<Entity3>(out collidingEntity))
         {
-            collidingEntity.body.velocity = Vector3.zero;
-            collidingEntity.transform.position = respawnPoint.position;
-
-            /**
-            player = collision.gameObject;
-            player.transform.position = respawnPoint.position;
-            **/
+            collidingEntity.Respawn(respawnPoint.position);
         }
     }
 }

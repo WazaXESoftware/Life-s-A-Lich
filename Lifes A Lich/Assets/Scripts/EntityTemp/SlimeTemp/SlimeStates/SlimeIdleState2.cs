@@ -10,7 +10,7 @@ public class SlimeIdleState2 : SlimeState2
     public override void EnterState()
     {
         base.EnterState();
-        entity.chargeTimer = 0f;
+        //entity.chargeTimer = 0f;
         entityCollider = entity.GetComponent<SphereCollider>();
         oneFrame = false;
         entity.animator.SetBool("IsIdle", true);
@@ -27,6 +27,7 @@ public class SlimeIdleState2 : SlimeState2
 
         if (!Input.GetKey(KeyCode.Space))
         {
+            /**
             if (entity.chargeTimer > 0)
             {
                 entity.animator.SetTrigger("OnRelease");
@@ -45,8 +46,9 @@ public class SlimeIdleState2 : SlimeState2
                     ExitState(entity.jumpState);
                 }
             }
-            else
-            {
+            **/
+            //else
+            //{
                 entity.Movement();
 
                 /**
@@ -59,15 +61,19 @@ public class SlimeIdleState2 : SlimeState2
                 entity.body.velocity = dir * entity.moveSpeed + new Vector3(0, entity.body.velocity.y, 0);
                 entity.body.AddForce(dir * entity.moveSpeed * Time.deltaTime, ForceMode.VelocityChange);
                 **/
-            }
+           // }
 
-            entity.chargeTimer = 0f;
+            //entity.chargeTimer = 0f;
         }
         else
         {
+            ExitState(entity.chargeState);
+
+            /**
             if (entity.chargeTimer == 0) entity.animator.SetTrigger("OnChargeUp");
             entity.body.AddForce(new Vector3(-entity.body.velocity.x * 0.97f * Time.deltaTime, 0, -entity.body.velocity.z * 0.97f * Time.deltaTime), ForceMode.VelocityChange);
             entity.chargeTimer += Time.deltaTime;
+            **/
         }
 
         if (!IsGrounded()) ExitState(entity.jumpState);

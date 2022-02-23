@@ -10,9 +10,15 @@ public class SlimeJumpState2 : SlimeState2
     private float timer = 0f;
     public override void EnterState()
     {
-        entity.animator.SetTrigger("OnJump");
+        entity.animator.SetBool("Jumping", true);
         entityCollider = entity.GetComponent<SphereCollider>();
         timer = 0f;
+    }
+
+    public override void ExitState(SlimeState2 newState)
+    {
+        base.ExitState(newState);
+        entity.animator.SetBool("Jumping", false);
     }
     public override void PlayerUpdate()
     {
@@ -20,6 +26,16 @@ public class SlimeJumpState2 : SlimeState2
         if (IsGrounded() && timer > leastTimeSpent)
         {
             ExitState(entity.idleState);
+            return;
+        }
+    }
+
+    public override void EntityUpdate()
+    {
+        if (IsGrounded())
+        {
+            ExitState(entity.idleState);
+            return;
         }
     }
 

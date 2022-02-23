@@ -70,4 +70,9 @@ public class SkeletonWalkState : SkeletonState
         ExitState(entity.collapsedState);
         entity.Exit();
     }
+
+    public override void Action()
+    {
+        ExitState(entity.actionState);
+    }
 }

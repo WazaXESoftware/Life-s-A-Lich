@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class Slime3 : Entity3
 {
-    [Header("Slime skipping")]
+    //[Header("Slime skipping")]
     //public bool skip = true;
-    [Range(0.3f, 3f)] public float skipMaxChargeTime = 2f;
-    [Range(0f, 3f)] public float leastChargeForSkip = 0.1f;
+    //[Range(0.3f, 3f)] public float skipMaxChargeTime = 2f;
+    //[Range(0f, 3f)] public float leastChargeForSkip = 0.1f;
     [Range(1f, 20f)] public float skipForceY = 6f;
     [Range(0.1f, 20f)] public float skipForceX = 10f;
-    public float chargeTimer = 0f;
+    //public float chargeTimer = 0f;
 
     private SlimeState2 state;
 
     [Header("States")]
     public SlimeIdleState2 idleState = new SlimeIdleState2();
+    public SlimeChargeState2 chargeState = new SlimeChargeState2();
     public SlimeJumpState2 jumpState = new SlimeJumpState2();
     public SlimeActionState2 actionState = new SlimeActionState2();
     public SlimeConfusedState2 confusedState = new SlimeConfusedState2();
@@ -23,6 +24,7 @@ public class Slime3 : Entity3
     public void OnValidate()
     {
         idleState.OnValidate(this);
+        chargeState.OnValidate(this);
         jumpState.OnValidate(this);
         actionState.OnValidate(this);
         confusedState.OnValidate(this);
@@ -56,6 +58,7 @@ public class Slime3 : Entity3
         state.Update();
 
         if (state == idleState) Debug.Log("IdleState");
+        if (state == chargeState) Debug.Log("ChargeState");
         if (state == jumpState) Debug.Log("JumpState");
         if (state == actionState) Debug.Log("ActionState");
         if (state == confusedState) Debug.Log("ConfusedState");
@@ -86,6 +89,12 @@ public class Slime3 : Entity3
         player = false;
         gameObject.tag = "Untagged";
         gameObject.layer = 10;
+    }
+
+    public override void Respawn(Vector3 position)
+    {
+        base.Respawn(position);
+        animator.SetTrigger("Respawn");
     }
 
     protected override void OnDrawGizmosSelected()

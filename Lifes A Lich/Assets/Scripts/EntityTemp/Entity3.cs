@@ -123,6 +123,12 @@ public class Entity3 : MonoBehaviour
         }
     }
 
+    public virtual void Respawn(Vector3 position)
+    {
+        transform.position = position;
+        body.velocity = Vector3.zero;
+    }
+
     /**
     public virtual void OnCollisionStay(Collision collision)
     {
