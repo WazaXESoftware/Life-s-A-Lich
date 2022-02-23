@@ -94,7 +94,6 @@ public class Slime3 : Entity3
     public override void Respawn(Vector3 position)
     {
         base.Respawn(position);
-        animator.SetTrigger("Respawn");
     }
 
     protected override void OnDrawGizmosSelected()
