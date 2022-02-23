@@ -8,25 +8,29 @@ public class SceneTrigger : MonoBehaviour
     public Animator animator;
     private int levelToLoad;
 
- // Update is called once per frame
+    // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Submit"))
+        void OnTriggerEnter(Collider other)
         {
-            FadeToLevel(+1);
+            if (other.CompareTag("Player"))
+            {
+                FadeToLevel(+1);
+            }
+
         }
-    }
 
-    public void FadeToLevel(int levelIndex)
-    {
-        levelToLoad = levelIndex;
-        animator.SetTrigger("FadeOut");
-    }
+        public void FadeToLevel(int levelIndex)
+        {
+            levelToLoad = levelIndex;
+            animator.SetTrigger("FadeOut");
+        }
 
 
-    public void OnFadeComplete()
-    {
-        SceneManager.LoadScene("MainTwo");
+       public void OnFadeComplete()
+        {
+            SceneManager.LoadScene("MainTwo");
 
+        }
     }
 }
