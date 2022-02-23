@@ -8,7 +8,6 @@ public class SceneTrigger : MonoBehaviour
     public Animator animator;
     private int levelToLoad;
 
- // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Submit"))
@@ -21,6 +20,7 @@ public class SceneTrigger : MonoBehaviour
     {
         levelToLoad = levelIndex;
         animator.SetTrigger("FadeOut");
+        OnFadeComplete();
     }
 
 
