@@ -24,7 +24,7 @@ public class SlimeIdleState2 : SlimeState2
 
     public override void PlayerUpdate()
     {
-
+        Controls();
         if (!Input.GetKey(KeyCode.Space))
         {
             /**
@@ -88,6 +88,19 @@ public class SlimeIdleState2 : SlimeState2
         }
 
         oneFrame = true;
+    }
+
+    public override void Controls()
+    {
+        if (entity.frozen) return;
+        if (!Input.GetButton("Jump"))
+        {
+            entity.Movement();
+        }
+        else
+        {
+            ExitState(entity.chargeState);
+        }
     }
 
     public override void Action()

@@ -19,25 +19,7 @@ public class SkeletonWalkState : SkeletonState
 
     public override void PlayerUpdate()
     {
-        entity.Movement();
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ExitState(entity.jumpState);
-            return;
-        }
-
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Action();
-            return;
-        }
-
-        if (Input.GetButtonDown("Fire2"))
-        {
-            Possess();
-            return;
-        }
+        Controls();
 
         if (!entity.IsGrounded())
         {
@@ -61,6 +43,31 @@ public class SkeletonWalkState : SkeletonState
         else if (new Vector3(entity.body.velocity.x, 0, entity.body.velocity.z).magnitude <= 0.01f)
         {
             ExitState(entity.idleState);
+            return;
+        }
+    }
+
+    public override void Controls()
+    {
+        if (entity.frozen) return;
+
+        entity.Movement();
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            ExitState(entity.jumpState);
+            return;
+        }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Action();
+            return;
+        }
+
+        if (Input.GetButtonDown("Fire2"))
+        {
+            Possess();
             return;
         }
     }
