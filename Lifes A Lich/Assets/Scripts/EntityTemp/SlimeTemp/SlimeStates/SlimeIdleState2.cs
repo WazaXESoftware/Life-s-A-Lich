@@ -76,7 +76,7 @@ public class SlimeIdleState2 : SlimeState2
             **/
         }
 
-        if (!IsGrounded()) ExitState(entity.jumpState);
+        if (!entity.IsGrounded()) ExitState(entity.jumpState);
 
         if (Input.GetButtonDown("Fire1"))
         {

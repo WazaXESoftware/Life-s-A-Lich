@@ -8,6 +8,7 @@ public class Entity3 : MonoBehaviour
     public Animator animator;
     public LayerMask layerMask;
 
+    private EventHandler eventHandler;
     [HideInInspector] public Camera cameraMain;
     protected Vector3 forward;
     protected Vector3 right;
@@ -19,12 +20,18 @@ public class Entity3 : MonoBehaviour
     [Tooltip("The wisp that spawns when exiting a monster.")] public GameObject host = null;
     [Tooltip("The offset of which the wisp is spawned when exiting a monster.")] public Vector3 spawnOffset = new Vector3(0, 1, 0);
     public bool player = false;
-    private bool oneFrame = false;
     [HideInInspector] public bool inPossessable = false;
 
     protected virtual void Start()
     {
         cameraMain = Camera.main;
+        eventHandler = FindObjectOfType<EventHandler>();
+        if (eventHandler == null) Debug.LogWarning("Entity3: Scene is missing an EventHandler.");
+        else
+        {
+            eventHandler.OnFreeze += Freeze;
+            eventHandler.OnUnFreeze += UnFreeze;
+        }
     }
 
     protected virtual void Update()
@@ -32,12 +39,21 @@ public class Entity3 : MonoBehaviour
         if (player) gameObject.layer = 13;
         else gameObject.layer = 0;
         if (player && host == null) Debug.LogError("Entity: Error, player is true while the entity is missing a host.");
-        oneFrame = true;
     }
 
     protected virtual void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(transform.position, possessRange);
+    }
+
+    public void Freeze()
+    {
+
+    }
+
+    public void UnFreeze()
+    {
+
     }
 
     public Entity3 FindClosestEntity()
@@ -82,7 +98,6 @@ public class Entity3 : MonoBehaviour
         if (!inPossessable)
         {
             player = true;
-            oneFrame = false;
             gameObject.tag = "Player";
             gameObject.layer = 13;
             this.host = host;
