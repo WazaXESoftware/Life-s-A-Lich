@@ -23,7 +23,7 @@ public class SlimeJumpState2 : SlimeState2
     public override void PlayerUpdate()
     {
         timer += Time.deltaTime;
-        if (IsGrounded() && timer > leastTimeSpent)
+        if (entity.IsGrounded() && timer > leastTimeSpent)
         {
             ExitState(entity.idleState);
             return;
@@ -32,16 +32,10 @@ public class SlimeJumpState2 : SlimeState2
 
     public override void EntityUpdate()
     {
-        if (IsGrounded())
+        if (entity.IsGrounded())
         {
             ExitState(entity.idleState);
             return;
         }
-    }
-
-    private bool IsGrounded()
-    {
-        //return entity.IsGrounded;
-        return Physics.CheckSphere(entityCollider.bounds.center - new Vector3(0, 0.25f, 0), (entityCollider.radius * entity.transform.localScale.y) - 0.1f, entity.layerMask, QueryTriggerInteraction.Ignore);
     }
 }

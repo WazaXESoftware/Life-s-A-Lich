@@ -113,4 +113,11 @@ public class Slime3 : Entity3
         Gizmos.DrawWireSphere(collider.bounds.center - new Vector3(0, 0.25f, 0), collider.radius * transform.localScale.y - 0.1f);
         Gizmos.color = Color.white;
     }
+
+    public bool IsGrounded()
+    {
+        //return entity.IsGrounded;
+        SphereCollider entityCollider = GetComponent<SphereCollider>();
+        return Physics.CheckSphere(entityCollider.bounds.center - new Vector3(0, 0.25f, 0), (entityCollider.radius * transform.localScale.y) - 0.1f, layerMask, QueryTriggerInteraction.Ignore);
+    }
 }

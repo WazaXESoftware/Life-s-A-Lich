@@ -5,12 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class GlobalControls : MonoBehaviour
 {
+    /**
     private List<Entity3> entities = new List<Entity3>();
 
     private void Start()
     {
         entities = new List<Entity3>(FindObjectsOfType<Entity3>());
     }
+    
+    **/
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Insert))
@@ -18,7 +21,7 @@ public class GlobalControls : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
-
+    /**
     public void Freeze()
     {
         foreach (Entity3 entity in entities)
@@ -34,4 +37,5 @@ public class GlobalControls : MonoBehaviour
             entity.frozen = false;
         }
     }
+    **/
 }
