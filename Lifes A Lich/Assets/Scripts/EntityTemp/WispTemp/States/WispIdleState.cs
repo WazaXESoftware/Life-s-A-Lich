@@ -7,6 +7,13 @@ public class WispIdleState : WispState
 {
     public override void PlayerUpdate() 
     {
+        Controls();
+    }
+
+    public override void Controls()
+    {
+        if (entity.frozen) return;
+
         entity.Movement();
 
         if (Input.GetButtonDown("Fire1"))

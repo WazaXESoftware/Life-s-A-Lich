@@ -12,7 +12,7 @@ public class Entity3 : MonoBehaviour
     protected Vector3 forward;
     protected Vector3 right;
 
-    //public bool isGrounded = false;
+    public bool frozen = false;
     [Range(0f, 50f)] public float moveSpeed = 5f;
     [Range(0f, 20f)] public float velocityCap = 10f;
     [Range(0f, 10f)] public float possessRange = 2f;
@@ -106,6 +106,7 @@ public class Entity3 : MonoBehaviour
 
     public virtual void Movement()
     {
+
         Vector3 forward = new Vector3(cameraMain.transform.forward.x, 0, cameraMain.transform.forward.z).normalized;
         Vector3 right = Vector3.Cross(Vector3.up, forward).normalized;
         float horizontal = Input.GetAxisRaw("Horizontal");

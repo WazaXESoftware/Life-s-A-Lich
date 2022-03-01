@@ -25,6 +25,8 @@ public class SlimeState2
 
     public virtual void Update() { }
 
+    public virtual void Controls() { }
+
     public virtual void Action() { }
 
     public virtual void Possess() { }

@@ -22,8 +22,14 @@ public class SlimeChargeState2 : SlimeState2
 
     public override void PlayerUpdate()
     {
+        if (entity.frozen)
+        {
+            ExitState(entity.idleState);
+            return;
+        }
+
         entity.body.AddForce(new Vector3(-entity.body.velocity.x * 0.97f * Time.deltaTime, 0, -entity.body.velocity.z * 0.97f * Time.deltaTime), ForceMode.VelocityChange);
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetButtonUp("Jump"))
         {
             if (timer < leastChargeForSkip)
             {

@@ -25,7 +25,7 @@ public class SkeletonJumpState : SkeletonState
 
     public override void PlayerUpdate()
     {
-        entity.Movement();
+        Controls();
         if (timer > minTimeSpent && entity.IsGrounded())
         {
             ExitState(entity.idleState);
@@ -52,5 +52,12 @@ public class SkeletonJumpState : SkeletonState
             return;
         }
         timer += Time.deltaTime;
+    }
+
+    public override void Controls()
+    {
+        if (entity.frozen) return;
+
+        entity.Movement();
     }
 }
