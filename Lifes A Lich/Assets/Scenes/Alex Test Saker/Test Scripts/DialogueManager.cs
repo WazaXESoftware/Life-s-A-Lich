@@ -14,29 +14,40 @@ public class DialogueManager : MonoBehaviour
 
     public static bool GameIsPaused = false;
 
+    public Queue<string> names;
     public Queue<string> sentences;
+
+    //private EventHandler eventHandler;
     void Start()
     {
+        //eventHandler = FindObjectOfType<EventHandler>();
+        names = new Queue<string>();
         sentences = new Queue<string>();
     }
 
 
-
-
     public void StartDialogue(Dialogue dialogue)
     {
+        //eventHandler.onFreeze();
+
         dialogueBox.SetActive(true);
 
-            nameText.text = dialogue.name;
+        //nameText.text = dialogue.names;
 
-            sentences.Clear();
+        names.Clear();
+        sentences.Clear();
 
-            foreach (string sentence in dialogue.sentences)
-            {
-                sentences.Enqueue(sentence);
-            }
+        foreach (string name in dialogue.names)
+        {
+            names.Enqueue(name);
+        }
 
-            DisplayNextSentence();
+        foreach (string sentence in dialogue.sentences)
+        {
+            sentences.Enqueue(sentence);
+        }
+
+        DisplayNextSentence();
     }
 
     public void DisplayNextSentence()
@@ -46,6 +57,8 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
+        string name = names.Dequeue();
+        nameText.text = name;
 
         string sentence = sentences.Dequeue();
         dialogueText.text = sentence;
@@ -54,6 +67,6 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         dialogueBox.SetActive(false);
-        
+        //eventHandler.onUnFreeze();
     }
 }

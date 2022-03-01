@@ -11,7 +11,6 @@ public class DialogueTrigger : MonoBehaviour
     public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-
     }
 
     private void OnTriggerEnter(Collider other)
@@ -20,7 +19,6 @@ public class DialogueTrigger : MonoBehaviour
         {
             TriggerDialogue();
             dialogueOver = true;
-
         }
     }
 }
