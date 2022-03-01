@@ -19,6 +19,17 @@ public class Skeleton : Entity3
     public SkeletonRebuildState rebuildState = new SkeletonRebuildState();
 
 
+    public void Awake()
+    {
+        idleState.OnValidate(this);
+        walkState.OnValidate(this);
+        jumpState.OnValidate(this);
+        fallState.OnValidate(this);
+        actionState.OnValidate(this);
+        collapsedState.OnValidate(this);
+        rebuildState.OnValidate(this);
+    }
+
     public void OnValidate()
     {
         idleState.OnValidate(this);

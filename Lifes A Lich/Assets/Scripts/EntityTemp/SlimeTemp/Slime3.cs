@@ -21,6 +21,15 @@ public class Slime3 : Entity3
     public SlimeActionState2 actionState = new SlimeActionState2();
     public SlimeConfusedState2 confusedState = new SlimeConfusedState2();
 
+    public void Awake()
+    {
+        idleState.OnValidate(this);
+        chargeState.OnValidate(this);
+        jumpState.OnValidate(this);
+        actionState.OnValidate(this);
+        confusedState.OnValidate(this);
+    }
+
     public void OnValidate()
     {
         idleState.OnValidate(this);
