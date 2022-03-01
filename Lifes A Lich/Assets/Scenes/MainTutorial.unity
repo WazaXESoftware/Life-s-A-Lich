@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 10.868523, g: 8.411079, b: 5.7677913, a: 1}
+  m_IndirectSpecularColor: {r: 11.128746, g: 8.5919, b: 5.903597, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5411,6 +5411,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 3895
   cameraMain: {fileID: 0}
+  frozen: 0
   moveSpeed: 30
   velocityCap: 3
   possessRange: 2
@@ -20016,6 +20017,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 3895
   cameraMain: {fileID: 0}
+  frozen: 0
   moveSpeed: 30
   velocityCap: 3
   possessRange: 2
@@ -22080,7 +22082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1217579936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25219,6 +25221,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   cameraMain: {fileID: 0}
+  frozen: 0
   moveSpeed: 2
   velocityCap: 10
   possessRange: 2
@@ -25639,8 +25642,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.6932682, y: 22.412022, z: 6.956663}
-  m_Center: {x: -2.935487, y: -6.570257, z: 1.5211725}
+  m_Size: {x: 1.5014436, y: 22.412022, z: 7.5051947}
+  m_Center: {x: -2.8395748, y: -6.570257, z: 1.7954383}
 --- !u!1001 &1460857129
 PrefabInstance:
   m_ObjectHideFlags: 0
