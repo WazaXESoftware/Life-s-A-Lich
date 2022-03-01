@@ -11,7 +11,7 @@ public class SlimeIdleState2 : SlimeState2
     {
         base.EnterState();
         //entity.chargeTimer = 0f;
-        entityCollider = entity.GetComponent<SphereCollider>();
+        //entityCollider = entity.GetComponent<SphereCollider>();
         oneFrame = false;
         entity.animator.SetBool("IsIdle", true);
     }
@@ -28,15 +28,6 @@ public class SlimeIdleState2 : SlimeState2
 
         if (!entity.IsGrounded()) ExitState(entity.jumpState);
 
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Action();
-        }
-        if (Input.GetButtonDown("Fire2"))
-        {
-            Possess();
-        }
-
         oneFrame = true;
     }
 
@@ -44,13 +35,25 @@ public class SlimeIdleState2 : SlimeState2
     {
         if (entity.frozen) return;
 
-        if (!Input.GetButton("Jump"))
+        if (Input.GetKey(KeyCode.Space) == false && Input.GetKey("joystick button 0") == false)
         {
             entity.Movement();
         }
         else
         {
             ExitState(entity.chargeState);
+            return;
+        }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Action();
+            return;
+        }
+        if (Input.GetButtonDown("Fire2"))
+        {
+            Possess();
+            return;
         }
     }
 
