@@ -21,8 +21,6 @@ public class DialogueManager : MonoBehaviour
     }
 
 
-
-
     public void StartDialogue(Dialogue dialogue)
     {
         dialogueBox.SetActive(true);

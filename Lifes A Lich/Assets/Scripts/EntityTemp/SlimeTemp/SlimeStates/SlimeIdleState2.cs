@@ -10,7 +10,6 @@ public class SlimeIdleState2 : SlimeState2
     public override void EnterState()
     {
         base.EnterState();
-        //entity.chargeTimer = 0f;
         entityCollider = entity.GetComponent<SphereCollider>();
         oneFrame = false;
         entity.animator.SetBool("IsIdle", true);

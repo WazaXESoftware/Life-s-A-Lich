@@ -29,8 +29,8 @@ public class Entity3 : MonoBehaviour
         if (eventHandler == null) Debug.LogWarning("Entity3: Scene is missing an EventHandler.");
         else
         {
-            eventHandler.OnFreeze += Freeze;
-            eventHandler.OnUnFreeze += UnFreeze;
+            eventHandler.onFreeze += Freeze;
+            eventHandler.onUnFreeze += UnFreeze;
         }
     }
 
