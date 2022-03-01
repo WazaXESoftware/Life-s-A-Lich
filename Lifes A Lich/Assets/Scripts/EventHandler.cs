@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EventHandler : MonoBehaviour
 {
-    public event Action OnFreeze;
-    public event Action OnUnFreeze;
+    public UnityAction onFreeze = delegate { };
+    public UnityAction onUnFreeze = delegate { };
 }
