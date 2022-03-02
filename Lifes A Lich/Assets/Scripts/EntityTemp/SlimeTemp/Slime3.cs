@@ -9,6 +9,7 @@ public class Slime3 : Entity3
     //[Range(0.3f, 3f)] public float skipMaxChargeTime = 2f;
     //[Range(0f, 3f)] public float leastChargeForSkip = 0.1f;
     [Range(1f, 20f)] public float skipForceY = 6f;
+    [Range(1f, 10f)] public float chargeAmplifier = 3f;
     [Range(0.1f, 20f)] public float skipForceX = 10f;
     //public float chargeTimer = 0f;
 
