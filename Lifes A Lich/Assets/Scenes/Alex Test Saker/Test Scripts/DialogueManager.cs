@@ -10,6 +10,10 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
 
+    public GameObject mortImage;
+    public GameObject slimeImage;
+    public GameObject skeletonImage;
+
     public GameObject dialogueBox;
 
     public static bool GameIsPaused = false;
@@ -62,6 +66,45 @@ public class DialogueManager : MonoBehaviour
 
         string sentence = sentences.Dequeue();
         dialogueText.text = sentence;
+
+        CharacterImage();
+    }
+
+    public void CharacterImage()
+    {
+        if (nameText.text == "Mort")
+        {
+            ShowMortImage();
+        }
+        else if(nameText.text == "Slime")
+        {
+            ShowSlimeImage();
+        }
+        else if (nameText.text == "Skeleton")
+        {
+            ShowSkeletonImage();
+        }
+    }
+
+    public void ShowMortImage()
+    {
+        mortImage.SetActive(true);
+        slimeImage.SetActive(false);
+        skeletonImage.SetActive(false);
+    }
+
+    public void ShowSlimeImage()
+    {
+        mortImage.SetActive(false);
+        slimeImage.SetActive(true);
+        skeletonImage.SetActive(false);
+    }
+
+    public void ShowSkeletonImage()
+    {
+        mortImage.SetActive(false);
+        slimeImage.SetActive(false);
+        skeletonImage.SetActive(true);
     }
 
     public void EndDialogue()
