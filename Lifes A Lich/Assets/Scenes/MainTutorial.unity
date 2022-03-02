@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 10.868988, g: 8.412106, b: 5.76884, a: 1}
+  m_IndirectSpecularColor: {r: 10.853717, g: 8.399956, b: 5.759876, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5255,14 +5255,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 279186099}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 17.62, y: 2.01, z: 2.15}
+  m_LocalRotation: {x: -0, y: -0.16096497, z: -0, w: -0.9869601}
+  m_LocalPosition: {x: 14.73, y: 1.37, z: -2.15}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 2097417517}
   m_Father: {fileID: 0}
   m_RootOrder: 61
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 378.526, z: 0}
 --- !u!1001 &282414218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15766,7 +15766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Mort
+    names: []
     sentences:
     - After eons of captivity, I am finally free from that wretched throne room!
     - "Though it seems I cannot do a great many things apart from moving around (W,A,S,D) 
@@ -40979,7 +40979,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2456565728905136149, guid: 0f40b569c6e250b499ff2114a5e55e6b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.31
+      value: 18.36
       objectReference: {fileID: 0}
     - target: {fileID: 2456565728905136149, guid: 0f40b569c6e250b499ff2114a5e55e6b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -40987,19 +40987,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2456565728905136149, guid: 0f40b569c6e250b499ff2114a5e55e6b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.4
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: 2456565728905136149, guid: 0f40b569c6e250b499ff2114a5e55e6b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7071068
+      value: -0.6746744
       objectReference: {fileID: 0}
     - target: {fileID: 2456565728905136149, guid: 0f40b569c6e250b499ff2114a5e55e6b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2456565728905136149, guid: 0f40b569c6e250b499ff2114a5e55e6b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0.73811555
       objectReference: {fileID: 0}
     - target: {fileID: 2456565728905136149, guid: 0f40b569c6e250b499ff2114a5e55e6b, type: 3}
       propertyPath: m_LocalRotation.z
@@ -41011,7 +41011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2456565728905136149, guid: 0f40b569c6e250b499ff2114a5e55e6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 270
+      value: 264.858
       objectReference: {fileID: 0}
     - target: {fileID: 2456565728905136149, guid: 0f40b569c6e250b499ff2114a5e55e6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
