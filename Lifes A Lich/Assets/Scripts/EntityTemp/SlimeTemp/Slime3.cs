@@ -13,7 +13,7 @@ public class Slime3 : Entity3
     [Range(0.1f, 20f)] public float skipForceX = 10f;
     //public float chargeTimer = 0f;
 
-    private SlimeState2 state;
+    [HideInInspector]public SlimeState2 state;
 
     [Header("States")]
     public SlimeIdleState2 idleState = new SlimeIdleState2();

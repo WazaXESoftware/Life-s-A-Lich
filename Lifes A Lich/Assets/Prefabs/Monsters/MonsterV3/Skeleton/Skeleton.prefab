@@ -53,6 +53,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 24371
   cameraMain: {fileID: 0}
+  frozen: 0
   moveSpeed: 15
   velocityCap: 7
   possessRange: 2
@@ -73,9 +74,13 @@ MonoBehaviour:
     timer: 0
   actionState:
     entity: {fileID: 3838953694961227014}
+    actionTime: 1
   collapsedState:
     entity: {fileID: 3838953694961227014}
     confusedTime: 1
+  rebuildState:
+    entity: {fileID: 3838953694961227014}
+    rebuildTime: 1.7
 --- !u!136 &3838953694961227129
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -100,8 +105,8 @@ CapsuleCollider:
   m_Material: {fileID: 13400000, guid: 22c22e70a2e80334893d09553eccaf29, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.34
-  m_Height: 0.68
+  m_Radius: 0.33
+  m_Height: 0.66
   m_Direction: 1
   m_Center: {x: 0, y: 0.3, z: 0}
 --- !u!54 &3838953694961227131

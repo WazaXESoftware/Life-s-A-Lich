@@ -20,7 +20,7 @@ public class SkeletonIdleState : SkeletonState
     public override void PlayerUpdate()
     {
         Controls();
-        
+        if (entity.state != this) return;
 
         if (!entity.IsGrounded())
         {

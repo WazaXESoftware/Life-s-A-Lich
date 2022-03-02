@@ -26,6 +26,8 @@ public class SkeletonJumpState : SkeletonState
     public override void PlayerUpdate()
     {
         Controls();
+        if (entity.state != this) return;
+
         if (timer > minTimeSpent && entity.IsGrounded())
         {
             ExitState(entity.idleState);

@@ -25,8 +25,13 @@ public class SlimeIdleState2 : SlimeState2
     public override void PlayerUpdate()
     {
         Controls();
+        if (entity.state != this) return;
 
-        if (!entity.IsGrounded()) ExitState(entity.jumpState);
+        if (!entity.IsGrounded())
+        {
+            ExitState(entity.jumpState);
+            return;
+        }
 
         oneFrame = true;
     }

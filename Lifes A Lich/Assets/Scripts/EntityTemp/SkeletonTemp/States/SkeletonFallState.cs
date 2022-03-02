@@ -17,7 +17,9 @@ public class SkeletonFallState : SkeletonState
 
     public override void PlayerUpdate()
     {
-        entity.Movement();
+        Controls();
+        if (entity.state != this) return;
+
         if (entity.IsGrounded())
         {
             ExitState(entity.idleState);
@@ -32,5 +34,12 @@ public class SkeletonFallState : SkeletonState
             ExitState(entity.idleState);
             return;
         }
+    }
+
+    public override void Controls()
+    {
+        if (entity.frozen) return;
+
+        entity.Movement();
     }
 }

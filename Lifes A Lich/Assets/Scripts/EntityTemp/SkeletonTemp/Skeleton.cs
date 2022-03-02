@@ -8,7 +8,7 @@ public class Skeleton : Entity3
 
     public CapsuleCollider feetCollider;
 
-    SkeletonState state;
+    [HideInInspector]public SkeletonState state;
 
     public SkeletonIdleState idleState = new SkeletonIdleState();
     public SkeletonWalkState walkState = new SkeletonWalkState();
@@ -70,7 +70,7 @@ public class Skeleton : Entity3
 
     public bool IsGrounded()
     {
-        return Physics.CheckSphere(feetCollider.bounds.center - new Vector3(0, 0.05f * transform.localScale.y, 0), (feetCollider.radius * transform.localScale.y) - 0.025f * transform.localScale.y, layerMask, QueryTriggerInteraction.Ignore);
+        return Physics.CheckSphere(feetCollider.bounds.center - new Vector3(0, 0.025f * transform.localScale.y, 0), (feetCollider.radius * transform.localScale.y) + 0.015f * transform.localScale.y, layerMask, QueryTriggerInteraction.Ignore);
     }
 
     protected override void OnDrawGizmosSelected()
@@ -78,7 +78,7 @@ public class Skeleton : Entity3
         Gizmos.DrawWireSphere(transform.position, possessRange);
 
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(feetCollider.bounds.center - new Vector3(0, 0.05f * transform.localScale.y, 0), (feetCollider.radius * transform.localScale.y) - 0.025f * transform.localScale.y);
+        Gizmos.DrawWireSphere(feetCollider.bounds.center - new Vector3(0, 0.025f * transform.localScale.y, 0), (feetCollider.radius * transform.localScale.y) + 0.015f * transform.localScale.y);
         Gizmos.color = Color.white;
     }
 }
