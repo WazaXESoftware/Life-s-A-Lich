@@ -23860,7 +23860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactableAudio:
-    ButtonEvent: event:/LJUD/Interactables/Int_Button
+    buttonEvent: event:/LJUD/Interactables/Int_Button
 --- !u!1001 &1233953190
 PrefabInstance:
   m_ObjectHideFlags: 0
