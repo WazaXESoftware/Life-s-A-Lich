@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 10.892899, g: 8.420588, b: 5.773281, a: 1}
+  m_IndirectSpecularColor: {r: 10.852801, g: 8.399998, b: 5.7607408, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -630,6 +630,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1469510736}
+  - {fileID: 251285489}
+  - {fileID: 1579716591}
+  - {fileID: 2145650775}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4740,6 +4743,73 @@ Transform:
   m_Father: {fileID: 2127963293}
   m_RootOrder: 98
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &251285488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 251285489}
+  - component: {fileID: 251285491}
+  - component: {fileID: 251285490}
+  m_Layer: 0
+  m_Name: Water Room
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &251285489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251285488}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -24.5, y: 3.51, z: -2.02}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 17188519}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &251285490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251285488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a37a893ba86c494882fd9cd39508f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Mort
+    - Mort
+    sentences:
+    - "A thousand years of arcane and mechanical advancements\u2026 yet they still
+      failed to keep my plumbing in check."
+    - ' I better not fall into that water, only the Gods know what eldritch materials
+      may have contaminated it.'
+  dialogueOver: 0
+--- !u!65 &251285491
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251285488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.740859, y: 10.267345, z: 8.772968}
+  m_Center: {x: -0.28881025, y: 0.3407669, z: -0.4836564}
 --- !u!1001 &251820138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5883,14 +5953,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 279186099}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 17.62, y: 2.01, z: 2.15}
+  m_LocalRotation: {x: -0, y: 0.08422972, z: -0, w: 0.9964464}
+  m_LocalPosition: {x: 16.44, y: 6.76, z: -1.96}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 2097417517}
   m_Father: {fileID: 0}
   m_RootOrder: 66
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 729.663, z: 0}
 --- !u!1001 &282414218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27566,15 +27636,20 @@ MonoBehaviour:
     - Slime
     - Mort
     - Slime
+    - Mort
+    - Slime
     sentences:
     - "You there, Oozeling! Bow before my greatness! It is I, Mortiem X\u2019ul,
       Vanquisher of Death, Devourer of Hope and Herald of Calamities! "
     - But you may refer to me as Mort, the full title does get rather tedious after
       a while.
-    - Blip, Glamp, Squish!
+    - <i>*Gloop, Glamp, Squish!*</i>
     - My apologies, my good Slime! I mistook you for a simple cretin, unaware of
       your intellectual standing.
-    - Squish!
+    - <i>*Squish!*</i>
+    - Though I seem to have lost most of my Lich powers, I am still able to Possess
+      minor creatures. No offense, Master Slime.
+    - <i>*...Gloop.*</i>
   dialogueOver: 0
 --- !u!65 &1469510738
 BoxCollider:
@@ -29814,6 +29889,70 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 283ff56620e8cbd4ab6ebcde1dd6c029, type: 3}
+--- !u!1 &1579716590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1579716591}
+  - component: {fileID: 1579716593}
+  - component: {fileID: 1579716592}
+  m_Layer: 0
+  m_Name: Farewell Slime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1579716591
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579716590}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -75.46, y: 6.13, z: 0.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 17188519}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1579716592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579716590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a37a893ba86c494882fd9cd39508f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Mort
+    sentences:
+    - "I\u2019m going to miss that Slime. Smarter than the average humanoid, really.
+      Quite a philosopher at times as well."
+  dialogueOver: 0
+--- !u!65 &1579716593
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579716590}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.0849066, y: 12.0441, z: 7.5829244}
+  m_Center: {x: -0.6167865, y: 2.0861664, z: 0.11136651}
 --- !u!1 &1580346611 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5f0f3c98bd2e9134c8fb8167cfa2d592, type: 3}
@@ -43165,6 +43304,78 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb83ad10926df944fa23da7dc14a5009, type: 3}
+--- !u!1 &2145650774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2145650775}
+  - component: {fileID: 2145650777}
+  - component: {fileID: 2145650776}
+  m_Layer: 0
+  m_Name: We Meet Again Slime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2145650775
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145650774}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -75.46, y: 6.13, z: -18.18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 17188519}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2145650776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145650774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a37a893ba86c494882fd9cd39508f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Mort
+    - Slime
+    - Mort
+    - Slime
+    - Mort
+    sentences:
+    - What is this? Another Slime?
+    - <i>*Squish! Gloop!*</i>
+    - ...So you're telling me that you are all one and the same? A collective hive
+      mind split into several bodies?
+    - <i>*Squash!*</i>
+    - Interesting...
+  dialogueOver: 0
+--- !u!65 &2145650777
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145650774}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.0849066, y: 12.0441, z: 7.5829244}
+  m_Center: {x: -0.6167865, y: 2.0861664, z: 0.11136651}
 --- !u!1001 &745318030091350088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43308,7 +43519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2456565728905136149, guid: 0f40b569c6e250b499ff2114a5e55e6b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.4
+      value: 0.39
       objectReference: {fileID: 0}
     - target: {fileID: 2456565728905136149, guid: 0f40b569c6e250b499ff2114a5e55e6b, type: 3}
       propertyPath: m_LocalRotation.w
