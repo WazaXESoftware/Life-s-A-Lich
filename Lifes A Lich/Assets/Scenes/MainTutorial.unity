@@ -23861,6 +23861,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableAudio:
     buttonEvent: event:/LJUD/Interactables/Int_Button
+  characterAudio:
+    slimeStretch: event:/LJUD/Characters/Slime/Slime_Stretch
 --- !u!1001 &1233953190
 PrefabInstance:
   m_ObjectHideFlags: 0

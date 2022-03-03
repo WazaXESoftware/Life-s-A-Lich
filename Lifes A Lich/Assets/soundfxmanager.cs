@@ -21,7 +21,24 @@ public class soundfxmanager : MonoBehaviour
         }
     }
 
+    [Serializable]
+    public class CharacterAudio
+    {
+        [EventRef]
+        public string slimeStretch;
+
+
+
+
+
+        public void SlimeStretch(GameObject audioObject)
+        {
+            RuntimeManager.PlayOneShotAttached(slimeStretch, audioObject);
+        }
+    }
+
     public InteractableAudio interactableAudio;
+    public CharacterAudio characterAudio;
 
 
     // Start is called before the first frame update
