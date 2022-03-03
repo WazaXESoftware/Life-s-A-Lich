@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 10.891064, g: 8.418655, b: 5.7717013, a: 1}
+  m_IndirectSpecularColor: {r: 10.852801, g: 8.399998, b: 5.7607408, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5924,6 +5924,7 @@ MonoBehaviour:
   velocityCap: 3
   possessRange: 2
   host: {fileID: 0}
+  eyes: {fileID: 0}
   spawnOffset: {x: 0, y: 1, z: 0}
   player: 0
   inPossessable: 0
@@ -27052,6 +27053,7 @@ MonoBehaviour:
   velocityCap: 10
   possessRange: 2
   host: {fileID: 0}
+  eyes: {fileID: 0}
   spawnOffset: {x: 0, y: 1, z: 0}
   player: 0
   inPossessable: 0
@@ -27687,7 +27689,7 @@ MonoBehaviour:
     - Mort
     - Slime
     sentences:
-    - "You there, Oozeling! Bow before my greatness! It is I, Mortiem X\u2019ul,
+    - "You there, Oozeling! Bow before my greatness! It is I, Mortiem X\u2019ul -
       Vanquisher of Death, Devourer of Hope and Herald of Calamities! "
     - But you may refer to me as Mort, the full title does get rather tedious after
       a while.
@@ -31499,6 +31501,7 @@ MonoBehaviour:
   velocityCap: 3
   possessRange: 2
   host: {fileID: 0}
+  eyes: {fileID: 0}
   spawnOffset: {x: 0, y: 1, z: 0}
   player: 0
   inPossessable: 0
