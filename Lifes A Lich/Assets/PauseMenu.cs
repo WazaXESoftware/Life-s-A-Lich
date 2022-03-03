@@ -6,10 +6,14 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
+
     public GameObject PauseMenuUI;
+
+
 
     private void Start()
     {
+
         Cursor.visible = false;
     }
 
@@ -28,6 +32,7 @@ public class PauseMenu : MonoBehaviour
             }
 
             Cursor.visible = true;
+
         }
 
     }
@@ -38,6 +43,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
         Cursor.visible = false;
+
     }
 
     void Pause()
@@ -47,6 +53,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
 
         Cursor.visible = true;
+
     }
 
     public void LoadMenu()
@@ -61,5 +68,6 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("Quitting Game");
         Application.Quit();
     }
-
 }
+
+
