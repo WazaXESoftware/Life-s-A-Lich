@@ -9,6 +9,7 @@ public class Entity3 : MonoBehaviour
     public LayerMask layerMask;
 
     private EventHandler eventHandler;
+    [HideInInspector]public soundfxmanager sfxmanager;
     [HideInInspector] public Camera cameraMain;
     protected Vector3 forward;
     protected Vector3 right;
@@ -27,12 +28,14 @@ public class Entity3 : MonoBehaviour
     {
         cameraMain = Camera.main;
         eventHandler = FindObjectOfType<EventHandler>();
+        sfxmanager = FindObjectOfType<soundfxmanager>();
         if (eventHandler == null) Debug.LogWarning("Entity3: Scene is missing an EventHandler.");
         else
         {
             eventHandler.onFreeze += Freeze;
             eventHandler.onUnFreeze += UnFreeze;
         }
+        if (sfxmanager == null) Debug.LogWarning("Entity3: Scene is missing an SFX Manager.");
     }
 
     protected virtual void Update()

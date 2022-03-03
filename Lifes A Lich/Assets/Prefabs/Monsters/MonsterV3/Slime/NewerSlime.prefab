@@ -90,7 +90,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &948698836639025003
 Transform:
   m_ObjectHideFlags: 0
@@ -350,7 +350,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2158016544567894543}
   m_LocalRotation: {x: 0.13187957, y: -0, z: -0, w: 0.9912658}
-  m_LocalPosition: {x: 0.124299996, y: -0.1852, z: -0.4154}
+  m_LocalPosition: {x: 0.124299996, y: -0.188, z: -0.405}
   m_LocalScale: {x: 0.1019788, y: 0.09, z: 0.1019788}
   m_Children:
   - {fileID: 3749203464187124580}
@@ -447,7 +447,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3722422030944692359}
   m_LocalRotation: {x: 0.13187957, y: -0, z: -0, w: 0.9912658}
-  m_LocalPosition: {x: -0.169, y: -0.1976, z: -0.4354}
+  m_LocalPosition: {x: -0.169, y: -0.2022, z: -0.4184}
   m_LocalScale: {x: 0.1019788, y: 0.09, z: 0.1019788}
   m_Children:
   - {fileID: 103589606669207827}
@@ -787,6 +787,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 3895
+  sfxmanager: {fileID: 0}
   cameraMain: {fileID: 0}
   frozen: 0
   moveSpeed: 13
