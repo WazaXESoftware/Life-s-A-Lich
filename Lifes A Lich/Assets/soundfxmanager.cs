@@ -27,13 +27,19 @@ public class soundfxmanager : MonoBehaviour
         [EventRef]
         public string slimeStretch;
 
+        [EventRef]
+        public string slimeTransfer;
 
 
-
+        
 
         public void SlimeStretch(GameObject audioObject)
         {
             RuntimeManager.PlayOneShotAttached(slimeStretch, audioObject);
+        }
+        public void SlimeTransfer(GameObject audioObject)
+        {
+            RuntimeManager.PlayOneShotAttached(slimeTransfer, audioObject);
         }
     }
 
