@@ -18,6 +18,7 @@ public class Entity3 : MonoBehaviour
     [Range(0f, 20f)] public float velocityCap = 10f;
     [Range(0f, 10f)] public float possessRange = 2f;
     [Tooltip("The wisp that spawns when exiting a monster.")] public GameObject host = null;
+    [Tooltip("The eyes that light up when a monster is currently possessed")]public GameObject eyes;
     [Tooltip("The offset of which the wisp is spawned when exiting a monster.")] public Vector3 spawnOffset = new Vector3(0, 1, 0);
     public bool player = false;
     [HideInInspector] public bool inPossessable = false;
@@ -48,12 +49,12 @@ public class Entity3 : MonoBehaviour
 
     public void Freeze()
     {
-
+        frozen = true;
     }
 
     public void UnFreeze()
     {
-
+        frozen = false;
     }
 
     public Entity3 FindClosestEntity()
@@ -100,6 +101,7 @@ public class Entity3 : MonoBehaviour
             player = true;
             gameObject.tag = "Player";
             gameObject.layer = 13;
+            if (eyes != null) eyes.SetActive(true);
             this.host = host;
             host.SetActive(false);
             host.transform.position = transform.position;
@@ -113,6 +115,7 @@ public class Entity3 : MonoBehaviour
         host.transform.position = transform.position + spawnOffset;
         host.SetActive(true);
         host.GetComponent<Entity3>().player = true;
+        if (eyes != null) eyes.SetActive(false);
         host = null;
         player = false;
         gameObject.tag = "Untagged";

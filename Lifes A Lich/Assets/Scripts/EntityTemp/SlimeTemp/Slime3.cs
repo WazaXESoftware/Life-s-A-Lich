@@ -82,6 +82,7 @@ public class Slime3 : Entity3
             player = true;
             gameObject.tag = "Player";
             gameObject.layer = 12;
+            if (eyes != null) eyes.SetActive(true);
             this.host = host;
             host.SetActive(false);
             host.transform.position = transform.position;
@@ -95,6 +96,7 @@ public class Slime3 : Entity3
         host.transform.position = transform.position + spawnOffset;
         host.SetActive(true);
         host.GetComponent<Entity3>().player = true;
+        if (eyes != null) eyes.SetActive(false);
         host = null;
         player = false;
         gameObject.tag = "Untagged";
