@@ -11,7 +11,14 @@ public class soundfxmanager : MonoBehaviour
     public class InteractableAudio
     {
         [EventRef]
-        public string ButtonEvent;
+        public string buttonEvent;
+
+
+
+        public void ButtonEvent(GameObject audioObject)
+        {
+            RuntimeManager.PlayOneShotAttached(buttonEvent, audioObject);
+        }
     }
 
     public InteractableAudio interactableAudio;
