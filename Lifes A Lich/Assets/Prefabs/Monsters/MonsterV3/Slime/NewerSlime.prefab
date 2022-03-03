@@ -44,8 +44,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.6299356, y: 0.20013523, z: 1.3843546}
-  m_Center: {x: -0.083905995, y: 0.39993238, z: -0.1921773}
+  m_Size: {x: 1.9243469, y: 0.20013523, z: 2.1264362}
+  m_Center: {x: -0.060012817, y: 0.39993238, z: -0.11550808}
 --- !u!54 &257338865
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -799,7 +799,7 @@ MonoBehaviour:
   inPossessable: 0
   skipForceY: 2
   chargeAmplifier: 3
-  skipForceX: 2.2
+  skipForceX: 1.5
   state:
     entity: {fileID: 0}
   idleState:
