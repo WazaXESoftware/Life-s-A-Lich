@@ -437,10 +437,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4883714598601526587, guid: df36cd471effb0447aecb3185abdc02f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.1469
-      objectReference: {fileID: 0}
     - target: {fileID: 8557836600710728371, guid: df36cd471effb0447aecb3185abdc02f, type: 3}
       propertyPath: m_Name
       value: NewerSlime
@@ -489,6 +485,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8557836602467811418, guid: df36cd471effb0447aecb3185abdc02f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8bf1a23dfc38b6146b346a151b4c9165, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df36cd471effb0447aecb3185abdc02f, type: 3}
 --- !u!1 &436179886
