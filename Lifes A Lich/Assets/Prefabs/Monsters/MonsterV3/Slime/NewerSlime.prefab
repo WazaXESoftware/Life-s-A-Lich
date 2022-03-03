@@ -790,7 +790,7 @@ MonoBehaviour:
   sfxmanager: {fileID: 0}
   cameraMain: {fileID: 0}
   frozen: 0
-  moveSpeed: 13
+  moveSpeed: 30
   velocityCap: 3
   possessRange: 2
   host: {fileID: 0}
@@ -798,16 +798,16 @@ MonoBehaviour:
   spawnOffset: {x: 0, y: 1, z: 0}
   player: 0
   inPossessable: 0
-  skipForceY: 6
+  skipForceY: 2
   chargeAmplifier: 3
-  skipForceX: 5.5
+  skipForceX: 2.2
   state:
     entity: {fileID: 0}
   idleState:
     entity: {fileID: 8557836600710728374}
   chargeState:
     entity: {fileID: 8557836600710728374}
-    skipMaxChargeTime: 2
+    skipMaxChargeTime: 1
     leastChargeForSkip: 0.1
   jumpState:
     entity: {fileID: 8557836600710728374}
