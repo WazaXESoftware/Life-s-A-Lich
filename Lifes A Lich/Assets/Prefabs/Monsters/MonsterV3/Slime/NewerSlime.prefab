@@ -44,8 +44,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.6299356, y: 0.20013523, z: 1.3843546}
-  m_Center: {x: -0.083905995, y: 0.39993238, z: -0.1921773}
+  m_Size: {x: 1.9243469, y: 0.20013523, z: 2.1264362}
+  m_Center: {x: -0.060012817, y: 0.39993238, z: -0.11550808}
 --- !u!54 &257338865
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -90,7 +90,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &948698836639025003
 Transform:
   m_ObjectHideFlags: 0
@@ -744,7 +744,6 @@ GameObject:
   - component: {fileID: 8557836600710728373}
   - component: {fileID: 8557836600710728374}
   - component: {fileID: 8557836600710728375}
-  - component: {fileID: 8557836600710728368}
   - component: {fileID: 8557836600710728369}
   - component: {fileID: 8557836600710728370}
   m_Layer: 0
@@ -762,7 +761,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8557836600710728371}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 1.416, z: -4.505}
+  m_LocalPosition: {x: 0, y: 1.416, z: -4.556}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 8163111261840515629}
@@ -790,24 +789,24 @@ MonoBehaviour:
   sfxmanager: {fileID: 0}
   cameraMain: {fileID: 0}
   frozen: 0
-  moveSpeed: 13
+  moveSpeed: 30
   velocityCap: 3
   possessRange: 2
   host: {fileID: 0}
-  eyes: {fileID: 864321546263445896}
+  eyes: {fileID: 0}
   spawnOffset: {x: 0, y: 1, z: 0}
   player: 0
   inPossessable: 0
-  skipForceY: 6
+  skipForceY: 2
   chargeAmplifier: 3
-  skipForceX: 5.5
+  skipForceX: 1.5
   state:
     entity: {fileID: 0}
   idleState:
     entity: {fileID: 8557836600710728374}
   chargeState:
     entity: {fileID: 8557836600710728374}
-    skipMaxChargeTime: 2
+    skipMaxChargeTime: 1
     leastChargeForSkip: 0.1
   jumpState:
     entity: {fileID: 8557836600710728374}
@@ -830,20 +829,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.9493546
   m_Center: {x: -0.0347929, y: -0.5821272, z: 4.417824e-11}
---- !u!136 &8557836600710728368
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8557836600710728371}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &8557836600710728369
 CapsuleCollider:
   m_ObjectHideFlags: 0

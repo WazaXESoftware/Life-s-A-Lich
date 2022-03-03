@@ -11,7 +11,7 @@ public class SlimeChargeState2 : SlimeState2
     public override void EnterState()
     {
         entity.animator.SetTrigger("Charging");
-        entity.sfxmanager.characterAudio.SlimeStretch(entity.gameObject);
+        if (entity.sfxmanager != null) entity.sfxmanager.characterAudio.SlimeStretch(entity.gameObject);
         timer = 0f;
     }
 
