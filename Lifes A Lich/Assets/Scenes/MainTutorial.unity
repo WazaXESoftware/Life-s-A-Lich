@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 10.873394, g: 8.414232, b: 5.770483, a: 1}
+  m_IndirectSpecularColor: {r: 10.851698, g: 8.395191, b: 5.7556667, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -28043,7 +28043,7 @@ MonoBehaviour:
     - My apologies, my good Slime! I mistook you for a simple cretin, unaware of
       your intellectual standing.
     - <i>*Squish!*</i>
-    - Though I seem to have lost most of my Lich powers, I am still able to Possess
+    - Though I seem to have lost most of my Lich powers, I am still able to <b><u>Possess</b></u>
       minor creatures. No offense, Master Slime.
     - <i>*...Gloop.*</i>
   dialogueOver: 0
@@ -44024,7 +44024,7 @@ MonoBehaviour:
     - ...So you're telling me that you are all one and the same? A collective hive
       mind split into several bodies?
     - <i>*Squash!*</i>
-    - Interesting...
+    - Fascinating...
   dialogueOver: 0
 --- !u!65 &2145650777
 BoxCollider:
