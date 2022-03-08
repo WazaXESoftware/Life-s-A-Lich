@@ -13,13 +13,33 @@ public class soundfxmanager : MonoBehaviour
         [EventRef]
         public string buttonEvent;
 
+        [EventRef]
+        public string doorEvent;
 
+        [EventRef]
+        public string platforminEvent;
+
+        [EventRef]
+        public string platformoutEvent;
 
         public void ButtonEvent(GameObject audioObject)
         {
             RuntimeManager.PlayOneShotAttached(buttonEvent, audioObject);
         }
+        public void DoorEvent(GameObject audioObject)
+        {
+            RuntimeManager.PlayOneShotAttached(doorEvent, audioObject);
+        }
+        public void PlatforminEvent(GameObject audioObject)
+        {
+            RuntimeManager.PlayOneShotAttached(platforminEvent, audioObject);
+        }
+        public void PlatformoutEvent(GameObject audioObject)
+        {
+            RuntimeManager.PlayOneShotAttached(platformoutEvent, audioObject);
+        }
     }
+
 
     [Serializable]
     public class CharacterAudio
@@ -28,10 +48,17 @@ public class soundfxmanager : MonoBehaviour
         public string slimeStretch;
 
         [EventRef]
+        public string slimeJump;
+
+        [EventRef]
         public string slimeTransfer;
 
+        [EventRef]
+        public string skeletonTransfer;
 
-        
+        [EventRef]
+        public string skeletonJump;
+
 
         public void SlimeStretch(GameObject audioObject)
         {
@@ -40,6 +67,18 @@ public class soundfxmanager : MonoBehaviour
         public void SlimeTransfer(GameObject audioObject)
         {
             RuntimeManager.PlayOneShotAttached(slimeTransfer, audioObject);
+        }
+        public void SkeletonTransfer(GameObject audioObject)
+        {
+            RuntimeManager.PlayOneShotAttached(skeletonTransfer, audioObject);
+        }
+        public void SlimeJump(GameObject audioObject)
+        {
+            RuntimeManager.PlayOneShotAttached(skeletonTransfer, audioObject);
+        }
+        public void SkeletonJump(GameObject audioObject)
+        {
+            RuntimeManager.PlayOneShotAttached(skeletonJump, audioObject);
         }
     }
 
