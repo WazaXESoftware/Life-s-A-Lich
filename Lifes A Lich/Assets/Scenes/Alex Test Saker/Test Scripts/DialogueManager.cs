@@ -21,10 +21,10 @@ public class DialogueManager : MonoBehaviour
     public Queue<string> names;
     public Queue<string> sentences;
 
-    //private EventHandler eventHandler;
+    private EventHandler eventHandler;
     void Start()
     {
-        //eventHandler = FindObjectOfType<EventHandler>();
+        eventHandler = FindObjectOfType<EventHandler>();
         names = new Queue<string>();
         sentences = new Queue<string>();
     }
@@ -32,11 +32,9 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        //eventHandler.onFreeze();
+        eventHandler.onFreeze();
 
         dialogueBox.SetActive(true);
-
-        //nameText.text = dialogue.names;
 
         names.Clear();
         sentences.Clear();
@@ -110,6 +108,6 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         dialogueBox.SetActive(false);
-        //eventHandler.onUnFreeze();
+        eventHandler.onUnFreeze();
     }
 }
