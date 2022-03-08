@@ -8,10 +8,11 @@ public class SlimeChargeState2 : SlimeState2
     [Range(0.3f, 3f)] public float skipMaxChargeTime = 2f;
     [Range(0f, 3f)] public float leastChargeForSkip = 0.1f;
     float timer = 0f;
+    bool sfx = false;
     public override void EnterState()
     {
         entity.animator.SetTrigger("Charging");
-        if (entity.sfxmanager != null) entity.sfxmanager.characterAudio.SlimeStretch(entity.gameObject);
+        sfx = false;
         timer = 0f;
     }
 
@@ -27,6 +28,12 @@ public class SlimeChargeState2 : SlimeState2
         {
             ExitState(entity.idleState);
             return;
+        }
+
+        if (timer > leastChargeForSkip && !sfx)
+        {
+            sfx = true;
+            if (entity.sfxmanager != null) entity.sfxmanager.characterAudio.SlimeStretch(entity.gameObject);
         }
 
         entity.body.AddForce(new Vector3(-entity.body.velocity.x * 0.97f * Time.deltaTime, 0, -entity.body.velocity.z * 0.97f * Time.deltaTime), ForceMode.VelocityChange);
