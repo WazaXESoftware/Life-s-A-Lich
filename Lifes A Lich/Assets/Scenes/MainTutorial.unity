@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 10.851698, g: 8.395191, b: 5.7556667, a: 1}
+  m_IndirectSpecularColor: {r: 10.909756, g: 8.433102, b: 5.7832656, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -24206,9 +24206,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableAudio:
     buttonEvent: event:/LJUD/Interactables/Int_Button
+    doorEvent: event:/LJUD/Interactables/Int_Door
+    platforminEvent: event:/LJUD/Interactables/Int_MovPlatform_in
+    platformoutEvent: event:/LJUD/Interactables/Int_MovPlatform_out
   characterAudio:
     slimeStretch: event:/LJUD/Characters/Slime/Slime_Stretch
-    slimeTransfer: 
+    slimeJump: event:/LJUD/Characters/Slime/Slime_Jump
+    slimeTransfer: event:/LJUD/Characters/Wisp/Wisp_Transfers/Transfer_Slime
+    skeletonTransfer: event:/LJUD/Characters/Wisp/Wisp_Transfers/Transfer_Skeleton
+    skeletonJump: event:/LJUD/Characters/Skeleton/Skeleton_Jump
+    skeletonImpact: event:/LJUD/Characters/Skeleton/Skeleton_Impact
 --- !u!1001 &1233953190
 PrefabInstance:
   m_ObjectHideFlags: 0

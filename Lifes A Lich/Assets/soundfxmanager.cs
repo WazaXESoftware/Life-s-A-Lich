@@ -59,6 +59,9 @@ public class soundfxmanager : MonoBehaviour
         [EventRef]
         public string skeletonJump;
 
+        [EventRef]
+        public string skeletonImpact;
+
 
         public void SlimeStretch(GameObject audioObject)
         {
@@ -80,7 +83,12 @@ public class soundfxmanager : MonoBehaviour
         {
             RuntimeManager.PlayOneShotAttached(skeletonJump, audioObject);
         }
+        public void SkeletonImpact(GameObject audioObject)
+        {
+            RuntimeManager.PlayOneShotAttached(skeletonImpact, audioObject);
+        }
     }
+
 
     public InteractableAudio interactableAudio;
     public CharacterAudio characterAudio;
