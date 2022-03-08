@@ -32,7 +32,11 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        eventHandler.onFreeze();
+        if(eventHandler != null)
+        {
+            eventHandler.onFreeze();
+        }
+        
 
         dialogueBox.SetActive(true);
 
