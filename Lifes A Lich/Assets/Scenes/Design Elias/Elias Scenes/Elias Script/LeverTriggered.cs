@@ -5,14 +5,16 @@ using UnityEngine;
 public class LeverTriggered : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+[SerializeField] Lever lever;
+[SerializeField] private Animator animationController;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if(lever.leverPulled == true){
+          animationController.SetBool("Triggered", true);
+        }
+        else if (lever.leverPulled == false){
+          animationController.SetBool("Triggered", false);
+        }
     }
 }
