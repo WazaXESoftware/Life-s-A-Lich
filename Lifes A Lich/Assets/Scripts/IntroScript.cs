@@ -35,7 +35,7 @@ public class IntroScript : MonoBehaviour
         if (firstClick) StartCoroutine(Transition());
         else
         {
-            intromusic.SetParameter("Next Slider", 0);
+            intromusic.SetParameter("Next Slider", 1);
             firstClick = true;
         }
     }
