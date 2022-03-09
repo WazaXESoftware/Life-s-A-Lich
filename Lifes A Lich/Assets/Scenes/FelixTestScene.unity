@@ -441,6 +441,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8557836600710728369, guid: df36cd471effb0447aecb3185abdc02f, type: 3}
+      propertyPath: m_Center.y
+      value: -0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557836600710728369, guid: df36cd471effb0447aecb3185abdc02f, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 92864feca0534d34285a9351c0e85f2c, type: 2}
     - target: {fileID: 8557836600710728371, guid: df36cd471effb0447aecb3185abdc02f, type: 3}
       propertyPath: m_Name
       value: NewerSlime
