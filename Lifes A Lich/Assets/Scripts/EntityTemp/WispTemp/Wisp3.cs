@@ -10,6 +10,8 @@ public class Wisp3 : Entity3
     [Range(0f, 1f)] public float fakeFriction;
     public bool haltOnRelease = false;
 
+    private SphereCollider bodyCollider;
+
     private WispState state;
 
     [Header("States")]
@@ -25,6 +27,9 @@ public class Wisp3 : Entity3
         base.Start();
         EnterState(idleState);
         inPossessable = true;
+
+        bodyCollider = gameObject.GetComponent<SphereCollider>();
+        if (bodyCollider == null) Debug.LogError("Wisp is missing a SphereCollider.");
     }
 
     private void Update()
@@ -43,7 +48,8 @@ public class Wisp3 : Entity3
     {
         RaycastHit raycastHit;
         Vector3 rayDirection = Vector3.down;
-        if (Physics.Raycast(transform.position, rayDirection, out raycastHit, desiredHeight, layerMask, QueryTriggerInteraction.Ignore))
+        float radius = bodyCollider.radius * transform.localScale.x;
+        if (Physics.SphereCast(transform.position, radius, rayDirection, out raycastHit, desiredHeight, layerMask, QueryTriggerInteraction.Ignore))
         {
             Vector3 velocity = body.velocity;
             float rayDirectionVelocity = Vector3.Dot(rayDirection, velocity);
@@ -52,7 +58,7 @@ public class Wisp3 : Entity3
 
             body.AddForce(rayDirection * spring);
         }
-
+        if (frozen) body.AddForce(new Vector3(-body.velocity.x * 0.95f * Time.deltaTime, 0, -body.velocity.z * 0.95f * Time.deltaTime), ForceMode.VelocityChange);
     }
 
     public override void Movement()
