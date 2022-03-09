@@ -50,6 +50,7 @@ public class IntroScript : MonoBehaviour
     void ExitIntro()
     {
         SceneManager.LoadScene("MainTutorial");
+        intromusic.Stop();
     }
 
     IEnumerator Transition()
