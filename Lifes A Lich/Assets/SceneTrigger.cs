@@ -10,14 +10,39 @@ public class SceneTrigger : MonoBehaviour
     public AudioSource signSound;
     public AudioSource signOffSound;
     private Animator anim;
-
+    private int levelLoad;
     // Start is called before the first frame update
-    
 
+
+    void Update()
+    {
+        
+
+    }
     private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            FadeLevel(+1);
+        }
+        
+    }
+
+    public void FadeLevel(int levelIndex)
+    {
+        levelLoad = levelIndex;
+        animator.SetTrigger("Fade");
+    }
+
+    public void OnFadeDone()
     {
         SceneManager.LoadScene("MainTwo");
     }
 
-    
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //SceneManager.LoadScene("MainTwo");
+    //}
+
+
 }
