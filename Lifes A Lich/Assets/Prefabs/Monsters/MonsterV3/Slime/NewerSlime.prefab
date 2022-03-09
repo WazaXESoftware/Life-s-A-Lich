@@ -800,6 +800,7 @@ MonoBehaviour:
   skipForceY: 2
   chargeAmplifier: 3
   skipForceX: 1.5
+  feetCollider: {fileID: 8557836600710728369}
   state:
     entity: {fileID: 0}
   idleState:
@@ -816,6 +817,9 @@ MonoBehaviour:
   confusedState:
     entity: {fileID: 8557836600710728374}
     confusedTime: 1
+  possessionState:
+    entity: {fileID: 8557836600710728374}
+    animationTime: 1.35
 --- !u!135 &8557836600710728375
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -839,10 +843,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8493546
+  m_Radius: 0.9
   m_Height: 0
   m_Direction: 1
-  m_Center: {x: -0.0347929, y: -0.9, z: 4.417824e-11}
+  m_Center: {x: -0.0347929, y: -0.7, z: 4.417824e-11}
 --- !u!54 &8557836600710728370
 Rigidbody:
   m_ObjectHideFlags: 0

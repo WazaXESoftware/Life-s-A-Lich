@@ -29,7 +29,7 @@ public class SlimePossessionState : SlimeState2
         timer += Time.deltaTime;
     }
 
-    public virtual void EntityUpdate() 
+    public override void EntityUpdate() 
     {
         Debug.LogError("SlimePossessionState: Slime being possessed while not registered as player.");
         ExitState(entity.idleState);

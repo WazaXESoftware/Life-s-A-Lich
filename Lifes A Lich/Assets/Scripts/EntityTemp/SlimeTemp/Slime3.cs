@@ -13,6 +13,8 @@ public class Slime3 : Entity3
     [Range(0.1f, 20f)] public float skipForceX = 10f;
     //public float chargeTimer = 0f;
 
+    public CapsuleCollider feetCollider;
+
     [HideInInspector]public SlimeState2 state;
 
     [Header("States")]
@@ -115,16 +117,14 @@ public class Slime3 : Entity3
     protected override void OnDrawGizmosSelected()
     {
         base.OnDrawGizmosSelected();
-        SphereCollider collider = GetComponent<SphereCollider>();
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(collider.bounds.center - new Vector3(0, 0.25f, 0), collider.radius * transform.localScale.y - 0.1f);
+        Gizmos.DrawWireSphere(feetCollider.bounds.center, (feetCollider.radius + 0.025f) * transform.localScale.y);
         Gizmos.color = Color.white;
     }
 
     public bool IsGrounded()
     {
         //return entity.IsGrounded;
-        SphereCollider entityCollider = GetComponent<SphereCollider>();
-        return Physics.CheckSphere(entityCollider.bounds.center - new Vector3(0, 0.25f, 0), (entityCollider.radius * transform.localScale.y) - 0.1f, layerMask, QueryTriggerInteraction.Ignore);
+        return Physics.CheckSphere(feetCollider.bounds.center, (feetCollider.radius + 0.025f) * transform.localScale.y, layerMask, QueryTriggerInteraction.Ignore);
     }
 }
