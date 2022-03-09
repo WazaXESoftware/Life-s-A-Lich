@@ -7,6 +7,6 @@ public class SceneRestart : MonoBehaviour
 {
     // Start is called before the first frame update
     void OnTriggerEnter(Collider other){
-      SceneManager.LoadScene(3);
+      SceneManager.LoadScene(4);
     }
 }
