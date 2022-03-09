@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1481.7754, g: 1835.8867, b: 2430.4492, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6268,6 +6268,7 @@ GameObject:
   - component: {fileID: 427846735}
   - component: {fileID: 427846734}
   - component: {fileID: 427846733}
+  - component: {fileID: 427846736}
   m_Layer: 0
   m_Name: Floor (4)
   m_TagString: Untagged
@@ -6300,8 +6301,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.34248933, z: 1}
-  m_Center: {x: -1.4029737e-13, y: -0.32875538, z: 0.0000000020236561}
+  m_Size: {x: 1, y: 0.80727, z: 1}
+  m_Center: {x: -3.254249e-13, y: -0.7625602, z: 0.000000004693945}
 --- !u!23 &427846734
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6351,6 +6352,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427846731}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &427846736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427846731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 229192bca717bf84fa2c3375ae6559e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &428301713 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5f0f3c98bd2e9134c8fb8167cfa2d592, type: 3}
@@ -12396,7 +12409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7114419825918057366, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -18.39
+      value: -16.01
       objectReference: {fileID: 0}
     - target: {fileID: 7114419825918057366, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -39569,7 +39582,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1337865929
 Transform:
   m_ObjectHideFlags: 0

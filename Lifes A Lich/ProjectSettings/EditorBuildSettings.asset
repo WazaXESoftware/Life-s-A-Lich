@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainTwo.unity
     guid: ee734a85ea8b0314a881d9d5fdbc5ace
+  - enabled: 1
+    path: Assets/Scenes/Design Elias/Elias Scenes/Elias Vattentorn.unity
+    guid: b490464267b7c6245b7c86b2b53aea62
   m_configObjects: {}
