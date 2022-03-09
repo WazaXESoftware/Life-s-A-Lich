@@ -11,6 +11,7 @@ public class IntroScript : MonoBehaviour
     public Animator fadeAnimator;
     [SerializeField] public GameObject[] scenes;
     public int sceneIndex = 1;
+    public int fmodIndex = 1;
 
     [Range(0f, 1f)] public float fadeOutTime = 0.3f;
     [Range(0f, 1f)] public float fadeInTime = 0.3f;
@@ -20,6 +21,7 @@ public class IntroScript : MonoBehaviour
     void Start()
     {
         sceneIndex = 1;
+        fmodIndex = 1;
         firstClick = false;
         DisplayScene(sceneIndex);
     }
@@ -35,7 +37,8 @@ public class IntroScript : MonoBehaviour
         if (firstClick) StartCoroutine(Transition());
         else
         {
-            intromusic.SetParameter("Next Slider", 1);
+            intromusic.SetParameter("Next Slider", fmodIndex);
+            fmodIndex++;
             firstClick = true;
         }
     }
@@ -45,7 +48,7 @@ public class IntroScript : MonoBehaviour
         sceneIndex = index;
         scenes[index - 1].SetActive(true);
         sceneAnimator.SetTrigger("Scene" + index);
-        intromusic.SetParameter("Next Slider", sceneIndex - 1);
+        intromusic.SetParameter("Next Slider", fmodIndex - 1);
         //IntroSoundFXManager.Play(index);
     }
 
@@ -66,6 +69,7 @@ public class IntroScript : MonoBehaviour
         yield return new WaitForSeconds(fadeInTime);
         HideScene(sceneIndex);
         sceneIndex++;
+        fmodIndex++;
         if (sceneIndex > scenes.Length)
         {
             ExitIntro();
