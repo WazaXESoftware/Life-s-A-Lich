@@ -18,8 +18,8 @@ public class SlimeIdleState2 : SlimeState2
 
     public override void ExitState(SlimeState2 newState)
     {
-        base.ExitState(newState);
         entity.animator.SetBool("IsIdle", false);
+        base.ExitState(newState);
     }
 
     public override void PlayerUpdate()

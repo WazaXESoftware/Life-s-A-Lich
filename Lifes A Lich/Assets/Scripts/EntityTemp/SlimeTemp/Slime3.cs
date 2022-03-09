@@ -13,6 +13,8 @@ public class Slime3 : Entity3
     [Range(0.1f, 20f)] public float skipForceX = 10f;
     //public float chargeTimer = 0f;
 
+    public CapsuleCollider feetCollider;
+
     [HideInInspector]public SlimeState2 state;
 
     [Header("States")]
@@ -21,6 +23,7 @@ public class Slime3 : Entity3
     public SlimeJumpState2 jumpState = new SlimeJumpState2();
     public SlimeActionState2 actionState = new SlimeActionState2();
     public SlimeConfusedState2 confusedState = new SlimeConfusedState2();
+    public SlimePossessionState possessionState = new SlimePossessionState();
 
     public void Awake()
     {
@@ -29,6 +32,7 @@ public class Slime3 : Entity3
         jumpState.OnValidate(this);
         actionState.OnValidate(this);
         confusedState.OnValidate(this);
+        possessionState.OnValidate(this);
     }
 
     public void OnValidate()
@@ -38,12 +42,13 @@ public class Slime3 : Entity3
         jumpState.OnValidate(this);
         actionState.OnValidate(this);
         confusedState.OnValidate(this);
+        possessionState.OnValidate(this);
     }
 
     protected override void Start()
     {
         base.Start();
-        EnterState(idleState);
+        EnterState(confusedState);
     }
 
     public void EnterState(SlimeState2 newState)
@@ -72,6 +77,7 @@ public class Slime3 : Entity3
         if (state == jumpState) Debug.Log("JumpState");
         if (state == actionState) Debug.Log("ActionState");
         if (state == confusedState) Debug.Log("ConfusedState");
+        if (state == possessionState) Debug.Log("PossessionState");
         animator.SetFloat("Speed", new Vector3(body.velocity.x, 0, body.velocity.z).magnitude);
     }
 
@@ -111,16 +117,14 @@ public class Slime3 : Entity3
     protected override void OnDrawGizmosSelected()
     {
         base.OnDrawGizmosSelected();
-        SphereCollider collider = GetComponent<SphereCollider>();
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(collider.bounds.center - new Vector3(0, 0.25f, 0), collider.radius * transform.localScale.y - 0.1f);
+        Gizmos.DrawWireSphere(feetCollider.bounds.center, (feetCollider.radius + 0.025f) * transform.localScale.y);
         Gizmos.color = Color.white;
     }
 
     public bool IsGrounded()
     {
         //return entity.IsGrounded;
-        SphereCollider entityCollider = GetComponent<SphereCollider>();
-        return Physics.CheckSphere(entityCollider.bounds.center - new Vector3(0, 0.25f, 0), (entityCollider.radius * transform.localScale.y) - 0.1f, layerMask, QueryTriggerInteraction.Ignore);
+        return Physics.CheckSphere(feetCollider.bounds.center, (feetCollider.radius + 0.025f) * transform.localScale.y, layerMask, QueryTriggerInteraction.Ignore);
     }
 }

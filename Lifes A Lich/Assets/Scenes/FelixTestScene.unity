@@ -191,6 +191,7 @@ MonoBehaviour:
   skipForceY: 6
   chargeAmplifier: 3
   skipForceX: 10
+  feetCollider: {fileID: 0}
   state:
     entity: {fileID: 0}
   idleState:
@@ -207,6 +208,9 @@ MonoBehaviour:
   confusedState:
     entity: {fileID: 142728896}
     confusedTime: 1
+  possessionState:
+    entity: {fileID: 142728896}
+    animationTime: 1
 --- !u!135 &142728897
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -485,6 +489,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8557836600710728374, guid: df36cd471effb0447aecb3185abdc02f, type: 3}
+      propertyPath: feetCollider
+      value: 
+      objectReference: {fileID: 1603347413}
+    - target: {fileID: 8557836600710728374, guid: df36cd471effb0447aecb3185abdc02f, type: 3}
+      propertyPath: possessionState.animationTime
+      value: 1.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8557836602467811418, guid: df36cd471effb0447aecb3185abdc02f, type: 3}
       propertyPath: m_Controller
       value: 
@@ -554,6 +566,7 @@ MonoBehaviour:
   skipForceY: 6
   chargeAmplifier: 3
   skipForceX: 10
+  feetCollider: {fileID: 0}
   state:
     entity: {fileID: 0}
   idleState:
@@ -570,6 +583,9 @@ MonoBehaviour:
   confusedState:
     entity: {fileID: 436179888}
     confusedTime: 1
+  possessionState:
+    entity: {fileID: 436179888}
+    animationTime: 1
 --- !u!54 &436179889
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1453,6 +1469,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &1603347413 stripped
+CapsuleCollider:
+  m_CorrespondingSourceObject: {fileID: 8557836600710728369, guid: df36cd471effb0447aecb3185abdc02f, type: 3}
+  m_PrefabInstance: {fileID: 287925452}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1684814016 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3838953694961227130, guid: 46f1a70d895661748aeefdd3609b88fe, type: 3}

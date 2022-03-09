@@ -11,26 +11,28 @@ public class SlimeConfusedState2 : SlimeState2
     public override void EnterState()
     {
         //entity.animator.SetTrigger("Confused");
+        entity.animator.SetBool("IsIdle", true);
         confusedTimer = 0;
         entity.inPossessable = true;
     }
 
     public override void ExitState(SlimeState2 newState)
     {
+        entity.animator.SetBool("IsIdle", false);
         entity.EnterState(newState);
         entity.inPossessable = false;
     }
 
     public override void PlayerUpdate()
     {
-        Debug.LogWarning("Warning: EntityConfusedState running while entity is player.");
+        ExitState(entity.possessionState);
     }
 
     public override void EntityUpdate()
     {
         if (confusedTimer > confusedTime)
         {
-            ExitState(entity.idleState);
+            entity.inPossessable = false;
         }
         confusedTimer += Time.deltaTime;
     }
