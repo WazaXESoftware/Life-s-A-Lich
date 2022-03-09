@@ -28,7 +28,7 @@ public class BasicLevelChanger : MonoBehaviour
 
     public void OnFadeComplete()
     {
-        SceneManager.LoadScene("MainTutorial");
+        SceneManager.LoadScene("IntroScene");
 
     }
 }
