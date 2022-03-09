@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 public class IntroScript : MonoBehaviour
 {
+    public StudioEventEmitter intromusic;
     public Animator sceneAnimator;
     public Animator fadeAnimator;
     [SerializeField] public GameObject[] scenes;
@@ -36,7 +38,7 @@ public class IntroScript : MonoBehaviour
         sceneIndex = index;
         scenes[index - 1].SetActive(true);
         sceneAnimator.SetTrigger("Scene" + index);
-        //IntroMusicManager.Play(index);
+        intromusic.SetParameter("Next Slider", sceneIndex - 1);
         //IntroSoundFXManager.Play(index);
     }
 
