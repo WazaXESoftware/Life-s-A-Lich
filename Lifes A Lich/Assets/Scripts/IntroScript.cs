@@ -15,9 +15,12 @@ public class IntroScript : MonoBehaviour
     [Range(0f, 1f)] public float fadeOutTime = 0.3f;
     [Range(0f, 1f)] public float fadeInTime = 0.3f;
 
+    bool firstClick = false;
+
     void Start()
     {
         sceneIndex = 1;
+        firstClick = false;
         DisplayScene(sceneIndex);
     }
 
@@ -29,8 +32,12 @@ public class IntroScript : MonoBehaviour
 
     public void NextScene()
     {
-        StartCoroutine(Transition());
-        
+        if (firstClick) StartCoroutine(Transition());
+        else
+        {
+            intromusic.SetParameter("Next Slider", 0);
+            firstClick = true;
+        }
     }
 
     public void DisplayScene(int index)
