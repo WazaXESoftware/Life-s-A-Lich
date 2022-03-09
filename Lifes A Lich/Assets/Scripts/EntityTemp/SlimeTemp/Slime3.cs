@@ -21,6 +21,7 @@ public class Slime3 : Entity3
     public SlimeJumpState2 jumpState = new SlimeJumpState2();
     public SlimeActionState2 actionState = new SlimeActionState2();
     public SlimeConfusedState2 confusedState = new SlimeConfusedState2();
+    public SlimePossessionState possessionState = new SlimePossessionState();
 
     public void Awake()
     {
@@ -29,6 +30,7 @@ public class Slime3 : Entity3
         jumpState.OnValidate(this);
         actionState.OnValidate(this);
         confusedState.OnValidate(this);
+        possessionState.OnValidate(this);
     }
 
     public void OnValidate()
@@ -38,12 +40,13 @@ public class Slime3 : Entity3
         jumpState.OnValidate(this);
         actionState.OnValidate(this);
         confusedState.OnValidate(this);
+        possessionState.OnValidate(this);
     }
 
     protected override void Start()
     {
         base.Start();
-        EnterState(idleState);
+        EnterState(confusedState);
     }
 
     public void EnterState(SlimeState2 newState)
@@ -72,6 +75,7 @@ public class Slime3 : Entity3
         if (state == jumpState) Debug.Log("JumpState");
         if (state == actionState) Debug.Log("ActionState");
         if (state == confusedState) Debug.Log("ConfusedState");
+        if (state == possessionState) Debug.Log("PossessionState");
         animator.SetFloat("Speed", new Vector3(body.velocity.x, 0, body.velocity.z).magnitude);
     }
 

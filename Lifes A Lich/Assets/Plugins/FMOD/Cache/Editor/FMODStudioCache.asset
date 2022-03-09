@@ -167,11 +167,11 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637823335009861732
+  lastModified: 637824321996382841
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1792
+    Value: 1886
   Exists: 1
 --- !u!114 &-5224477749450554307
 MonoBehaviour:
@@ -323,7 +323,7 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Musik.bank
   Name: Musik
   StudioPath: bank:/Musik
-  lastModified: 637823335011233051
+  lastModified: 637824321997183132
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -342,7 +342,7 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Ljud.bank
   Name: Ljud
   StudioPath: bank:/Ljud
-  lastModified: 637823335009821688
+  lastModified: 637824321996352068
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -389,6 +389,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 700
   Length: 9673
+--- !u!114 &-1603863068239305421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Storyboard
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Storyboard
+  guid: bbc9429f55e73145ae5e0319f01981c6
+  Banks:
+  - {fileID: -2724180223921598833}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6594390504508071559}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 230568
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,12 +447,13 @@ MonoBehaviour:
   - {fileID: -4683024230633150499}
   - {fileID: 2960074506486443813}
   - {fileID: 6659896877496409265}
+  - {fileID: -1603863068239305421}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3881105977425897345}
   StringsBanks:
   - {fileID: -5790721090821985280}
-  stringsBankWriteTime: 637823335009861732
+  stringsBankWriteTime: 637824321996382841
   cacheVersion: 6
 --- !u!114 &595716292334996282
 MonoBehaviour:
@@ -551,7 +576,7 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637823335009851712
+  lastModified: 637824321996372908
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -575,6 +600,46 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &6411088710910673758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menymusik/Start game
+  m_EditorClassIdentifier: 
+  Name: Start game
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &6594390504508071559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Storyboard/Next Slider
+  m_EditorClassIdentifier: 
+  Name: Next Slider
+  Min: 0
+  Max: 8
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &6659896877496409265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,7 +726,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 7604892703988898423}
+  - {fileID: 6411088710910673758}
   MinDistance: 0
   MaxDistance: 0
   Length: 93400

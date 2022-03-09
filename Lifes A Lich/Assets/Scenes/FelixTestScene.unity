@@ -207,6 +207,9 @@ MonoBehaviour:
   confusedState:
     entity: {fileID: 142728896}
     confusedTime: 1
+  possessionState:
+    entity: {fileID: 142728896}
+    animationTime: 1
 --- !u!135 &142728897
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -485,6 +488,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8557836600710728374, guid: df36cd471effb0447aecb3185abdc02f, type: 3}
+      propertyPath: possessionState.animationTime
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 8557836602467811418, guid: df36cd471effb0447aecb3185abdc02f, type: 3}
       propertyPath: m_Controller
       value: 
@@ -570,6 +577,9 @@ MonoBehaviour:
   confusedState:
     entity: {fileID: 436179888}
     confusedTime: 1
+  possessionState:
+    entity: {fileID: 436179888}
+    animationTime: 1
 --- !u!54 &436179889
 Rigidbody:
   m_ObjectHideFlags: 0
