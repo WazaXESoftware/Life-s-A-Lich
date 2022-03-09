@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 10.899715, g: 8.426014, b: 5.777713, a: 1}
+  m_IndirectSpecularColor: {r: 10.913605, g: 8.437677, b: 5.785958, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2556,7 +2556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2649728998612392017, guid: 0327d30b6aa119243844cb22c28590e7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.16
+      value: -1.297
       objectReference: {fileID: 0}
     - target: {fileID: 2649728998612392017, guid: 0327d30b6aa119243844cb22c28590e7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15919,11 +15919,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1340260658915734571, guid: 283ff56620e8cbd4ab6ebcde1dd6c029, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.22112308
+      value: 0.29625466
       objectReference: {fileID: 0}
     - target: {fileID: 1340260658915734571, guid: 283ff56620e8cbd4ab6ebcde1dd6c029, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -80.47
+      value: -80.77
       objectReference: {fileID: 0}
     - target: {fileID: 1340260658915734571, guid: 283ff56620e8cbd4ab6ebcde1dd6c029, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18410,7 +18410,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954293658}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -83.17, y: -0.81, z: -21.01}
+  m_LocalPosition: {x: -83.17, y: -2.19, z: -21.01}
   m_LocalScale: {x: 10.65805, y: 1, z: 13.569349}
   m_Children: []
   m_Father: {fileID: 1938045823}
@@ -42649,8 +42649,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.170599, y: 1, z: 8.195498}
-  m_Center: {x: 2.7466135, y: 0, z: -1.9471107}
+  m_Size: {x: 6.170599, y: 1.4884956, z: 8.195498}
+  m_Center: {x: 2.7466133, y: 0.2442424, z: -1.9471107}
 --- !u!114 &2112408814
 MonoBehaviour:
   m_ObjectHideFlags: 0
