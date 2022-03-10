@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 17.362556, g: 13.42131, b: 9.202395, a: 1}
+  m_IndirectSpecularColor: {r: 17.326172, g: 13.412075, b: 9.197859, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -36603,11 +36603,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1506945866129782844, guid: 2b703b180d51dbc438dc181a0927e8fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 31.970013
+      value: 30.98
       objectReference: {fileID: 0}
     - target: {fileID: 1506945866129782844, guid: 2b703b180d51dbc438dc181a0927e8fb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 78.446045
+      value: 78.45
       objectReference: {fileID: 0}
     - target: {fileID: 1506945866129782844, guid: 2b703b180d51dbc438dc181a0927e8fb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -46016,15 +46016,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269623834809241636, guid: 72a6668dbe57274488dfdd18537813d0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.12999949
+      value: -0.13
       objectReference: {fileID: 0}
     - target: {fileID: 3269623834809241636, guid: 72a6668dbe57274488dfdd18537813d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.487344
+      value: 6.64
       objectReference: {fileID: 0}
     - target: {fileID: 3269623834809241636, guid: 72a6668dbe57274488dfdd18537813d0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.2199974
+      value: 3.22
       objectReference: {fileID: 0}
     - target: {fileID: 3269623834809241636, guid: 72a6668dbe57274488dfdd18537813d0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -46083,6 +46083,14 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6228728904963701819, guid: 202fe9d7b4998c94fa75bff1f083f36c, type: 3}
+      propertyPath: m_FadeScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228728904963701819, guid: 202fe9d7b4998c94fa75bff1f083f36c, type: 3}
+      propertyPath: m_FadeFactor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7735852089658333781, guid: 202fe9d7b4998c94fa75bff1f083f36c, type: 3}
       propertyPath: m_RootOrder
       value: 316
@@ -46093,7 +46101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7735852089658333781, guid: 202fe9d7b4998c94fa75bff1f083f36c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 32.73058
+      value: 31.72
       objectReference: {fileID: 0}
     - target: {fileID: 7735852089658333781, guid: 202fe9d7b4998c94fa75bff1f083f36c, type: 3}
       propertyPath: m_LocalPosition.z
