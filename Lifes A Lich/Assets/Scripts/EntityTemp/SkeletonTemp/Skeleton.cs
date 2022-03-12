@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Skeleton : Entity3
 {
-    [Range(0f, 100f)]public float jumpForce = 20f;
+    [Range(0f, 100f)] public float jumpForce = 20f;
 
     public CapsuleCollider feetCollider;
 
-    [HideInInspector]public SkeletonState state;
+    [HideInInspector] public SkeletonState state;
 
     public SkeletonIdleState idleState = new SkeletonIdleState();
     public SkeletonWalkState walkState = new SkeletonWalkState();
@@ -80,5 +80,17 @@ public class Skeleton : Entity3
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(feetCollider.bounds.center - new Vector3(0, 0.025f * transform.localScale.y, 0), (feetCollider.radius * transform.localScale.y) + 0.015f * transform.localScale.y);
         Gizmos.color = Color.white;
+    }
+
+    public override void TakeOver(GameObject host)
+    {
+        base.TakeOver(host);
+        //Lägg till kod här Markus :)
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        //Lägg till kod här Markus :)
     }
 }
