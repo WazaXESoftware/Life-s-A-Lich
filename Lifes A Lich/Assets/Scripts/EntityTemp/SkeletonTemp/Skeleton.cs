@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class Skeleton : Entity3
 {
     [Range(0f, 100f)] public float jumpForce = 20f;
-
+    public StudioEventEmitter prototyplevel;
     public CapsuleCollider feetCollider;
 
     [HideInInspector] public SkeletonState state;
@@ -85,12 +86,13 @@ public class Skeleton : Entity3
     public override void TakeOver(GameObject host)
     {
         base.TakeOver(host);
-        //Lägg till kod här Markus :)
+        prototyplevel.SetParameter("Possess", 1);
     }
 
     public override void Exit()
     {
+        prototyplevel.SetParameter("Possess", 0);
         base.Exit();
-        //Lägg till kod här Markus :)
+        //L?gg till kod h?r Markus :)
     }
 }
