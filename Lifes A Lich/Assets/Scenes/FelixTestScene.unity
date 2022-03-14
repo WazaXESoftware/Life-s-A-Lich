@@ -845,6 +845,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: -46.254, y: 0, z: 0}
+--- !u!1 &728464583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7114419825918057369, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
+  m_PrefabInstance: {fileID: 2916777719395057957}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &772143898
 GameObject:
   m_ObjectHideFlags: 0
@@ -3046,6 +3051,14 @@ PrefabInstance:
     - target: {fileID: 3814793160063704116, guid: 46f1a70d895661748aeefdd3609b88fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -85.04121
+      objectReference: {fileID: 0}
+    - target: {fileID: 3838953694961227014, guid: 46f1a70d895661748aeefdd3609b88fe, type: 3}
+      propertyPath: host
+      value: 
+      objectReference: {fileID: 728464583}
+    - target: {fileID: 3838953694961227014, guid: 46f1a70d895661748aeefdd3609b88fe, type: 3}
+      propertyPath: player
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3838953694961227014, guid: 46f1a70d895661748aeefdd3609b88fe, type: 3}
       propertyPath: animator

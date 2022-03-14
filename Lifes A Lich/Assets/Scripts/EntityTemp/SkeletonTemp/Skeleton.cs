@@ -44,7 +44,12 @@ public class Skeleton : Entity3
     protected override void Start()
     {
         base.Start();
-        EnterState(collapsedState);
+        if (!player) EnterState(collapsedState);
+        else
+        {
+            TakeOver(host);
+            EnterState(idleState);
+        }
     }
 
     protected override void Update()
