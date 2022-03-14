@@ -172,8 +172,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9182326272809003557, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
+      propertyPath: UVModule.mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182326272809003557, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
       propertyPath: ShapeModule.type
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182326272809003557, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
+      propertyPath: UVModule.enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9182326272809003557, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
       propertyPath: SubModule.enabled
