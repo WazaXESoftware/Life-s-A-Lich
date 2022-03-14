@@ -32,7 +32,7 @@ public class Wisp3 : Entity3
         if (bodyCollider == null) Debug.LogError("Wisp is missing a SphereCollider.");
     }
 
-    private void Update()
+    protected override void Update()
     {
         if (player) state.PlayerUpdate();
         else state.EntityUpdate();
