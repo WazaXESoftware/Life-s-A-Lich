@@ -85,9 +85,10 @@ public class Skeleton : Entity3
 
     public override void TakeOver(GameObject host)
     {
+      
         base.TakeOver(host);
-        prototyplevel.SetParameter("Possess", 1);
     }
+
 
     public override void Exit()
     {
