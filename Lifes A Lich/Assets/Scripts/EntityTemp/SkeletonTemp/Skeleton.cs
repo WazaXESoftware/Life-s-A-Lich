@@ -6,7 +6,8 @@ using FMODUnity;
 public class Skeleton : Entity3
 {
     [Range(0f, 100f)] public float jumpForce = 20f;
-    public StudioEventEmitter prototyplevel;
+    //public StudioEventEmitter prototyplevel;
+    public MusicObject mObject;
     public CapsuleCollider feetCollider;
 
     [HideInInspector] public SkeletonState state;
@@ -90,14 +91,14 @@ public class Skeleton : Entity3
 
     public override void TakeOver(GameObject host)
     {
-      
+        if (mObject != null) mObject.emitter.SetParameter("Possess", 1);
         base.TakeOver(host);
     }
 
 
     public override void Exit()
     {
-        if (prototyplevel != null) prototyplevel.SetParameter("Possess", 0);
+        if (mObject != null) mObject.emitter.SetParameter("Possess", 0);
         base.Exit();
         //L?gg till kod h?r Markus :)
     }
