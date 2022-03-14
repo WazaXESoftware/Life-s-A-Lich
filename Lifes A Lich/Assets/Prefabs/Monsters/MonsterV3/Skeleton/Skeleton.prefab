@@ -97,6 +97,7 @@ MonoBehaviour:
   player: 0
   inPossessable: 0
   jumpForce: 4
+  prototyplevel: {fileID: 0}
   feetCollider: {fileID: 3838953694961227128}
   state:
     entity: {fileID: 0}
@@ -419,21 +420,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3838953694961227015}
     m_Modifications:
+    - target: {fileID: 286846409194717217, guid: b94b36d6a29820b4cb4eb95fb1ad3717, type: 3}
+      propertyPath: m_Size.z
+      value: 2.462139
+      objectReference: {fileID: 0}
+    - target: {fileID: 286846409194717217, guid: b94b36d6a29820b4cb4eb95fb1ad3717, type: 3}
+      propertyPath: m_Offset.z
+      value: 1.2310694
+      objectReference: {fileID: 0}
     - target: {fileID: 481935732444888959, guid: b94b36d6a29820b4cb4eb95fb1ad3717, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 481935732444888959, guid: b94b36d6a29820b4cb4eb95fb1ad3717, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481935732444888959, guid: b94b36d6a29820b4cb4eb95fb1ad3717, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.61
+      value: 0.02736473
       objectReference: {fileID: 0}
     - target: {fileID: 481935732444888959, guid: b94b36d6a29820b4cb4eb95fb1ad3717, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481935732444888959, guid: b94b36d6a29820b4cb4eb95fb1ad3717, type: 3}
       propertyPath: m_LocalRotation.w

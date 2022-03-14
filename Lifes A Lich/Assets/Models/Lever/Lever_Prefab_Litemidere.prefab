@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 2914743439773921795}
   - component: {fileID: 2914743439773921796}
   - component: {fileID: 2914743439773921797}
+  - component: {fileID: 7162856494835324799}
   m_Layer: 0
   m_Name: Lever_Prefab_Litemidere
   m_TagString: Untagged
@@ -216,3 +217,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lever: {fileID: 2914743439773921796}
   animationController: {fileID: 2914743439773921795}
+--- !u!65 &7162856494835324799
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5395231133277418863}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.011641952, y: 0.005933467, z: 0.019969938}
+  m_Center: {x: -0.00027306582, y: 0.00043534106, z: -0.000015750313}
