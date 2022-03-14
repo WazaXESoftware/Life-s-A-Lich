@@ -92,7 +92,7 @@ public class Skeleton : Entity3
 
     public override void Exit()
     {
-        prototyplevel.SetParameter("Possess", 0);
+        if (prototyplevel != null) prototyplevel.SetParameter("Possess", 0);
         base.Exit();
         //L?gg till kod h?r Markus :)
     }
