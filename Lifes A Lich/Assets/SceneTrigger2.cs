@@ -25,8 +25,9 @@ public class SceneTrigger2 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            startmusik.emitter.Stop();
             FadeLevel(+1);
+            startmusik.emitter.Stop();
+            
         }
 
     }
