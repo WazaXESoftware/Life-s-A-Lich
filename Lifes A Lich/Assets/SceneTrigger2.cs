@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 public class SceneTrigger2 : MonoBehaviour
 {
     public Animator animator;
     private int levelToLoade;
-    public AudioSource signSound;
+    public MusicObject startmusik;
     public AudioSource signOffSound;
     private Animator anim;
     private int levelLoad;
@@ -23,6 +24,7 @@ public class SceneTrigger2 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            startmusik.emitter.Stop();
             FadeLevel(+1);
         }
 
