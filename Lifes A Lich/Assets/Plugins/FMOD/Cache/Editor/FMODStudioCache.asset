@@ -66,6 +66,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-8165587998302727857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Storyboard/Next Slider
+  m_EditorClassIdentifier: 
+  Name: Next Slider
+  Min: 0
+  Max: 9
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-7915653084049466142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,6 +129,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1269
+--- !u!114 &-7600274978911000161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Slutmusik/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-7392551645005835490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +212,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-6281112870886991920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Slutmusik/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-6068672377878424676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,7 +287,7 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637829378480000000
+  lastModified: 637829383870000000
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -319,6 +379,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1520
+--- !u!114 &-4632023805412070887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menymusik/Start game
+  m_EditorClassIdentifier: 
+  Name: Start game
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-4502106713497134214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,7 +543,7 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Musik.bank
   Name: Musik
   StudioPath: bank:/Musik
-  lastModified: 637829378480000000
+  lastModified: 637829383870000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -482,7 +562,7 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Ljud.bank
   Name: Ljud
   StudioPath: bank:/Ljud
-  lastModified: 637829378480000000
+  lastModified: 637829383870000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -549,7 +629,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -4039354669582951578}
+  - {fileID: -8165587998302727857}
   MinDistance: 0
   MaxDistance: 0
   Length: 230568
@@ -594,7 +674,7 @@ MonoBehaviour:
   - {fileID: 3881105977425897345}
   StringsBanks:
   - {fileID: -5790721090821985280}
-  stringsBankWriteTime: 637829378480000000
+  stringsBankWriteTime: 637829383870000000
   cacheVersion: 6
 --- !u!114 &595716292334996282
 MonoBehaviour:
@@ -609,6 +689,26 @@ MonoBehaviour:
   m_Name: parameter:/Menymusik/Start game
   m_EditorClassIdentifier: 
   Name: Start game
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &787082986619777051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Prototyplevel/Possess
+  m_EditorClassIdentifier: 
+  Name: Possess
   Min: 0
   Max: 1
   Default: 0
@@ -659,6 +759,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1800
+--- !u!114 &1097997974972391530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Prototyplevel/Possess
+  m_EditorClassIdentifier: 
+  Name: Possess
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &1260742697452342409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -739,7 +859,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -5959353569947868446}
+  - {fileID: -7600274978911000161}
   MinDistance: 0
   MaxDistance: 0
   Length: 68000
@@ -901,10 +1021,30 @@ MonoBehaviour:
   Path: LjudMusik/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637829378480000000
+  lastModified: 637829383870000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &4613567560952067717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Storyboard/Next Slider
+  m_EditorClassIdentifier: 
+  Name: Next Slider
+  Min: 0
+  Max: 9
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &4698819395921637880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -985,7 +1125,67 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &5766464235528176209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Storyboard/Next Slider
+  m_EditorClassIdentifier: 
+  Name: Next Slider
+  Min: 0
+  Max: 9
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &5901254741654554747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Prototyplevel/Possess
+  m_EditorClassIdentifier: 
+  Name: Possess
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &5948597603927426930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menymusik/Start game
+  m_EditorClassIdentifier: 
+  Name: Start game
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &6201515055284783118
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1091,6 +1291,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3000
+--- !u!114 &7424052747237625090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menymusik/Start game
+  m_EditorClassIdentifier: 
+  Name: Start game
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &7604892703988898423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1151,10 +1371,30 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 5321682995065463423}
+  - {fileID: 6201515055284783118}
   MinDistance: 0
   MaxDistance: 0
   Length: 93400
+--- !u!114 &7685034209554313470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Slutmusik/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &8526805502095579277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1175,7 +1415,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 1990100901083450546}
+  - {fileID: 787082986619777051}
   MinDistance: 0
   MaxDistance: 0
   Length: 113454
