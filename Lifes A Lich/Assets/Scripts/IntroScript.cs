@@ -109,7 +109,7 @@ public class IntroScript : MonoBehaviour
         sceneIndex = index;
         scenes[index - 1].SetActive(true);
         sceneAnimator.SetTrigger("Scene" + index);
-        intromusic.SetParameter("Next Slider", sceneIndex - 1);
+        intromusic.SetParameter("Next Slider", sceneIndex);
         continueAppearTimer = 0f;
         //IntroSoundFXManager.Play(index);
     }
