@@ -68,7 +68,7 @@ public class Wisp3 : Entity3
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 dir = (forward * vertical + right * horizontal).normalized;
-        if (body.velocity.magnitude > 0.01f) transform.rotation = Quaternion.LookRotation(new Vector3(body.velocity.x, 0, body.velocity.z), Vector3.up);
+        if (new Vector3(body.velocity.x, 0, body.velocity.z).magnitude > 0.01f) transform.rotation = Quaternion.LookRotation(new Vector3(body.velocity.x, 0, body.velocity.z), Vector3.up);
         body.AddForce(dir * moveSpeed * Time.deltaTime, ForceMode.VelocityChange);
         if (body.velocity.magnitude > velocityCap)
         {

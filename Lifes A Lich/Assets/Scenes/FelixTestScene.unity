@@ -3073,6 +3073,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3838953694961227014, guid: 46f1a70d895661748aeefdd3609b88fe, type: 3}
+      propertyPath: fakeFriction
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3838953694961227014, guid: 46f1a70d895661748aeefdd3609b88fe, type: 3}
       propertyPath: layerMask.m_Bits
       value: 7987
       objectReference: {fileID: 0}

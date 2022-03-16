@@ -18,6 +18,7 @@ public class SkeletonFallState : SkeletonState
     public override void PlayerUpdate()
     {
         Controls();
+        entity.body.AddForce(new Vector3(-entity.body.velocity.x * entity.fakeFriction * Time.deltaTime, 0, -entity.body.velocity.z * entity.fakeFriction * Time.deltaTime), ForceMode.VelocityChange);
         if (entity.state != this) return;
 
         if (entity.IsGrounded())
@@ -29,6 +30,7 @@ public class SkeletonFallState : SkeletonState
 
     public override void EntityUpdate()
     {
+        entity.body.AddForce(new Vector3(-entity.body.velocity.x * entity.fakeFriction * Time.deltaTime, 0, -entity.body.velocity.z * entity.fakeFriction * Time.deltaTime), ForceMode.VelocityChange);
         if (entity.IsGrounded())
         {
             ExitState(entity.idleState);

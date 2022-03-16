@@ -98,6 +98,7 @@ MonoBehaviour:
   player: 0
   inPossessable: 0
   jumpForce: 4
+  fakeFriction: 0.75
   mObject: {fileID: 11400000, guid: ee8b5f535907cdf41bc363238f4327af, type: 2}
   feetCollider: {fileID: 3838953694961227128}
   state:

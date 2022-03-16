@@ -6,6 +6,7 @@ using FMODUnity;
 public class Skeleton : Entity3
 {
     [Range(0f, 100f)] public float jumpForce = 20f;
+    [Range(0f, 1f)] public float fakeFriction = 0.3f;
     //public StudioEventEmitter prototyplevel;
     public MusicObject mObject;
     public CapsuleCollider feetCollider;
