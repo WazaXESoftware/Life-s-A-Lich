@@ -92,6 +92,7 @@ public class Skeleton : Entity3
     public override void TakeOver(GameObject host)
     {
         if (mObject != null) mObject.emitter.SetParameter("Possess", 1);
+        if (sfxmanager != null) sfxmanager.characterAudio.SkeletonTransfer(gameObject);
         base.TakeOver(host);
     }
 

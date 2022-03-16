@@ -14,6 +14,7 @@ public class SkeletonJumpState : SkeletonState
         timer = 0;
         entity.animator.SetBool("Jumping", true);
         entity.body.AddForce(entity.jumpForce * Vector3.up, ForceMode.VelocityChange);
+        if (entity.sfxmanager != null) entity.sfxmanager.characterAudio.SkeletonJump(entity.gameObject);
     }
 
     public override void ExitState(SkeletonState newState)

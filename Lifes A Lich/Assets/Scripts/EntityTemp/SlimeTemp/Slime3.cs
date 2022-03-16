@@ -93,6 +93,7 @@ public class Slime3 : Entity3
             host.SetActive(false);
             host.transform.position = transform.position;
             host.transform.parent = transform;
+            if (sfxmanager != null) sfxmanager.characterAudio.SlimeTransfer(gameObject);
         }
     }
 

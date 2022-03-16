@@ -79,6 +79,7 @@ public class SlimeChargeState2 : SlimeState2
 
         entity.body.AddForce((entity.skipForceX * dir * amplifier) + (entity.skipForceY * Vector3.up * amplifier), ForceMode.VelocityChange);
         //entity.body.velocity = (trueTime / skipMaxChargeTime) * dir * entity.skipForceX + new Vector3(0, (trueTime / skipMaxChargeTime) * entity.skipForceY, 0);
+        if (entity.sfxmanager != null) entity.sfxmanager.characterAudio.SlimeJump(entity.gameObject);
         ExitState(entity.jumpState);
     }
 }
