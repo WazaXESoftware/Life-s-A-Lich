@@ -11,6 +11,7 @@ public class ButtonGate : MonoBehaviour
     public float speedUp = 3f;
     public float speedDown = 4f;
     public bool buttonPushed;
+    private bool doorSoundPlayed;
     private float minHeight;
     public float maxHeight;
 
@@ -35,7 +36,12 @@ public class ButtonGate : MonoBehaviour
         if (buttonPushed && gate.transform.position.y < minHeight + maxHeight)
         {
             moveUp();
-            sfxmanager.interactableAudio.DoorEvent(gameObject);
+            if (doorSoundPlayed)
+            {
+                sfxmanager.interactableAudio.DoorEvent(gameObject);
+                doorSoundPlayed = false;
+            }
+            
         }
         else if(buttonPushed == false && gate.transform.position.y > minHeight)
         {
@@ -46,6 +52,7 @@ public class ButtonGate : MonoBehaviour
     private void moveUp()
     {
         gate.transform.Translate(Vector3.up * speedUp * Time.deltaTime);
+        doorSoundPlayed = true;
     }
 
     private void moveDown()
