@@ -32,7 +32,7 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
 
-            Cursor.visible = true;
+            Cursor.visible = false;
 
         }
 
@@ -53,7 +53,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
 
-        Cursor.visible = true;
+        Cursor.visible = false;
 
     }
 
