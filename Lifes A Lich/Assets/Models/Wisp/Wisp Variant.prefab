@@ -91,6 +91,10 @@ PrefabInstance:
       propertyPath: desiredHeight
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7114419824856791374, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7114419824856791377, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.0071987556
@@ -230,6 +234,10 @@ PrefabInstance:
     - target: {fileID: 9182326272809003557, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
       propertyPath: InheritVelocityModule.enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182326272809003557, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 9182326272809003557, guid: eb4e5a8dda79df045b5d11bcb9c85c5a, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
