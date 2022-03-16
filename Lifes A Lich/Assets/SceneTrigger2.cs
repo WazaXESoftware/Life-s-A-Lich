@@ -40,6 +40,6 @@ public class SceneTrigger2 : MonoBehaviour
 
     public void OnFadeDone()
     {
-        SceneManager.LoadScene("MainTree");
+        SceneManager.LoadScene("EndCredtis");
     }
 }
