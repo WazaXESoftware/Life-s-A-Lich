@@ -838,8 +838,8 @@ MonoBehaviour:
   Max: 1
   Default: 0
   ID:
-    data1: 0
-    data2: 0
+    data1: 3486662504
+    data2: 1560807195
   Exists: 1
 --- !u!114 &595716292334996282
 MonoBehaviour:
