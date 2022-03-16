@@ -6,6 +6,7 @@ using UnityEngine;
 public class ButtonGate : MonoBehaviour
 {
     public List<GameObject> characters;
+    private soundfxmanager sfxmanager;
     public GameObject gate;
     public float speedUp = 3f;
     public float speedDown = 4f;
@@ -21,6 +22,12 @@ public class ButtonGate : MonoBehaviour
             characters.Add(entity.gameObject);
         }
 
+        sfxmanager = FindObjectOfType<soundfxmanager>();
+        if(sfxmanager == null)
+        {
+            Debug.LogWarning("Warning, scene is missing an SFX Manager");
+        }
+
         minHeight = gate.transform.position.y;
     }
     void Update()
@@ -28,6 +35,7 @@ public class ButtonGate : MonoBehaviour
         if (buttonPushed && gate.transform.position.y < minHeight + maxHeight)
         {
             moveUp();
+            sfxmanager.interactableAudio.DoorEvent(gameObject);
         }
         else if(buttonPushed == false && gate.transform.position.y > minHeight)
         {
@@ -50,6 +58,7 @@ public class ButtonGate : MonoBehaviour
         if (characters.Contains(other.gameObject))
         {
             buttonPushed = true;
+            sfxmanager.interactableAudio.ButtonEvent(gameObject);
         }
     }
 
