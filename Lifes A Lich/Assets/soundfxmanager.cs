@@ -77,7 +77,7 @@ public class soundfxmanager : MonoBehaviour
         }
         public void SlimeJump(GameObject audioObject)
         {
-            RuntimeManager.PlayOneShotAttached(skeletonTransfer, audioObject);
+            RuntimeManager.PlayOneShotAttached(slimeJump, audioObject);
         }
         public void SkeletonJump(GameObject audioObject)
         {
