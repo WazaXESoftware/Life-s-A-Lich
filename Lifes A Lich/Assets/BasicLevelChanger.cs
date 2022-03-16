@@ -22,13 +22,25 @@ public class BasicLevelChanger : MonoBehaviour
     {
         levelToLoad = levelIndex;
         animator.SetTrigger("FadeOut");
+        
         emitter.SetParameter("Start game", 1);
 
+    }
+
+    public void ProtoToLevel(int levelIndex)
+    {
+        animator.SetTrigger("Prototype");
+        emitter.SetParameter("Start game", 1);
     }
 
     public void OnFadeComplete()
     {
         SceneManager.LoadScene("IntroScene");
 
+    }
+
+    public void OnFadeChangeComplete()
+    {
+        SceneManager.LoadScene("MainTree");
     }
 }
