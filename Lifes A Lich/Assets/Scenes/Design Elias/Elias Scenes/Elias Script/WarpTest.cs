@@ -21,6 +21,7 @@ public class WarpTest : InteractableObject
         if(slimeSummoned == true)
         {
         slimeSummonAnimator.SetBool("summon", true);
+
         }
 
     }
