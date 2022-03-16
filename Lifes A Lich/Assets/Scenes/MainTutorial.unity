@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 17.35247, g: 13.414534, b: 9.19748, a: 1}
+  m_IndirectSpecularColor: {r: 17.567932, g: 13.561256, b: 9.306541, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1600,6 +1600,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4175711795028247363, guid: df36cd471effb0447aecb3185abdc02f, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 277357346}
     - target: {fileID: 8557836600710728371, guid: df36cd471effb0447aecb3185abdc02f, type: 3}
       propertyPath: m_Name
       value: NewerSlime (3)
@@ -27794,6 +27798,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4175711795028247363, guid: df36cd471effb0447aecb3185abdc02f, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 277357346}
     - target: {fileID: 8557836600710728371, guid: df36cd471effb0447aecb3185abdc02f, type: 3}
       propertyPath: m_Name
       value: NewerSlime (1)
