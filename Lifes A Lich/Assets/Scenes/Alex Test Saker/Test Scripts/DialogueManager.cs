@@ -56,6 +56,14 @@ public class DialogueManager : MonoBehaviour
         DisplayNextSentence();
     }
 
+    private void Update()
+    {
+        if (Input.GetButtonDown("joystick button 0"))
+        {
+            DisplayNextSentence();
+        }
+    }
+
     public void DisplayNextSentence()
     {
         if(sentences.Count == 0)
