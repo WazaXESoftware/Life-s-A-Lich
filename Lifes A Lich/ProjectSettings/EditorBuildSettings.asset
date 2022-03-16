@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Design Elias/Elias Scenes/MainEnding.unity
     guid: bc7e27ff1604c7448b21a44c739f2654
+  - enabled: 1
+    path: Assets/EndCredits/EndCredtis.unity
+    guid: 387098de221a26141bd810a47463bda6
   m_configObjects: {}
