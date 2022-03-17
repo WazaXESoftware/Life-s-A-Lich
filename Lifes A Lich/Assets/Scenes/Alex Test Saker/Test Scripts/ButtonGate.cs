@@ -52,7 +52,6 @@ public class ButtonGate : MonoBehaviour
     private void moveUp()
     {
         gate.transform.Translate(Vector3.up * speedUp * Time.deltaTime);
-        doorSoundPlayed = true;
     }
 
     private void moveDown()
@@ -66,6 +65,7 @@ public class ButtonGate : MonoBehaviour
         {
             buttonPushed = true;
             sfxmanager.interactableAudio.ButtonEvent(gameObject);
+            doorSoundPlayed = true;
         }
     }
 
