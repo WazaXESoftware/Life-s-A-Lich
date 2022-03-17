@@ -48,7 +48,7 @@ public class PauseMenu : MonoBehaviour
         PauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
-        dManager.GameIsPaused = false;
+        if (dManager != null) dManager.GameIsPaused = false;
         Cursor.visible = false;
 
     }
@@ -58,7 +58,7 @@ public class PauseMenu : MonoBehaviour
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
-        dManager.GameIsPaused = true;
+        if (dManager != null) dManager.GameIsPaused = true;
         Cursor.visible = false;
 
     }
