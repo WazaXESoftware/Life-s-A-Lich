@@ -7,10 +7,15 @@ using UnityEngine.UI;
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
+    public DialogueManager dManager;
 
     public GameObject PauseMenuUI;
 
 
+    private void OnValidate()
+    {
+        if (dManager == null) Debug.LogWarning("PauseMenu: Dialogue Manager reference is missing");
+    }
 
     private void Start()
     {
@@ -43,6 +48,7 @@ public class PauseMenu : MonoBehaviour
         PauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        dManager.GameIsPaused = false;
         Cursor.visible = false;
 
     }
@@ -52,7 +58,7 @@ public class PauseMenu : MonoBehaviour
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
-
+        dManager.GameIsPaused = true;
         Cursor.visible = false;
 
     }

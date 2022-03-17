@@ -24,7 +24,7 @@ public class SlimeChargeState2 : SlimeState2
 
     public override void PlayerUpdate()
     {
-        if (entity.frozen)
+        if (entity.frozen || !entity.IsGrounded())
         {
             ExitState(entity.idleState);
             return;

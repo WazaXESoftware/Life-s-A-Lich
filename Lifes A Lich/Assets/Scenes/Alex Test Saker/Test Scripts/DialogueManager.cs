@@ -16,7 +16,7 @@ public class DialogueManager : MonoBehaviour
 
     public GameObject dialogueBox;
 
-    public static bool GameIsPaused = false;
+    public bool GameIsPaused = false;
 
     public Queue<string> names;
     public Queue<string> sentences;
@@ -58,9 +58,12 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("joystick button 0"))
+        if (!GameIsPaused)
         {
-            DisplayNextSentence();
+            if (Input.GetButtonDown("Jump"))
+            {
+                DisplayNextSentence();
+            }
         }
     }
 

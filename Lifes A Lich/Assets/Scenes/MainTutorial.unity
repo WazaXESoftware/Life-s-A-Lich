@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 17.386147, g: 13.442179, b: 9.218601, a: 1}
+  m_IndirectSpecularColor: {r: 17.354103, g: 13.414595, b: 9.197649, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4029,6 +4029,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f0f3c98bd2e9134c8fb8167cfa2d592, type: 3}
+--- !u!1 &204607180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1826410752749335749, guid: 516655fc014caed408fa764f97981cd1, type: 3}
+  m_PrefabInstance: {fileID: 1036071259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &212398739
 GameObject:
   m_ObjectHideFlags: 0
@@ -17374,7 +17379,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 850640027}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -20794,6 +20799,14 @@ PrefabInstance:
     - target: {fileID: 1826410752968018956, guid: 516655fc014caed408fa764f97981cd1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1826410752968018957, guid: 516655fc014caed408fa764f97981cd1, type: 3}
+      propertyPath: dManager
+      value: 
+      objectReference: {fileID: 1217579936}
+    - target: {fileID: 1826410753621542419, guid: 516655fc014caed408fa764f97981cd1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 516655fc014caed408fa764f97981cd1, type: 3}
@@ -25118,6 +25131,7 @@ MonoBehaviour:
   slimeImage: {fileID: 154593801}
   skeletonImage: {fileID: 918157701}
   dialogueBox: {fileID: 8724810}
+  GameIsPaused: 0
 --- !u!222 &1217579937
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -41435,7 +41449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 850640027}
+  m_FirstSelected: {fileID: 204607180}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1995380789
