@@ -7,9 +7,13 @@ public class DoorClose : MonoBehaviour
 {
     public StudioEventEmitter slutMusik;
   public GameObject door;
-  private float minHeight = -5.48f;
+  private float minHeight;
     // Start is called before the first frame update
 [SerializeField] Lever lever;
+void Start()
+{
+    minHeight = door.transform.position.y;
+}
 
 
     private void OnTriggerEnter(Collider other){
