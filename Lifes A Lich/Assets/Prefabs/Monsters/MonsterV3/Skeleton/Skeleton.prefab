@@ -114,7 +114,7 @@ MonoBehaviour:
     timer: 0
   actionState:
     entity: {fileID: 3838953694961227014}
-    actionTime: 1
+    actionTime: 1.4
   collapsedState:
     entity: {fileID: 3838953694961227014}
     confusedTime: 1

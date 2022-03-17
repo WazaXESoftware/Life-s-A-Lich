@@ -12,7 +12,7 @@ public class SkeletonJumpState : SkeletonState
     public override void EnterState()
     {
         timer = 0;
-        entity.animator.SetBool("Jumping", true);
+        entity.animator.SetTrigger("Jumping");
         entity.body.AddForce(entity.jumpForce * Vector3.up, ForceMode.VelocityChange);
         if (entity.sfxmanager != null) entity.sfxmanager.characterAudio.SkeletonJump(entity.gameObject);
     }
@@ -21,7 +21,7 @@ public class SkeletonJumpState : SkeletonState
     {
         timer = 0;
         base.ExitState(newState);
-        entity.animator.SetBool("Jumping", false);
+        entity.animator.SetTrigger("Jumping");
     }
 
     public override void PlayerUpdate()

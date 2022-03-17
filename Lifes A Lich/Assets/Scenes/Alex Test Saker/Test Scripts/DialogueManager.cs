@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
+    public Button continueButton;
 
     public GameObject mortImage;
     public GameObject slimeImage;
@@ -60,11 +61,23 @@ public class DialogueManager : MonoBehaviour
     {
         if (!GameIsPaused)
         {
+
             if (Input.GetButtonDown("Jump"))
             {
+                FadeButtonColor(continueButton, continueButton.colors.pressedColor);
                 DisplayNextSentence();
             }
+            else if (Input.GetButtonUp("Jump"))
+            {
+                FadeButtonColor(continueButton, continueButton.colors.normalColor);
+            }
         }
+    }
+
+    void FadeButtonColor(Button button, Color color)
+    {
+        Graphic graphic = button.GetComponent<Graphic>();
+        graphic.CrossFadeColor(color, button.colors.fadeDuration, true, true);
     }
 
     public void DisplayNextSentence()

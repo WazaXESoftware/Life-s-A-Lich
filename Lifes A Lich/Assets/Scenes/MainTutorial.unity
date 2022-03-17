@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 17.327057, g: 13.4123535, b: 9.198168, a: 1}
+  m_IndirectSpecularColor: {r: 17.33345, g: 13.412626, b: 9.198323, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -25127,6 +25127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 1556027023}
   dialogueText: {fileID: 1185442139}
+  continueButton: {fileID: 850640029}
   mortImage: {fileID: 1101208161}
   slimeImage: {fileID: 154593801}
   skeletonImage: {fileID: 918157701}
