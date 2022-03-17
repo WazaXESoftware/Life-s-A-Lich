@@ -7,6 +7,11 @@ public class LookAt : MonoBehaviour
     public Transform target;
     public float speed = 20f;
 
+    private void Start()
+    {
+        target = Camera.main.transform;
+    }
+
     private void Update()
     {
         Vector3 direction = target.position - transform.position;
